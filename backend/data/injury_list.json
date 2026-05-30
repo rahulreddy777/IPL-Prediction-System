@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Pat Cummins",
+    "player": "Pat Cummins",
+    "team": "SRH",
+    "injury": "Lumbar Stress Fracture",
+    "severity": "HIGH",
+    "status": "injured",
+    "note": "Missed openings - return mid-April"
+  },
+  {
+    "name": "Mitchell Starc",
+    "player": "Mitchell Starc",
+    "team": "DC",
+    "injury": "Shoulder/Elbow Load Mgmt",
+    "severity": "MODERATE",
+    "status": "injured",
+    "note": "Managing workload - return unconfirmed"
+  },
+  {
+    "name": "Josh Hazlewood",
+    "player": "Josh Hazlewood",
+    "team": "RCB",
+    "injury": "Achilles Rehab",
+    "severity": "MODERATE",
+    "status": "injured",
+    "note": "Missing early phase - expected late April"
+  },
+  {
+    "name": "Lockie Ferguson",
+    "player": "Lockie Ferguson",
+    "team": "PBKS",
+    "injury": "Paternity Leave",
+    "severity": "MILD",
+    "status": "injured",
+    "note": "Missing first half of season"
+  },
+  {
+    "name": "Matthew Short",
+    "player": "Matthew Short",
+    "team": "CSK",
+    "injury": "Fractured Thumb",
+    "severity": "HIGH",
+    "status": "injured",
+    "note": "Sidelined opening week - under review"
+  },
+  {
+    "name": "M. Pathirana",
+    "player": "M. Pathirana",
+    "team": "KKR",
+    "injury": "Calf Strain (WC)",
+    "severity": "HIGH",
+    "status": "injured",
+    "note": "Recovering - KKR hopeful late-season return"
+  },
+  {
+    "name": "Eshan Malinga",
+    "player": "Eshan Malinga",
+    "team": "SRH",
+    "injury": "Shoulder Dislocation",
+    "severity": "HIGH",
+    "status": "injured",
+    "note": "Availability still uncertain"
+  }
+]

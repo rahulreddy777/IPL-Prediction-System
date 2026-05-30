@@ -1,0 +1,1499 @@
+{
+  "csk": {
+    "Ruturaj Gaikwad": {
+      "matches": 71,
+      "runs": 2502,
+      "avg": 40.35,
+      "sr": 137.47
+    },
+    "Sanju Samson": {
+      "matches": 177,
+      "runs": 4704,
+      "avg": 30.94,
+      "sr": 139.04
+    },
+    "Shivam Dube": {
+      "matches": 79,
+      "runs": 1859,
+      "avg": 30.47,
+      "sr": 143.66,
+      "wkts": 5
+    },
+    "MS Dhoni": {
+      "matches": 278,
+      "runs": 5439,
+      "avg": 38.3,
+      "sr": 137.45
+    },
+    "Dewald Brevis": {
+      "matches": 16,
+      "runs": 455,
+      "avg": 28.44,
+      "sr": 153.2
+    },
+    "Noor Ahmad": {
+      "matches": 37,
+      "wkts": 48,
+      "econ": 8.08
+    },
+    "Rahul Chahar": {
+      "matches": 79,
+      "wkts": 75,
+      "econ": 7.72
+    },
+    "Khaleel Ahmed": {
+      "matches": 71,
+      "wkts": 89,
+      "econ": 8.97
+    },
+    "Spencer Johnson": {
+      "matches": 8,
+      "wkts": 9,
+      "econ": 9.25
+    },
+    "Kartik Sharma": {
+      "matches": 12,
+      "runs": 334,
+      "avg": 30.36,
+      "sr": 162.92
+    },
+    "Prashant Veer": {
+      "matches": 9,
+      "runs": 112,
+      "avg": 28.0,
+      "econ": 6.45,
+      "wkts": 12
+    },
+    "Ayush Mhatre": {
+      "matches": 7,
+      "runs": 240,
+      "avg": 34.28,
+      "sr": 188.97
+    },
+    "Anshul Kamboj": {
+      "matches": 11,
+      "runs": 35,
+      "avg": 11.66,
+      "econ": 9.07,
+      "wkts": 10
+    },
+    "Akeal Hosein": {
+      "matches": 1,
+      "wkts": 1,
+      "econ": 10.0
+    },
+    "Matthew Short": {
+      "matches": 6,
+      "runs": 117,
+      "avg": 19.5,
+      "sr": 127.17
+    },
+    "Sarfaraz Khan": {
+      "matches": 50,
+      "runs": 585,
+      "avg": 22.5,
+      "sr": 130.58
+    },
+    "Matt Henry": {
+      "matches": 6,
+      "wkts": 2,
+      "econ": 10.64
+    },
+    "Jamie Overton": {
+      "matches": 3,
+      "runs": 15,
+      "econ": 13.83
+    },
+    "Mukesh Choudhary": {
+      "matches": 16,
+      "wkts": 17,
+      "econ": 9.94
+    },
+    "Gurjapneet Singh": {
+      "matches": 15,
+      "wkts": 21,
+      "econ": 9.25
+    },
+    "Zak Foulkes": {
+      "matches": 17,
+      "runs": 22,
+      "avg": 5.5,
+      "econ": 8.21,
+      "wkts": 16
+    },
+    "Ramakrishna Ghosh": {
+      "matches": 9,
+      "runs": 45,
+      "avg": 9.0,
+      "econ": 10.95,
+      "wkts": 2
+    },
+    "Shreyas Gopal": {
+      "matches": 52,
+      "runs": 180,
+      "avg": 12.85,
+      "econ": 8.16,
+      "wkts": 52
+    },
+    "Urvil Patel": {
+      "matches": 3,
+      "runs": 68,
+      "avg": 22.66,
+      "sr": 212.5
+    },
+    "Aman Khan": {
+      "matches": 12,
+      "runs": 115,
+      "avg": 12.77,
+      "econ": 10.25
+    }
+  },
+  "mi": {
+    "Rohit Sharma": {
+      "matches": 272,
+      "runs": 7046,
+      "avg": 29.73,
+      "sr": 132.09
+    },
+    "Suryakumar Yadav": {
+      "matches": 166,
+      "runs": 4311,
+      "avg": 35.05,
+      "sr": 148.66
+    },
+    "Tilak Varma": {
+      "matches": 54,
+      "runs": 1499,
+      "avg": 37.48,
+      "sr": 144.41
+    },
+    "Sherfane Rutherford": {
+      "matches": 23,
+      "runs": 412,
+      "avg": 25.75,
+      "sr": 148.5
+    },
+    "Quinton de Kock": {
+      "matches": 115,
+      "runs": 3309,
+      "avg": 30.64,
+      "sr": 134.02
+    },
+    "Ryan Rickelton": {
+      "matches": 14,
+      "runs": 388,
+      "avg": 29.85,
+      "sr": 150.97
+    },
+    "Robin Minz": {
+      "matches": 9,
+      "runs": 73,
+      "avg": 12.16,
+      "sr": 135.2
+    },
+    "Hardik Pandya": {
+      "matches": 152,
+      "runs": 2749,
+      "wkts": 78,
+      "sr": 146.93,
+      "econ": 9.18
+    },
+    "Shardul Thakur": {
+      "matches": 105,
+      "runs": 312,
+      "wkts": 107,
+      "sr": 141.1,
+      "econ": 9.4
+    },
+    "Mitchell Santner": {
+      "matches": 31,
+      "runs": 110,
+      "wkts": 23,
+      "sr": 105.77,
+      "econ": 7.2
+    },
+    "Will Jacks": {
+      "matches": 21,
+      "runs": 463,
+      "wkts": 7,
+      "sr": 158.4,
+      "econ": 8.8
+    },
+    "Naman Dhir": {
+      "matches": 23,
+      "runs": 392,
+      "wkts": 0,
+      "sr": 170.0,
+      "econ": 9.5
+    },
+    "Raj Bawa": {
+      "matches": 5,
+      "runs": 19,
+      "wkts": 0,
+      "sr": 105.56,
+      "econ": 10.5
+    },
+    "Corbin Bosch": {
+      "matches": 5,
+      "runs": 47,
+      "wkts": 1,
+      "sr": 146.8,
+      "econ": 7.85
+    },
+    "Jasprit Bumrah": {
+      "matches": 145,
+      "wkts": 183,
+      "econ": 7.25
+    },
+    "Trent Boult": {
+      "matches": 120,
+      "wkts": 143,
+      "econ": 8.38
+    },
+    "Deepak Chahar": {
+      "matches": 87,
+      "wkts": 83,
+      "econ": 7.98
+    },
+    "Mayank Markande": {
+      "matches": 37,
+      "wkts": 37,
+      "econ": 8.91
+    },
+    "Ashwani Kumar": {
+      "matches": 7,
+      "wkts": 11,
+      "econ": 11.31
+    },
+    "Allah Ghazanfar": {
+      "matches": 2,
+      "wkts": 0,
+      "econ": 9.5
+    },
+    "Danish Malewar": {
+      "matches": 13,
+      "runs": 1151,
+      "avg": 88.53,
+      "sr": 142.0
+    },
+    "Mayank Rawat": {
+      "matches": 11,
+      "runs": 114,
+      "wkts": 5,
+      "avg": 28.5,
+      "sr": 122.58,
+      "econ": 7.6
+    },
+    "Atharva Ankolekar": {
+      "matches": 18,
+      "runs": 142,
+      "wkts": 12,
+      "avg": 17.75,
+      "sr": 110.5,
+      "econ": 7.15
+    },
+    "Raghu Sharma": {
+      "matches": 3,
+      "wkts": 5,
+      "econ": 7.9
+    },
+    "Mohammad Izhar": {
+      "matches": 5,
+      "wkts": 9,
+      "econ": 7.12,
+      "avg": 15.56,
+      "sr": 13.11,
+      "best": "4/39"
+    }
+  },
+  "lsg": {
+    "Aiden Markram": {
+      "matches": 57,
+      "runs": 1440,
+      "avg": 31.3,
+      "sr": 135.08
+    },
+    "Abdul Samad": {
+      "matches": 63,
+      "runs": 741,
+      "avg": 19.5,
+      "sr": 151.84
+    },
+    "Matthew Breetzke": {
+      "matches": 8,
+      "runs": 188,
+      "avg": 23.5,
+      "sr": 142.42
+    },
+    "Himmat Singh": {
+      "matches": 2,
+      "runs": 13,
+      "avg": 6.5,
+      "sr": 108.33
+    },
+    "Rishabh Pant": {
+      "matches": 125,
+      "runs": 3553,
+      "avg": 34.16,
+      "sr": 147.61
+    },
+    "Nicholas Pooran": {
+      "matches": 90,
+      "runs": 2293,
+      "avg": 34.22,
+      "sr": 168.98
+    },
+    "Josh Inglis": {
+      "matches": 11,
+      "runs": 278,
+      "avg": 30.89,
+      "sr": 162.57
+    },
+    "Mitchell Marsh": {
+      "matches": 55,
+      "runs": 1293,
+      "wkts": 37,
+      "sr": 143.03,
+      "econ": 8.52
+    },
+    "Ayush Badoni": {
+      "matches": 56,
+      "runs": 963,
+      "wkts": 2,
+      "sr": 135.0,
+      "econ": 8.12
+    },
+    "Shahbaz Ahamad": {
+      "matches": 58,
+      "runs": 545,
+      "wkts": 20,
+      "sr": 121.65,
+      "econ": 9.04
+    },
+    "Wanindu Hasaranga": {
+      "matches": 37,
+      "runs": 158,
+      "wkts": 46,
+      "sr": 134.1,
+      "econ": 8.41
+    },
+    "Mohammed Shami": {
+      "matches": 119,
+      "wkts": 133,
+      "econ": 8.63
+    },
+    "Avesh Khan": {
+      "matches": 76,
+      "wkts": 87,
+      "econ": 9.12
+    },
+    "Anrich Nortje": {
+      "matches": 48,
+      "wkts": 61,
+      "econ": 9.07
+    },
+    "Mohsin Khan": {
+      "matches": 28,
+      "wkts": 37,
+      "econ": 8.42
+    },
+    "Mayank Yadav": {
+      "matches": 6,
+      "wkts": 9,
+      "econ": 9.17
+    },
+    "Arjun Tendulkar": {
+      "matches": 5,
+      "wkts": 3,
+      "econ": 9.2
+    },
+    "M. Siddharth": {
+      "matches": 5,
+      "wkts": 3,
+      "econ": 7.42
+    },
+    "Akash Singh": {
+      "matches": 7,
+      "wkts": 5,
+      "econ": 9.89
+    },
+    "Arshin Kulkarni": {
+      "matches": 2,
+      "runs": 9,
+      "wkts": 0,
+      "avg": 4.5,
+      "sr": 112.5,
+      "econ": 12.0
+    },
+    "Digvesh Rathi": {
+      "matches": 13,
+      "wkts": 14,
+      "econ": 8.25,
+      "avg": 30.64
+    },
+    "Prince Yadav": {
+      "matches": 6,
+      "wkts": 3,
+      "econ": 9.85
+    },
+    "Mukul Choudhary": {
+      "matches": 7,
+      "runs": 210,
+      "avg": 42.0,
+      "sr": 165.35
+    },
+    "Naman Tiwari": {
+      "matches": 8,
+      "wkts": 11,
+      "econ": 8.12
+    },
+    "Akshat Raghuwanshi": {
+      "matches": 7,
+      "runs": 63,
+      "avg": 12.6,
+      "sr": 131.25
+    }
+  },
+  "srh": {
+    "Travis Head": {
+      "matches": 38,
+      "runs": 1146,
+      "avg": 34.73,
+      "sr": 170.03
+    },
+    "Aniket Verma": {
+      "matches": 14,
+      "runs": 236,
+      "avg": 26.22,
+      "sr": 166.2
+    },
+    "Ishan Kishan": {
+      "matches": 119,
+      "runs": 2998,
+      "avg": 28.5,
+      "sr": 136.2
+    },
+    "Heinrich Klaasen": {
+      "matches": 40,
+      "runs": 1480,
+      "avg": 44.27,
+      "sr": 172.7
+    },
+    "Liam Livingstone": {
+      "matches": 49,
+      "runs": 1051,
+      "wkts": 13,
+      "sr": 158.76,
+      "econ": 9.02
+    },
+    "Harshal Patel": {
+      "matches": 119,
+      "runs": 270,
+      "wkts": 151,
+      "sr": 117.9,
+      "econ": 8.86
+    },
+    "Abhishek Sharma": {
+      "matches": 77,
+      "runs": 1816,
+      "wkts": 11,
+      "sr": 163.02,
+      "econ": 8.95
+    },
+    "Nitish Kumar Reddy": {
+      "matches": 28,
+      "runs": 485,
+      "wkts": 5,
+      "sr": 132.88,
+      "econ": 10.96
+    },
+    "Kamindu Mendis": {
+      "matches": 5,
+      "runs": 92,
+      "wkts": 2,
+      "sr": 133.33,
+      "econ": 8.57
+    },
+    "Jaydev Unadkat": {
+      "matches": 112,
+      "wkts": 110,
+      "econ": 8.86
+    },
+    "Pat Cummins": {
+      "matches": 72,
+      "wkts": 79,
+      "econ": 8.4
+    },
+    "Shivam Mavi": {
+      "matches": 32,
+      "wkts": 30,
+      "econ": 8.71
+    },
+    "Brydon Carse": {
+      "matches": 11,
+      "wkts": 12,
+      "econ": 9.45
+    },
+    "Eshan Malinga": {
+      "matches": 7,
+      "wkts": 13,
+      "econ": 8.52
+    },
+    "Zeeshan Ansari": {
+      "matches": 8,
+      "wkts": 10,
+      "econ": 7.92
+    },
+    "Harsh Dubey": {
+      "matches": 5,
+      "runs": 48,
+      "wkts": 4,
+      "sr": 124.5,
+      "avg": 16.0,
+      "econ": 8.15
+    },
+    "R. Smaran": {
+      "matches": 4,
+      "runs": 56,
+      "avg": 18.66,
+      "sr": 121.74
+    },
+    "Salil Arora": {
+      "matches": 12,
+      "runs": 312,
+      "avg": 31.2,
+      "sr": 158.4
+    },
+    "David Payne": {
+      "matches": 45,
+      "wkts": 58,
+      "econ": 8.35
+    },
+    "Shivang Kumar": {
+      "matches": 6,
+      "runs": 84,
+      "wkts": 3,
+      "sr": 140.0,
+      "avg": 21.0,
+      "econ": 9.1
+    },
+    "Onkar Tarmale": {
+      "matches": 10,
+      "wkts": 12,
+      "econ": 7.85
+    },
+    "Amit Kumar": {
+      "matches": 8,
+      "runs": 112,
+      "wkts": 5,
+      "sr": 135.2,
+      "avg": 22.4,
+      "econ": 8.4
+    },
+    "Praful Hinge": {
+      "matches": 9,
+      "wkts": 11,
+      "econ": 8.22
+    },
+    "Sakib Hussain": {
+      "matches": 12,
+      "wkts": 10,
+      "econ": 10.8
+    },
+    "Krains Fuletra": {
+      "matches": 9,
+      "wkts": 10,
+      "econ": 7.61,
+      "avg": 21.3,
+      "sr": 16.8,
+      "best": "3/22"
+    }
+  },
+  "rcb": {
+    "Virat Kohli": {
+      "matches": 267,
+      "runs": 8661,
+      "avg": 38.84,
+      "sr": 132.5
+    },
+    "Rajat Patidar": {
+      "matches": 42,
+      "runs": 1111,
+      "avg": 30.86,
+      "sr": 154.31
+    },
+    "Devdutt Padikkal": {
+      "matches": 74,
+      "runs": 1806,
+      "avg": 25.44,
+      "sr": 126.29
+    },
+    "Phil Salt": {
+      "matches": 34,
+      "runs": 1056,
+      "avg": 34.06,
+      "sr": 175.71
+    },
+    "Jitesh Sharma": {
+      "matches": 55,
+      "runs": 991,
+      "avg": 25.41,
+      "sr": 157.05
+    },
+    "Venkatesh Iyer": {
+      "matches": 62,
+      "runs": 1468,
+      "wkts": 3,
+      "sr": 137.32,
+      "econ": 9.8
+    },
+    "Krunal Pandya": {
+      "matches": 142,
+      "runs": 1756,
+      "wkts": 93,
+      "sr": 132.4,
+      "econ": 7.37
+    },
+    "Tim David": {
+      "matches": 50,
+      "runs": 846,
+      "sr": 173.36
+    },
+    "Romario Shepherd": {
+      "matches": 15,
+      "runs": 173,
+      "wkts": 7,
+      "sr": 164.76,
+      "econ": 11.2
+    },
+    "Swapnil Singh": {
+      "matches": 15,
+      "runs": 41,
+      "wkts": 11,
+      "sr": 128.12,
+      "econ": 8.85
+    },
+    "Bhuvneshwar Kumar": {
+      "matches": 190,
+      "wkts": 198,
+      "econ": 7.56
+    },
+    "Josh Hazlewood": {
+      "matches": 39,
+      "wkts": 57,
+      "econ": 8.28
+    },
+    "Yash Dayal": {
+      "matches": 43,
+      "wkts": 41,
+      "econ": 9.58
+    },
+    "Suyash Sharma": {
+      "matches": 27,
+      "wkts": 18,
+      "econ": 8.75
+    },
+    "Rasikh Salam": {
+      "matches": 11,
+      "wkts": 10,
+      "econ": 10.85
+    },
+    "Nuwan Thushara": {
+      "matches": 7,
+      "wkts": 8,
+      "econ": 8.89
+    },
+    "Jacob Bethell": {
+      "matches": 31,
+      "runs": 697,
+      "wkts": 8,
+      "avg": 29.04,
+      "sr": 149.89,
+      "econ": 8.12
+    },
+    "Jordan Cox": {
+      "matches": 178,
+      "runs": 4045,
+      "avg": 30.64,
+      "sr": 130.0
+    },
+    "Jacob Duffy": {
+      "matches": 48,
+      "wkts": 62,
+      "econ": 8.09
+    },
+    "Manoj Bhandage": {
+      "matches": 28,
+      "runs": 187,
+      "wkts": 18,
+      "avg": 15.58,
+      "sr": 150.0,
+      "econ": 7.5
+    },
+    "Mangesh Yadav": {
+      "matches": 12,
+      "runs": 145,
+      "wkts": 16,
+      "avg": 24.1,
+      "sr": 142.0,
+      "econ": 7.8
+    },
+    "Kanishk Chouhan": {
+      "matches": 12,
+      "runs": 210,
+      "wkts": 14,
+      "avg": 25.85,
+      "sr": 138.42,
+      "econ": 4.85
+    },
+    "Vicky Ostwal": {
+      "matches": 15,
+      "runs": 67,
+      "wkts": 14,
+      "avg": 13.4,
+      "sr": 106.35,
+      "econ": 6.47
+    },
+    "Vihaan Malhotra": {
+      "matches": 7,
+      "runs": 240,
+      "avg": 60.0,
+      "sr": 101.86,
+      "wkts": 5,
+      "best": "4/14"
+    },
+    "Abhinandan Singh": {
+      "matches": 10,
+      "wkts": 15,
+      "econ": 7.91,
+      "avg": 17.06,
+      "sr": 13.6,
+      "best": "4/26"
+    }
+  },
+  "rr": {
+    "Yashasvi Jaiswal": {
+      "matches": 67,
+      "runs": 2166,
+      "avg": 34.38,
+      "sr": 152.86
+    },
+    "Riyan Parag": {
+      "matches": 84,
+      "runs": 1566,
+      "avg": 26.1,
+      "sr": 141.85
+    },
+    "Shimron Hetmyer": {
+      "matches": 81,
+      "runs": 1593,
+      "avg": 24.51,
+      "sr": 139.61
+    },
+    "Shubham Dubey": {
+      "matches": 13,
+      "runs": 139,
+      "avg": 23.17,
+      "sr": 163.53
+    },
+    "Dhruv Jurel": {
+      "matches": 42,
+      "runs": 680,
+      "avg": 28.33,
+      "sr": 153.85
+    },
+    "Donovan Ferreira": {
+      "matches": 3,
+      "runs": 9,
+      "avg": 3.0,
+      "sr": 64.29
+    },
+    "Ravindra Jadeja": {
+      "matches": 254,
+      "runs": 3260,
+      "wkts": 172,
+      "sr": 135.59,
+      "econ": 7.6
+    },
+    "Yudhvir Singh Charak": {
+      "matches": 3,
+      "runs": 1,
+      "wkts": 3,
+      "sr": 20.0,
+      "econ": 9.15
+    },
+    "Sandeep Sharma": {
+      "matches": 114,
+      "wkts": 124,
+      "econ": 7.77
+    },
+    "Ravi Bishnoi": {
+      "matches": 77,
+      "wkts": 86,
+      "econ": 7.85
+    },
+    "Tushar Deshpande": {
+      "matches": 46,
+      "wkts": 51,
+      "econ": 9.6
+    },
+    "Jofra Archer": {
+      "matches": 52,
+      "wkts": 59,
+      "econ": 7.55
+    },
+    "Kuldeep Sen": {
+      "matches": 12,
+      "wkts": 14,
+      "econ": 9.63
+    },
+    "Nandre Burger": {
+      "matches": 6,
+      "wkts": 7,
+      "econ": 8.53
+    },
+    "Adam Milne": {
+      "matches": 10,
+      "wkts": 7,
+      "econ": 9.48
+    },
+    "Kwena Maphaka": {
+      "matches": 2,
+      "wkts": 1,
+      "econ": 13.5
+    },
+    "Vaibhav Suryavanshi": {
+      "matches": 14,
+      "runs": 412,
+      "avg": 31.69,
+      "sr": 158.46
+    },
+    "Lhuan-dre Pretorius": {
+      "matches": 8,
+      "runs": 245,
+      "avg": 35.0,
+      "sr": 142.85
+    },
+    "Sushant Mishra": {
+      "matches": 4,
+      "wkts": 3,
+      "econ": 10.5
+    },
+    "Yash Raj Punja": {
+      "matches": 6,
+      "wkts": 5,
+      "econ": 8.12
+    },
+    "Vignesh Puthur": {
+      "matches": 5,
+      "wkts": 4,
+      "econ": 8.4
+    },
+    "Ravi Singh": {
+      "matches": 9,
+      "runs": 156,
+      "avg": 19.5,
+      "sr": 138.2
+    },
+    "Aman Rao": {
+      "matches": 7,
+      "runs": 112,
+      "avg": 16.0,
+      "sr": 124.4
+    },
+    "Brijesh Sharma": {
+      "matches": 4,
+      "runs": 45,
+      "wkts": 2,
+      "sr": 115.0,
+      "econ": 9.1
+    },
+    "Dasun Shanaka": {
+      "matches": 3,
+      "runs": 26,
+      "wkts": 0,
+      "avg": 13.0,
+      "sr": 100.0
+    },
+    "Kumar Kartikeya": {
+      "matches": 16,
+      "runs": 12,
+      "wkts": 12,
+      "avg": 33.92,
+      "sr": 23.5
+    }
+  },
+  "gt": {
+    "Shubman Gill": {
+      "matches": 118,
+      "runs": 3866,
+      "avg": 38.27,
+      "sr": 135.5
+    },
+    "Sai Sudharsan": {
+      "matches": 40,
+      "runs": 1793,
+      "avg": 49.81,
+      "sr": 145.89
+    },
+    "Shahrukh Khan": {
+      "matches": 55,
+      "runs": 732,
+      "avg": 20.33,
+      "sr": 134.8
+    },
+    "Tom Banton": {
+      "matches": 7,
+      "runs": 106,
+      "avg": 15.14,
+      "sr": 120.45
+    },
+    "Jos Buttler": {
+      "matches": 121,
+      "runs": 4120,
+      "avg": 39.23,
+      "sr": 148.2
+    },
+    "Anuj Rawat": {
+      "matches": 24,
+      "runs": 318,
+      "avg": 19.88,
+      "sr": 119.1
+    },
+    "Kumar Kushagra": {
+      "matches": 4,
+      "runs": 3,
+      "avg": 1.0,
+      "sr": 42.86
+    },
+    "Jason Holder": {
+      "matches": 46,
+      "runs": 259,
+      "wkts": 53,
+      "sr": 121.15,
+      "econ": 8.57
+    },
+    "Rahul Tewatia": {
+      "matches": 95,
+      "runs": 1020,
+      "wkts": 32,
+      "sr": 132.4,
+      "econ": 7.91
+    },
+    "Washington Sundar": {
+      "matches": 65,
+      "runs": 511,
+      "wkts": 39,
+      "sr": 126.17,
+      "econ": 7.7
+    },
+    "Glenn Phillips": {
+      "matches": 8,
+      "runs": 65,
+      "wkts": 2,
+      "sr": 118.18,
+      "econ": 7.5
+    },
+    "Rashid Khan": {
+      "matches": 136,
+      "wkts": 158,
+      "econ": 6.73
+    },
+    "Kagiso Rabada": {
+      "matches": 84,
+      "wkts": 119,
+      "econ": 8.06
+    },
+    "Mohammed Siraj": {
+      "matches": 108,
+      "wkts": 109,
+      "econ": 8.74
+    },
+    "Ishant Sharma": {
+      "matches": 117,
+      "wkts": 97,
+      "econ": 8.11
+    },
+    "Prasidh Krishna": {
+      "matches": 66,
+      "wkts": 74,
+      "econ": 8.77
+    },
+    "Sai Kishore": {
+      "matches": 25,
+      "wkts": 32,
+      "econ": 8.86
+    },
+    "Jayant Yadav": {
+      "matches": 21,
+      "wkts": 10,
+      "econ": 7.18
+    },
+    "Arshad Khan": {
+      "matches": 10,
+      "wkts": 5,
+      "econ": 11.2
+    },
+    "Luke Wood": {
+      "matches": 1,
+      "wkts": 0,
+      "econ": 17.0
+    },
+    "Manav Suthar": {
+      "matches": 1,
+      "wkts": 0,
+      "econ": 10.0
+    },
+    "Prithviraj Yarra": {
+      "matches": 2,
+      "wkts": 1,
+      "econ": 11.2
+    },
+    "Gurnoor Brar": {
+      "matches": 1,
+      "wkts": 0,
+      "econ": 14.0
+    },
+    "Nishant Sindhu": {
+      "matches": 0,
+      "runs": 0,
+      "wkts": 0
+    },
+    "Ashok Sharma": {
+      "matches": 0,
+      "wkts": 0,
+      "econ": 0.0
+    }
+  },
+  "pbks": {
+    "Shreyas Iyer": {
+      "matches": 133,
+      "runs": 3731,
+      "avg": 34.23,
+      "sr": 133.35
+    },
+    "Nehal Wadhera": {
+      "matches": 36,
+      "runs": 719,
+      "avg": 26.63,
+      "sr": 142.94
+    },
+    "Shashank Singh": {
+      "matches": 32,
+      "runs": 514,
+      "avg": 29.19,
+      "sr": 164.65
+    },
+    "Prabhsimran Singh": {
+      "matches": 34,
+      "runs": 756,
+      "avg": 22.23,
+      "sr": 146.22
+    },
+    "Vishnu Vinod": {
+      "matches": 6,
+      "runs": 39,
+      "avg": 6.5,
+      "sr": 108.33
+    },
+    "Marcus Stoinis": {
+      "matches": 109,
+      "runs": 2026,
+      "wkts": 44,
+      "sr": 144.71,
+      "econ": 9.79
+    },
+    "Marco Jansen": {
+      "matches": 35,
+      "runs": 141,
+      "wkts": 36,
+      "sr": 109.3,
+      "econ": 9.41
+    },
+    "Priyansh Arya": {
+      "matches": 17,
+      "runs": 475,
+      "wkts": 0,
+      "sr": 179.25
+    },
+    "Harpreet Brar": {
+      "matches": 41,
+      "runs": 211,
+      "wkts": 25,
+      "sr": 125.6,
+      "econ": 7.71
+    },
+    "Azmatullah Omarzai": {
+      "matches": 12,
+      "runs": 142,
+      "wkts": 11,
+      "sr": 131.48,
+      "econ": 8.86
+    },
+    "Yuzvendra Chahal": {
+      "matches": 174,
+      "wkts": 221,
+      "econ": 7.96
+    },
+    "Arshdeep Singh": {
+      "matches": 82,
+      "wkts": 97,
+      "econ": 8.73
+    },
+    "Lockie Ferguson": {
+      "matches": 49,
+      "wkts": 51,
+      "econ": 8.97
+    },
+    "Yash Thakur": {
+      "matches": 21,
+      "wkts": 24,
+      "econ": 9.25
+    },
+    "Vyshak Vijaykumar": {
+      "matches": 11,
+      "wkts": 13,
+      "econ": 10.54
+    },
+    "Pravin Dubey": {
+      "matches": 4,
+      "wkts": 0,
+      "econ": 8.41
+    },
+    "Cooper Connolly": {
+      "matches": 37,
+      "runs": 786,
+      "wkts": 27,
+      "avg": 30.23,
+      "sr": 137.41,
+      "econ": 6.84
+    },
+    "Ben Dwarshuis": {
+      "matches": 129,
+      "wkts": 164,
+      "econ": 8.09
+    },
+    "Musheer Khan": {
+      "matches": 1,
+      "runs": 0,
+      "wkts": 1
+    },
+    "Suryansh Shedge": {
+      "matches": 5,
+      "runs": 7,
+      "wkts": 0
+    },
+    "Mitchell Owen": {
+      "matches": 1,
+      "runs": 0
+    },
+    "Xavier Bartlett": {
+      "matches": 4,
+      "wkts": 2,
+      "econ": 9.6
+    },
+    "Harnoor Pannu": {
+      "matches": 9,
+      "runs": 169,
+      "avg": 21.12,
+      "sr": 130.0
+    },
+    "Pyla Avinash": {
+      "matches": 13,
+      "runs": 198,
+      "avg": 18.0,
+      "sr": 116.47
+    },
+    "Vishal Nishad": {
+      "matches": 9,
+      "runs": 0,
+      "wkts": 12,
+      "avg": 20.42,
+      "sr": 15.5
+    }
+  },
+  "dc": {
+    "Prithvi Shaw": {
+      "matches": 79,
+      "runs": 1892,
+      "avg": 23.95,
+      "sr": 147.47
+    },
+    "Tristan Stubbs": {
+      "matches": 32,
+      "runs": 705,
+      "avg": 41.47,
+      "sr": 163.19
+    },
+    "Nitish Rana": {
+      "matches": 118,
+      "runs": 2853,
+      "avg": 27.97,
+      "sr": 136.77
+    },
+    "David Miller": {
+      "matches": 141,
+      "runs": 3077,
+      "avg": 36.2,
+      "sr": 138.6
+    },
+    "Karun Nair": {
+      "matches": 84,
+      "runs": 1694,
+      "avg": 23.86,
+      "sr": 131.73
+    },
+    "Ashutosh Sharma": {
+      "matches": 11,
+      "runs": 189,
+      "avg": 27.0,
+      "sr": 167.26
+    },
+    "Sameer Rizvi": {
+      "matches": 8,
+      "runs": 15,
+      "avg": 7.5,
+      "sr": 115.38
+    },
+    "KL Rahul": {
+      "matches": 145,
+      "runs": 5222,
+      "avg": 46.21,
+      "sr": 135.0
+    },
+    "Abishek Porel": {
+      "matches": 31,
+      "runs": 661,
+      "avg": 25.42,
+      "sr": 149.89
+    },
+    "Axar Patel": {
+      "matches": 162,
+      "runs": 1916,
+      "wkts": 128,
+      "sr": 133.99,
+      "econ": 7.35
+    },
+    "Kuldeep Yadav": {
+      "matches": 98,
+      "wkts": 102,
+      "econ": 8.04
+    },
+    "Mitchell Starc": {
+      "matches": 52,
+      "wkts": 65,
+      "econ": 8.12
+    },
+    "T. Natarajan": {
+      "matches": 61,
+      "wkts": 67,
+      "econ": 8.92
+    },
+    "Mukesh Kumar": {
+      "matches": 20,
+      "wkts": 24,
+      "econ": 10.12
+    },
+    "D. Chameera": {
+      "matches": 12,
+      "wkts": 9,
+      "econ": 8.73
+    },
+    "Lungi Ngidi": {
+      "matches": 14,
+      "wkts": 25,
+      "econ": 8.3
+    },
+    "Kyle Jamieson": {
+      "matches": 9,
+      "wkts": 9,
+      "econ": 9.6
+    },
+    "Pathum Nissanka": {
+      "matches": 0,
+      "runs": 0
+    },
+    "Auqib Nabi Dar": {
+      "matches": 0,
+      "wkts": 0,
+      "econ": 0.0
+    },
+    "Vipraj Nigam": {
+      "matches": 12,
+      "wkts": 14,
+      "econ": 7.85
+    },
+    "Madhav Tiwari": {
+      "matches": 5,
+      "wkts": 4,
+      "econ": 8.12
+    },
+    "Ajay Mandal": {
+      "matches": 2,
+      "wkts": 0,
+      "econ": 9.50
+    },
+    "Tripurana Vijay": {
+      "matches": 4,
+      "wkts": 3,
+      "econ": 7.60
+    },
+    "Sahil Parakh": {
+      "matches": 22,
+      "runs": 516,
+      "wkts": 0,
+      "avg": 28.67,
+      "sr": 158.8
+    }
+  },
+  "kkr": {
+    "Ajinkya Rahane": {
+      "matches": 198,
+      "runs": 5032,
+      "avg": 30.5,
+      "sr": 125.02
+    },
+    "Rinku Singh": {
+      "matches": 59,
+      "runs": 1099,
+      "avg": 30.53,
+      "sr": 145.18
+    },
+    "Manish Pandey": {
+      "matches": 174,
+      "runs": 3942,
+      "avg": 29.42,
+      "sr": 121.52
+    },
+    "Rahul Tripathi": {
+      "matches": 100,
+      "runs": 2241,
+      "avg": 25.8,
+      "sr": 137.4
+    },
+    "Angkrish Raghuvanshi": {
+      "matches": 22,
+      "runs": 463,
+      "avg": 28.94,
+      "sr": 144.69
+    },
+    "Ramandeep Singh": {
+      "matches": 24,
+      "runs": 284,
+      "avg": 25.81,
+      "sr": 162.2
+    },
+    "Tim Seifert": {
+      "matches": 3,
+      "runs": 26,
+      "avg": 13.0,
+      "sr": 118.18
+    },
+    "Sunil Narine": {
+      "matches": 189,
+      "runs": 1780,
+      "wkts": 192,
+      "sr": 164.5,
+      "econ": 6.81
+    },
+    "Cameron Green": {
+      "matches": 29,
+      "runs": 707,
+      "wkts": 16,
+      "sr": 148.2,
+      "econ": 9.2
+    },
+    "Rachin Ravindra": {
+      "matches": 12,
+      "runs": 245,
+      "wkts": 1,
+      "sr": 155.0,
+      "econ": 8.8
+    },
+    "Anukul Roy": {
+      "matches": 12,
+      "runs": 26,
+      "wkts": 2,
+      "sr": 104.0,
+      "econ": 7.8
+    },
+    "Varun Chakaravarthy": {
+      "matches": 84,
+      "wkts": 99,
+      "econ": 7.6
+    },
+    "Umran Malik": {
+      "matches": 34,
+      "wkts": 35,
+      "econ": 9.4
+    },
+    "Vaibhav Arora": {
+      "matches": 32,
+      "wkts": 30,
+      "econ": 9.3
+    },
+    "Kartik Tyagi": {
+      "matches": 20,
+      "wkts": 15,
+      "econ": 9.5
+    },
+    "Prashant Solanki": {
+      "matches": 2,
+      "wkts": 2,
+      "econ": 6.33
+    },
+    "Blessing Muzarabani": {
+      "matches": 89,
+      "wkts": 106,
+      "avg": 21.35,
+      "econ": 7.24
+    },
+    "Rovman Powell": {
+      "matches": 29,
+      "runs": 365,
+      "wkts": 1,
+      "avg": 18.25,
+      "sr": 146.59,
+      "econ": 11.67
+    },
+    "Navdeep Saini": {
+      "matches": 32,
+      "wkts": 23,
+      "avg": 42.48,
+      "econ": 8.88
+    },
+    "Saurabh Dubey": {
+      "matches": 0,
+      "runs": 0,
+      "wkts": 0,
+      "avg": 0.0,
+      "sr": 0.0
+    },
+    "Finn Allen": {
+      "matches": 0,
+      "runs": 0,
+      "avg": 0.0,
+      "sr": 160.5
+    },
+    "Sarthak Ranjan": {
+      "matches": 9,
+      "runs": 449,
+      "avg": 56.13,
+      "sr": 146.73
+    },
+    "Daksh Kamra": {
+      "matches": 12,
+      "runs": 142,
+      "wkts": 18,
+      "avg": 19.8,
+      "sr": 118.5,
+      "econ": 7.42
+    },
+    "Tejasvi Singh": {
+      "matches": 10,
+      "runs": 304,
+      "avg": 38.0,
+      "sr": 192.4
+    }
+  }
+}

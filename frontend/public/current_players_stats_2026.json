@@ -1,0 +1,2713 @@
+[
+  {
+    "team": "PBKS",
+    "player": "Shreyas Iyer",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 120,
+      "runs": 3317,
+      "average": 32.2,
+      "strike_rate": 127.42
+    },
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Nehal Wadhera",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Vishnu Vinod",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Harnoor Pannu",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Pyla Avinash",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Prabhsimran Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Shashank Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Marcus Stoinis",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": {
+      "matches": 96,
+      "runs": 1845,
+      "average": 27.53,
+      "strike_rate": 141.27
+    },
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Harpreet Brar",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Marco Jansen",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Azmatullah Omarzai",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Priyansh Arya",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Musheer Khan",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Suryansh Shedge",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Mitch Owen",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Arshdeep Singh",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 82,
+      "wickets": 97,
+      "bowling_average": 26.49,
+      "economy": 8.99,
+      "best_figure": "5/32"
+    }
+  },
+  {
+    "team": "PBKS",
+    "player": "Yuzvendra Chahal",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Vyshak Vijaykumar",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Yash Thakur",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Xavier Bartlett",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Lockie Ferguson",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Cooper Connolly",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "3.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Ben Dwarshuis",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "4.40 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Vishal Nishad",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "PBKS",
+    "player": "Pravin Dubey",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Shubham Dubey",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Vaibhav Suryavanshi",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Lhuan-dre Pretorius",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Shimron Hetmyer",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Yashasvi Jaiswal",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Dhruv Jurel",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Riyan Parag",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Yudhvir Singh Charak",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Jofra Archer",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Tushar Deshpande",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Sandeep Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 137,
+      "wickets": 146,
+      "bowling_average": 27.87,
+      "economy": 8.03,
+      "best_figure": "5/18"
+    }
+  },
+  {
+    "team": "RR",
+    "player": "Kwena Maphaka",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Nandre Burger",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Ravindra Jadeja",
+    "acquisition": "Trade",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": {
+      "matches": 240,
+      "runs": 2959,
+      "average": 27.14,
+      "strike_rate": 129.72
+    },
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Sam Curran",
+    "acquisition": "Trade",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Donovan Ferreira",
+    "acquisition": "Trade",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Ravi Bishnoi",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "7.20 crore",
+    "batting": null,
+    "bowling": {
+      "matches": 77,
+      "wickets": 72,
+      "bowling_average": 31.06,
+      "economy": 8.21,
+      "best_figure": "3/24"
+    }
+  },
+  {
+    "team": "RR",
+    "player": "Sushant Mishra",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "90 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Vignesh Puthur",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Yash Raj Punja",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Ravi Singh",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "95 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Brijesh Sharma",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Aman Rao",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Adam Milne",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.40 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RR",
+    "player": "Kuldeep Sen",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Rajat Patidar",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Virat Kohli",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 267,
+      "runs": 8661,
+      "average": 39.54,
+      "strike_rate": 132.85
+    },
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Tim David",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Devdutt Padikkal",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Phil Salt",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Jitesh Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Krunal Pandya",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": {
+      "matches": 127,
+      "runs": 1720,
+      "average": 21.23,
+      "strike_rate": 132.81
+    },
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Jacob Bethell",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Romario Shepherd",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Swapnil Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Josh Hazlewood",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Bhuvneshwar Kumar",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 190,
+      "wickets": 198,
+      "bowling_average": 27.33,
+      "economy": 7.69,
+      "best_figure": "5/19"
+    }
+  },
+  {
+    "team": "RCB",
+    "player": "Rasikh Salam",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Yash Dayal",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 43,
+      "wickets": 41,
+      "bowling_average": 33.9,
+      "economy": 9.57,
+      "best_figure": "3/20"
+    }
+  },
+  {
+    "team": "RCB",
+    "player": "Suyash Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Nuwan Thushara",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Abhinandan Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Venkatesh Iyer",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "7.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Jacob Duffy",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Mangesh Yadav",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "5.20 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Satvik Deswal",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Jordan Cox",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Kanishk Chouhan",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Vihaan Malhotra",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "RCB",
+    "player": "Vicky Ostwal",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Travis Head",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Abhishek Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Aniket Verma",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "R Smaran",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Ishan Kishan",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 105,
+      "runs": 2644,
+      "average": 28.43,
+      "strike_rate": 135.86
+    },
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Heinrich Klaasen",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Nitish Kumar Reddy",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Harsh Dubey",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Kamindu Mendis",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Harshal Patel",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Brydon Carse",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Jaydev Unadkat",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Eshan Malinga",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Zeeshan Ansari",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Shivang Kumar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Salil Arora",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "1.50 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Krains Fuletra",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Praful Hinge",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Amit Kumar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Onkar Tarmale",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Sakib Hussain",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Liam Livingstone",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "13.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Shivam Mavi",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "SRH",
+    "player": "Jack Edwards",
+    "acquisition": "Auction",
+    "type": "Overseas (uncapped)",
+    "role": "All-rounder",
+    "price": "3.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Ajinkya Rahane",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 198,
+      "runs": 5032,
+      "average": 30.5,
+      "strike_rate": 125.02
+    },
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Rinku Singh",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Angkrish Raghuvanshi",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Manish Pandey",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 174,
+      "runs": 3942,
+      "average": 29.2,
+      "strike_rate": 121.29
+    },
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Rovman Powell",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Anukul Roy",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Ramandeep Singh",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Vaibhav Arora",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Sunil Narine",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Varun Chakaravarthy",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Harshit Rana",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 34,
+      "wickets": 40,
+      "bowling_average": 25.72,
+      "economy": 9.51,
+      "best_figure": "3/24"
+    }
+  },
+  {
+    "team": "KKR",
+    "player": "Umran Malik",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Cameron Green",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "25.20 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Matheesha Pathirana",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "18.00 crore",
+    "batting": null,
+    "bowling": {
+      "matches": 32,
+      "wickets": 47,
+      "bowling_average": 21.61,
+      "economy": 8.68,
+      "best_figure": "4/28"
+    }
+  },
+  {
+    "team": "KKR",
+    "player": "Finn Allen",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Tejasvi Singh",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "3.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Prashant Solanki",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Kartik Tyagi",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Rahul Tripathi",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "75 lakh",
+    "batting": {
+      "matches": 95,
+      "runs": 2210,
+      "average": 26.3,
+      "strike_rate": 138.47
+    },
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Tim Seifert",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "1.50 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Sarthak Ranjan",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Daksh Kamra",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Akash Deep",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "1.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "KKR",
+    "player": "Rachin Ravindra",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Rishabh Pant",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 111,
+      "runs": 3284,
+      "average": 35.31,
+      "strike_rate": 148.93
+    },
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Ayush Badoni",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Abdul Samad",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Aiden Markram",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Himmat Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Matthew Breetzke",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Nicholas Pooran",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Mitchell Marsh",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Shahbaz Ahamad",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Arshin Kulkarni",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Mayank Yadav",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Avesh Khan",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 76,
+      "wickets": 87,
+      "bowling_average": 28.28,
+      "economy": 9.12,
+      "best_figure": "4/24"
+    }
+  },
+  {
+    "team": "LSG",
+    "player": "Mohsin Khan",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "M. Siddharth",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Digvesh Rathi",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Prince Yadav",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Akash Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Arjun Tendulkar",
+    "acquisition": "Trade",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Mohammed Shami",
+    "acquisition": "Trade",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 119,
+      "wickets": 133,
+      "bowling_average": 28.18,
+      "economy": 8.63,
+      "best_figure": "4/11"
+    }
+  },
+  {
+    "team": "LSG",
+    "player": "Anrich Nortje",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": {
+      "matches": 48,
+      "wickets": 61,
+      "bowling_average": 27.16,
+      "economy": 9.07,
+      "best_figure": "3/33"
+    }
+  },
+  {
+    "team": "LSG",
+    "player": "Wanindu Hasaranga",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Mukul Choudhary",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "2.60 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Naman Tiwari",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "1.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Akshat Raghuwanshi",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "2.20 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "LSG",
+    "player": "Josh Inglis",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "8.60 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Rohit Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 272,
+      "runs": 7046,
+      "average": 29.73,
+      "strike_rate": 132.09
+    },
+    "bowling": {
+      "matches": 44,
+      "wickets": 40,
+      "bowling_average": 27.15,
+      "economy": 7.02,
+      "best_figure": "3/13"
+    }
+  },
+  {
+    "team": "MI",
+    "player": "Surya Kumar Yadav",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Robin Minz",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Ryan Rickelton",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Tilak Varma",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Hardik Pandya",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": {
+      "matches": 137,
+      "runs": 2615,
+      "average": 28.11,
+      "strike_rate": 143.83
+    },
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Naman Dhir",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Mitchell Santner",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Will Jacks",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Corbin Bosch",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Raj Bawa",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Trent Boult",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Jasprit Bumrah",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Deepak Chahar",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Ashwani Kumar",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Raghu Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 44,
+      "wickets": 40,
+      "bowling_average": 27.15,
+      "economy": 7.02,
+      "best_figure": "3/13"
+    }
+  },
+  {
+    "team": "MI",
+    "player": "Allah Ghazanfar",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Mayank Markande",
+    "acquisition": "Trade",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Shardul Thakur",
+    "acquisition": "Trade",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Sherfane Rutherford",
+    "acquisition": "Trade",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Quinton De Kock",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "1.00 crore",
+    "batting": {
+      "matches": 108,
+      "runs": 3328,
+      "average": 31.69,
+      "strike_rate": 134.57
+    },
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Atharva Ankolekar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Mohammad Izhar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Danish Malewar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "MI",
+    "player": "Mayank Rawat",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "KL Rahul",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 145,
+      "runs": 5222,
+      "average": 46.21,
+      "strike_rate": 136.02
+    },
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Karun Nair",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Abishek Porel",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Tristan Stubbs",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Axar Patel",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Sameer Rizvi",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Ashutosh Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Vipraj Nigam",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Ajay Mandal",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Tripurana Vijay",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Madhav Tiwari",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Mitchell Starc",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "T. Natarajan",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 63,
+      "wickets": 67,
+      "bowling_average": 30.11,
+      "economy": 8.93,
+      "best_figure": "4/19"
+    }
+  },
+  {
+    "team": "DC",
+    "player": "Mukesh Kumar",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Dushmantha Chameera",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Kuldeep Yadav",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 98,
+      "wickets": 102,
+      "bowling_average": 26.95,
+      "economy": 8.03,
+      "best_figure": "4/14"
+    }
+  },
+  {
+    "team": "DC",
+    "player": "Nitish Rana",
+    "acquisition": "Trade",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 107,
+      "runs": 2636,
+      "average": 28.65,
+      "strike_rate": 135.24
+    },
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Auqib Dar",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "8.40 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Ben Duckett",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "David Miller",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "2.00 crore",
+    "batting": {
+      "matches": 132,
+      "runs": 2981,
+      "average": 36.35,
+      "strike_rate": 139.23
+    },
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Pathum Nissanka",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "4.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Lungi Ngidi",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Sahil Parakh",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Prithvi Shaw",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "75 lakh",
+    "batting": {
+      "matches": 79,
+      "runs": 1694,
+      "average": 21.44,
+      "strike_rate": 144.17
+    },
+    "bowling": null
+  },
+  {
+    "team": "DC",
+    "player": "Kyle Jamieson",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Shubman Gill",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": {
+      "matches": 110,
+      "runs": 3392,
+      "average": 39.44,
+      "strike_rate": 138.16
+    },
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Sai Sudharsan",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Kumar Kushagra",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Anuj Rawat",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Jos Buttler",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 121,
+      "runs": 4120,
+      "average": 38.14,
+      "strike_rate": 149.27
+    },
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Nishant Sindhu",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Glenn Phillips",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Washington Sundar",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 66,
+      "wickets": 39,
+      "bowling_average": 36.82,
+      "economy": 7.69,
+      "best_figure": "3/16"
+    }
+  },
+  {
+    "team": "GT",
+    "player": "Arshad Khan",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Shahrukh Khan",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Rahul Tewatia",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Kagiso Rabada",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 84,
+      "wickets": 119,
+      "bowling_average": 22.95,
+      "economy": 8.61,
+      "best_figure": "4/21"
+    }
+  },
+  {
+    "team": "GT",
+    "player": "Mohammed Siraj",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 108,
+      "wickets": 109,
+      "bowling_average": 30.72,
+      "economy": 8.73,
+      "best_figure": "4/17"
+    }
+  },
+  {
+    "team": "GT",
+    "player": "Prasidh Krishna",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Ishant Sharma",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 117,
+      "wickets": 96,
+      "bowling_average": 35.17,
+      "economy": 8.37,
+      "best_figure": "5/12"
+    }
+  },
+  {
+    "team": "GT",
+    "player": "Gurnoor Singh Brar",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Rashid Khan",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 136,
+      "wickets": 158,
+      "bowling_average": 23.83,
+      "economy": 7.08,
+      "best_figure": "4/24"
+    }
+  },
+  {
+    "team": "GT",
+    "player": "Manav Suthar",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Sai Kishore",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Jayant Yadav",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Ashok Sharma",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "90 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Jason Holder",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "7.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Tom Banton",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Luke Wood",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "GT",
+    "player": "Prithviraj Yarra",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "30 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Ruturaj Gaikwad",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "MS Dhoni",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 278,
+      "runs": 5439,
+      "average": 38.3,
+      "strike_rate": 137.45
+    },
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Dewald Brevis",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Ayush Mhatre",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Batter",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Urvil Patel",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Anshul Kamboj",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Jamie Overton",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Ramakrishna Ghosh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Shivam Dube",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "All-rounder",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Khaleel Ahmed",
+    "acquisition": "Retained",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Noor Ahmad",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 37,
+      "wickets": 48,
+      "bowling_average": 22.22,
+      "economy": 8.08,
+      "best_figure": "4/18"
+    }
+  },
+  {
+    "team": "CSK",
+    "player": "Mukesh Choudhary",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Nathan Ellis",
+    "acquisition": "Retained",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Shreyas Gopal",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": {
+      "matches": 52,
+      "wickets": 52,
+      "bowling_average": 25.94,
+      "economy": 8.16,
+      "best_figure": "4/16"
+    }
+  },
+  {
+    "team": "CSK",
+    "player": "Gurjapneet Singh",
+    "acquisition": "Retained",
+    "type": "Indian (uncapped)",
+    "role": "Bowler",
+    "price": "-",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Sanju Samson",
+    "acquisition": "Trade",
+    "type": "Indian (capped)",
+    "role": "Wicketkeeper",
+    "price": "-",
+    "batting": {
+      "matches": 177,
+      "runs": 4704,
+      "average": 31.15,
+      "strike_rate": 139.17
+    },
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Akeal Hosein",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Prashant Veer",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "14.20 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Kartik Sharma",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "Wicketkeeper",
+    "price": "14.20 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Matthew Short",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "1.50 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Aman Khan",
+    "acquisition": "Auction",
+    "type": "Indian (uncapped)",
+    "role": "All-rounder",
+    "price": "40 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Sarfaraz Khan",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Batter",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Rahul Chahar",
+    "acquisition": "Auction",
+    "type": "Indian (capped)",
+    "role": "Bowler",
+    "price": "1.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Matt Henry",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "Bowler",
+    "price": "2.00 crore",
+    "batting": null,
+    "bowling": null
+  },
+  {
+    "team": "CSK",
+    "player": "Zak Foulkes",
+    "acquisition": "Auction",
+    "type": "Overseas (capped)",
+    "role": "All-rounder",
+    "price": "75 lakh",
+    "batting": null,
+    "bowling": null
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "team_rankings_2026": {
+    "MI": {
+      "rank": 1,
+      "overall_score": 97,
+      "batting": 97,
+      "bowling": 97,
+      "all_round": 95,
+      "key_players": ["Rohit Sharma", "Suryakumar Yadav", "Tilak Varma", "Quinton de Kock", "Jasprit Bumrah", "Trent Boult", "Hardik Pandya", "Will Jacks"],
+      "strengths": ["Most balanced squad", "Elite Indian core", "World-class pace attack", "Exceptional all-rounder depth"],
+      "description": "Most Balanced Overall - Elite core of Indian superstars with massive tactical advantage"
+    },
+    "GT": {
+      "rank": 2,
+      "overall_score": 94,
+      "batting": 90,
+      "bowling": 98,
+      "all_round": 88,
+      "key_players": ["Shubman Gill", "Sai Sudharsan", "Jos Buttler", "Rashid Khan", "Kagiso Rabada", "Mohammed Siraj", "Prasidh Krishna", "Washington Sundar"],
+      "strengths": ["Best bowling lineup", "Stable top-3", "Spin dominance", "Death bowling"],
+      "description": "Strongest Bowling & Top Order - Powerhouse of consistency in restricting teams"
+    },
+    "DC": {
+      "rank": 3,
+      "overall_score": 89,
+      "batting": 86,
+      "bowling": 93,
+      "all_round": 90,
+      "key_players": ["KL Rahul", "Pathum Nissanka", "Nitish Rana", "Tristan Stubbs", "David Miller", "Kuldeep Yadav", "Axar Patel", "Mitchell Starc"],
+      "strengths": ["Best spin duo in league", "Tactical reset", "Elite finishing power", "Spin control"],
+      "description": "Tactical Reset & Spin Dominance - ₹124.75Cr revamp for stability and spin control"
+    },
+    "KKR": {
+      "rank": 4,
+      "overall_score": 88,
+      "batting": 91,
+      "bowling": 83,
+      "all_round": 96,
+      "key_players": ["Rinku Singh", "Cameron Green", "Finn Allen", "Rachin Ravindra", "Sunil Narine", "Varun Chakravarthy", "Ramandeep Singh"],
+      "strengths": ["Most all-rounders", "Mystery spin", "Explosive batting depth", "Green's impact"],
+      "description": "The All-Rounder Specialists - High-impact all-rounders despite injury concerns in pace dept"
+    },
+    "SRH": {
+      "rank": 5,
+      "overall_score": 83,
+      "batting": 94,
+      "bowling": 78,
+      "all_round": 76,
+      "key_players": ["Travis Head", "Abhishek Sharma", "Heinrich Klaasen", "Pat Cummins", "Bhuvneshwar Kumar"],
+      "strengths": ["Attack-first batting", "Powerful top order", "Death hitting", "Cummins leadership"],
+      "description": "Attack-First Approach - Head/Abhishek/Klaasen power; bowling depth concern"
+    },
+    "RCB": {
+      "rank": 6,
+      "overall_score": 80,
+      "batting": 87,
+      "bowling": 79,
+      "all_round": 74,
+      "key_players": ["Jacob Bethell", "Virat Kohli", "Phil Salt", "Josh Hazlewood", "Yash Dayal"],
+      "strengths": ["Star batting lineup", "Kohli's experience", "Bethell's potential", "Bowling improvement"],
+      "description": "Star Batting Core - Bethell/Kohli/Salt firepower; bowling depth remains concern"
+    },
+    "CSK": {
+      "rank": 7,
+      "overall_score": 79,
+      "batting": 84,
+      "bowling": 77,
+      "all_round": 78,
+      "key_players": ["Ruturaj Gaikwad", "Sanju Samson", "Shivam Dube", "MS Dhoni", "Matheesha Pathirana", "Ravindra Jadeja"],
+      "strengths": ["Experienced core", "Dhoni mentorship", "Death bowling", "Spin resources"],
+      "description": "Experienced Core - Samson/Ruturaj firepower with Dhoni's legendary guidance"
+    },
+    "RR": {
+      "rank": 8,
+      "overall_score": 76,
+      "batting": 80,
+      "bowling": 74,
+      "all_round": 80,
+      "key_players": ["Yashasvi Jaiswal", "Vaibhav Suryavanshi", "Riyan Parag", "Sanju Samson", "Jofra Archer", "Sandeep Sharma"],
+      "strengths": ["Exciting youngsters", "Balanced squad", "Archer's pace", "Emerging talent"],
+      "description": "Exciting Youngsters - Vaibhav Suryavanshi + balanced but not elite overall"
+    },
+    "LSG": {
+      "rank": 9,
+      "overall_score": 74,
+      "batting": 82,
+      "bowling": 72,
+      "all_round": 71,
+      "key_players": ["Rishabh Pant", "Nicholas Pooran", "David Miller", "Mayank Yadav", "Ravi Bishnoi"],
+      "strengths": ["Big hitters up top", "Pant's leadership", "Pooran's power", "Young pace"],
+      "description": "Big Hitters Brigade - Pant/Pooran explosive; bowling depth concern"
+    },
+    "PBKS": {
+      "rank": 10,
+      "overall_score": 71,
+      "batting": 78,
+      "bowling": 70,
+      "all_round": 69,
+      "key_players": ["Shreyas Iyer", "Prabhsimran Singh", "Arshdeep Singh", "Yuzvendra Chahal", "Marcus Stoinis"],
+      "strengths": ["Solid core", "Iyer captaincy", "Chahal's spin", "Arshdeep's swing"],
+      "description": "Solid Core - Lacks elite match-winners in bowling department"
+    }
+  },
+  "department_power_rankings": {
+    "batting": { "top_team": "CSK/MI", "key_players": "Gaikwad/Samson/Dube (CSK) / Rohit/SKY/Tilak (MI)" },
+    "bowling": { "top_team": "GT/DC", "key_players": "Rashid/Rabada/Siraj (GT) / Kuldeep/Axar/Starc (DC)" },
+    "all_rounders": { "top_team": "KKR", "key_players": "Cameron Green, Sunil Narine, Rachin Ravindra" }
+  },
+  "venue_analysis": {
+    "Bengaluru": { "home_team": "RCB", "pitch_type": "batting", "chase_advantage": 62, "avg_first_innings": 185 },
+    "Mumbai": { "home_team": "MI", "pitch_type": "batting", "chase_advantage": 58, "avg_first_innings": 175 },
+    "Kolkata": { "home_team": "KKR", "pitch_type": "balanced", "chase_advantage": 55, "avg_first_innings": 165 },
+    "Chennai": { "home_team": "CSK", "pitch_type": "spin", "chase_advantage": 40, "avg_first_innings": 160 },
+    "Hyderabad": { "home_team": "SRH", "pitch_type": "batting", "chase_advantage": 57, "avg_first_innings": 170 },
+    "Delhi": { "home_team": "DC", "pitch_type": "balanced", "chase_advantage": 50, "avg_first_innings": 165 },
+    "Ahmedabad": { "home_team": "GT", "pitch_type": "balanced", "chase_advantage": 56, "avg_first_innings": 170 },
+    "Mullanpur": { "home_team": "PBKS", "pitch_type": "balanced", "chase_advantage": 54, "avg_first_innings": 168 },
+    "Lucknow": { "home_team": "LSG", "pitch_type": "balanced", "chase_advantage": 55, "avg_first_innings": 165 },
+    "Guwahati": { "home_team": null, "pitch_type": "balanced", "chase_advantage": 50, "avg_first_innings": 160 }
+  }
+}

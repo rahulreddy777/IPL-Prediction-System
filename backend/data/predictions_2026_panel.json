@@ -1,0 +1,57 @@
+{
+  "sectionTitle": "Prediction Matches 2026 - IPL",
+  "refreshInterval": 15000,
+  "cacheDuration": 30000,
+  "settings": {
+    "autoRefresh": true,
+    "websocket": true,
+    "fallbackPreviousPrediction": true,
+    "showPredictionAccuracy": true,
+    "showAIUpdatedBadge": true
+  },
+  "filters": ["ALL", "LIVE", "UPCOMING", "FINISHED"],
+  "playoffKeys": {
+    "Q1": 71,
+    "ELIM": 72,
+    "Q2": 73,
+    "FINAL": 74
+  },
+  "matchOverrides": {
+    "68": {
+      "matchId": "70343220",
+      "homeTeam": "Lucknow Super Giants",
+      "awayTeam": "Punjab Kings",
+      "team1": "LSG",
+      "team2": "PBKS",
+      "stage": "League",
+      "predictedWinner": "PBKS",
+      "prediction": 58,
+      "confidence": "Medium",
+      "liveStatus": "UPCOMING"
+    },
+    "69": {
+      "matchId": "70343222",
+      "homeTeam": "Mumbai Indians",
+      "awayTeam": "Rajasthan Royals",
+      "team1": "MI",
+      "team2": "RR",
+      "stage": "League",
+      "predictedWinner": "MI",
+      "prediction": 64,
+      "confidence": "High",
+      "liveStatus": "UPCOMING"
+    },
+    "70": {
+      "matchId": "70343224",
+      "homeTeam": "Kolkata Knight Riders",
+      "awayTeam": "Delhi Capitals",
+      "team1": "KKR",
+      "team2": "DC",
+      "stage": "League",
+      "predictedWinner": "KKR",
+      "prediction": 55,
+      "confidence": "Medium",
+      "liveStatus": "UPCOMING"
+    }
+  }
+}

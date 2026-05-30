@@ -1,0 +1,420 @@
+/* LiveScores — IPL dark theme */
+.live-scores {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 20px 8px;
+}
+
+.live-scores__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.live-scores__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #eab308;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.live-scores__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.live-scores__badge--off {
+  background: rgba(148, 163, 184, 0.12);
+  color: #94a3b8;
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+.live-scores__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: livePulse 1.2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+}
+
+.live-scores__meta {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.live-scores__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.live-card {
+  background: linear-gradient(145deg, #131e32 0%, #0f1729 100%);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.2s, transform 0.2s;
+  animation: cardFadeIn 0.35s ease;
+}
+
+.live-card:hover {
+  border-color: rgba(234, 179, 8, 0.45);
+  transform: translateY(-2px);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.live-card__status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #22c55e;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.live-card__teams {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.live-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.live-card__team {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.live-card__score {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #eab308;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.live-card__overs {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.live-card__match-name {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.live-card__team-full {
+  font-size: 0.68rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.live-card__venue {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.live-scores__empty-hint {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  color: #64748b;
+}
+
+/* Loading */
+.live-scores__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 48px 20px;
+  color: #94a3b8;
+}
+
+.live-scores__spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(234, 179, 8, 0.2);
+  border-top-color: #eab308;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error & empty */
+.live-scores__error,
+.live-scores__empty {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.live-scores__error {
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.live-scores__empty {
+  color: #94a3b8;
+}
+
+.live-scores__retry {
+  margin-top: 12px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #eab308;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.live-scores__retry:hover {
+  background: #fbbf24;
+}
+
+@media (max-width: 600px) {
+  .live-scores__title {
+    font-size: 1.1rem;
+  }
+
+  .live-card__score {
+    font-size: 0.95rem;
+  }
+}
+
+/* Status Boxes (no-live-match / mongodb-cache / api-unavailable) */
+.live-scores__status-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 36px 20px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid;
+  text-align: center;
+  animation: cardFadeIn 0.35s ease;
+}
+
+.live-scores__status-box p {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+.live-scores__status-box b {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* ── Card variants ───────────────────────────────────────────────────────────── */
+
+/* Upcoming — amber glow */
+.live-card--upcoming {
+  border-color: rgba(245, 158, 11, 0.35);
+  background: linear-gradient(145deg, #1c1500 0%, #130f00 100%);
+}
+.live-card--upcoming:hover { border-color: rgba(245, 158, 11, 0.65); }
+
+/* Completed — green glow */
+.live-card--completed {
+  border-color: rgba(52, 211, 153, 0.28);
+  background: linear-gradient(145deg, #001a12 0%, #000e0a 100%);
+}
+.live-card--completed:hover { border-color: rgba(52, 211, 153, 0.55); }
+
+/* ── Status bar colours ───────────────────────────────────────────────────────── */
+.live-card__status--live     { color: #22c55e; }
+.live-card__status--upcoming {
+  color: #f59e0b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.live-card__status--completed {
+  color: #34d399;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+/* Animated amber dot for upcoming */
+.live-card__status-dot--upcoming {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f59e0b;
+  animation: upcomingPulse 2s ease-in-out infinite;
+}
+@keyframes upcomingPulse {
+  0%, 100% { opacity: 1;   transform: scale(1);   }
+  50%       { opacity: 0.4; transform: scale(1.35); }
+}
+
+/* ── VS layout (upcoming card) ─────────────────────────────────────────────── */
+.live-card__vs-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+}
+.live-card__team-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1;
+}
+.live-card__team-block--right { align-items: flex-end; text-align: right; }
+.live-card__team-emoji { font-size: 1.6rem; line-height: 1; }
+.live-card__vs-badge {
+  font-size: 0.82rem;
+  font-weight: 900;
+  color: #475569;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* ── Upcoming meta (venue / time / series) ──────────────────────────────────── */
+.live-card__upcoming-meta {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(245, 158, 11, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.live-card__time   { font-size: 0.78rem; font-weight: 700; color: #f59e0b; }
+.live-card__series { font-size: 0.68rem; color: #64748b; }
+
+/* ── Completed extras ────────────────────────────────────────────────────────── */
+.live-card__winner-banner {
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin: 4px 0 14px;
+  text-shadow: 0 0 14px currentColor;
+}
+.live-card__result-status {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(52, 211, 153, 0.12);
+  font-size: 0.7rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* ── Section labels (Live / Upcoming / Completed) ─────────────────────────── */
+.live-scores__section {
+  margin-bottom: 28px;
+}
+
+.live-scores__section-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-family: 'Oswald', 'Inter', sans-serif;
+}
+
+.live-scores__section-count {
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: inherit;
+  opacity: 0.85;
+}
+
+/* ── CRR / RRR / Overs row ─────────────────────────────────────────────────── */
+.live-card__crr-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+  flex-wrap: wrap;
+}

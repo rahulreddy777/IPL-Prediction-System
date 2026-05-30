@@ -1,0 +1,650 @@
+{
+  "matchResults": [
+    {
+      "cricApiId": "ipl2026-m9-gt-rr",
+      "matchNumber": 9,
+      "matchup": "GT vs RR",
+      "date": "Apr 04",
+      "venue": "Ahmedabad",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 6 runs",
+      "predictedWinner": "GT",
+      "predictionCorrect": false,
+      "confidence": 64,
+      "predictedProb": {
+        "GT": 64,
+        "RR": 36
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-05T09:13:00.000Z"
+    },
+    {
+      "cricApiId": "ipl2026-m8-dc-mi",
+      "matchNumber": 8,
+      "matchup": "DC vs MI",
+      "date": "Apr 04",
+      "venue": "Delhi",
+      "actualWinner": "DC",
+      "actualWinnerFull": "Delhi Capitals",
+      "winMargin": "Delhi Capitals won by 6 wickets",
+      "predictedWinner": "MI",
+      "predictionCorrect": false,
+      "confidence": 57,
+      "predictedProb": {
+        "DC": 43,
+        "MI": 57
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-05T09:13:00.000Z"
+    },
+    {
+      "cricApiId": "ipl2026-m7-csk-pbks",
+      "matchNumber": 7,
+      "matchup": "CSK vs PBKS",
+      "date": "Apr 03",
+      "venue": "Chennai",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 5 wickets",
+      "predictedWinner": "CSK",
+      "predictionCorrect": false,
+      "confidence": 63,
+      "predictedProb": {
+        "CSK": 63,
+        "PBKS": 37
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-05T09:13:00.000Z"
+    },
+    {
+      "cricApiId": "fd010e39-2255-4460-b0e0-962a26b67b70",
+      "matchNumber": 6,
+      "matchup": "KKR vs SRH",
+      "date": "Apr 02",
+      "venue": "Kolkata",
+      "actualWinner": "SRH",
+      "actualWinnerFull": "Sunrisers Hyderabad",
+      "winMargin": "Sunrisers Hyderabad won by 65 runs",
+      "predictedWinner": "KKR",
+      "predictionCorrect": false,
+      "confidence": 47.03,
+      "predictedProb": {
+        "KKR": 52.97,
+        "SRH": 47.03
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T18:43:54.076Z"
+    },
+    {
+      "cricApiId": "ae676d7c-3082-489c-96c5-5620f393c900",
+      "matchNumber": 5,
+      "matchup": "LSG vs DC",
+      "date": "Apr 01",
+      "venue": "Lucknow",
+      "actualWinner": "DC",
+      "actualWinnerFull": "Delhi Capitals",
+      "winMargin": "Delhi Capitals won by 6 wkts",
+      "predictedWinner": "DC",
+      "predictionCorrect": true,
+      "confidence": 57.21,
+      "predictedProb": {
+        "LSG": 42.79,
+        "DC": 57.21
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T12:30:28.789Z"
+    },
+    {
+      "cricApiId": "11ff7db9-9c71-464e-afcb-5b03e4fa4b0a",
+      "matchNumber": 4,
+      "matchup": "PBKS vs GT",
+      "date": "Mar 31",
+      "venue": "Mullanpur",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 3 wkts",
+      "predictedWinner": "GT",
+      "predictionCorrect": false,
+      "confidence": 42.59,
+      "predictedProb": {
+        "PBKS": 42.59,
+        "GT": 57.41
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T12:30:28.795Z"
+    },
+    {
+      "cricApiId": "d788e9f9-99bf-4650-a035-92a7e21b3d08",
+      "matchNumber": 3,
+      "matchup": "RR vs CSK",
+      "date": "Mar 30",
+      "venue": "Guwahati",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 8 wkts",
+      "predictedWinner": "CSK",
+      "predictionCorrect": false,
+      "confidence": 48.35,
+      "predictedProb": {
+        "RR": 48.35,
+        "CSK": 51.65
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T12:30:28.801Z"
+    },
+    {
+      "cricApiId": "e02475c1-8f9a-4915-a9e8-d4dbc3441c96",
+      "matchNumber": 2,
+      "matchup": "MI vs KKR",
+      "date": "Mar 29",
+      "venue": "Mumbai",
+      "actualWinner": "MI",
+      "actualWinnerFull": "Mumbai Indians",
+      "winMargin": "Mumbai Indians won by 6 wkts",
+      "predictedWinner": "MI",
+      "predictionCorrect": true,
+      "confidence": 57.79,
+      "predictedProb": {
+        "MI": 57.79,
+        "KKR": 42.21
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T12:30:28.809Z"
+    },
+    {
+      "cricApiId": "55fe0f15-6eb0-4ad5-835b-5564be4f6a21",
+      "matchNumber": 1,
+      "matchup": "RCB vs SRH",
+      "date": "Mar 28",
+      "venue": "Bengaluru",
+      "actualWinner": "RCB",
+      "actualWinnerFull": "Royal Challengers Bengaluru",
+      "winMargin": "Royal Challengers Bengaluru won by 6 wkts",
+      "predictedWinner": "SRH",
+      "predictionCorrect": false,
+      "confidence": 48.26,
+      "predictedProb": {
+        "RCB": 48.26,
+        "SRH": 51.74
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-02T12:30:28.817Z"
+    },
+    {
+      "cricApiId": "69d5e465-e2e5-4616-aa22-8d069c2dc0fe",
+      "matchNumber": 11,
+      "matchup": "RCB vs CSK",
+      "date": "Apr 05",
+      "venue": "Bengaluru",
+      "actualWinner": "RCB",
+      "actualWinnerFull": "Royal Challengers Bengaluru",
+      "winMargin": "Royal Challengers Bengaluru won by 43 runs",
+      "predictedWinner": "CSK",
+      "predictionCorrect": false,
+      "confidence": 46.09,
+      "predictedProb": {
+        "RCB": 46.09,
+        "CSK": 53.91
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.047Z"
+    },
+    {
+      "cricApiId": "9186c79f-2121-4fc4-bb8d-3c411b417609",
+      "matchNumber": 10,
+      "matchup": "SRH vs LSG",
+      "date": "Apr 05",
+      "venue": "Hyderabad",
+      "actualWinner": "LSG",
+      "actualWinnerFull": "Lucknow Super Giants",
+      "winMargin": "Lucknow Super Giants won by 5 wkts",
+      "predictedWinner": "SRH",
+      "predictionCorrect": false,
+      "confidence": 49.39,
+      "predictedProb": {
+        "SRH": 50.61,
+        "LSG": 49.39
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.048Z"
+    },
+    {
+      "cricApiId": "8f54d791-e6be-4638-9d30-862329e5ebc7",
+      "matchNumber": 9,
+      "matchup": "GT vs RR",
+      "date": "Apr 04",
+      "venue": "Ahmedabad",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 6 runs",
+      "predictedWinner": "GT",
+      "predictionCorrect": false,
+      "confidence": 38.49,
+      "predictedProb": {
+        "GT": 61.51,
+        "RR": 38.49
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.048Z"
+    },
+    {
+      "cricApiId": "19455906-a0a9-4959-a591-c5aee00b3e1b",
+      "matchNumber": 8,
+      "matchup": "DC vs MI",
+      "date": "Apr 04",
+      "venue": "Delhi",
+      "actualWinner": "DC",
+      "actualWinnerFull": "Delhi Capitals",
+      "winMargin": "Delhi Capitals won by 6 wkts",
+      "predictedWinner": "MI",
+      "predictionCorrect": false,
+      "confidence": 46.91,
+      "predictedProb": {
+        "DC": 46.91,
+        "MI": 53.09
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.049Z"
+    },
+    {
+      "cricApiId": "59353457-477e-4c7b-b367-e312d5474744",
+      "matchNumber": 7,
+      "matchup": "CSK vs PBKS",
+      "date": "Apr 03",
+      "venue": "Chennai",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 5 wkts",
+      "predictedWinner": "CSK",
+      "predictionCorrect": false,
+      "confidence": 45.26,
+      "predictedProb": {
+        "CSK": 54.74,
+        "PBKS": 45.26
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.049Z"
+    },
+    {
+      "cricApiId": "22fb99f0-77c2-4724-9375-32a82a0b2a70",
+      "matchNumber": 6,
+      "matchup": "KKR vs SRH",
+      "date": "Apr 02",
+      "venue": "Kolkata",
+      "actualWinner": "SRH",
+      "actualWinnerFull": "Sunrisers Hyderabad",
+      "winMargin": "Sunrisers Hyderabad won by 65 runs",
+      "predictedWinner": "KKR",
+      "predictionCorrect": false,
+      "confidence": 43.23,
+      "predictedProb": {
+        "KKR": 56.77,
+        "SRH": 43.23
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.049Z"
+    },
+    {
+      "cricApiId": "962d1940-4fea-4e71-97ca-5fc2c008169f",
+      "matchNumber": 5,
+      "matchup": "LSG vs DC",
+      "date": "Apr 01",
+      "venue": "Lucknow",
+      "actualWinner": "DC",
+      "actualWinnerFull": "Delhi Capitals",
+      "winMargin": "Delhi Capitals won by 6 wkts",
+      "predictedWinner": "DC",
+      "predictionCorrect": true,
+      "confidence": 51.04,
+      "predictedProb": {
+        "LSG": 48.96,
+        "DC": 51.04
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.050Z"
+    },
+    {
+      "cricApiId": "235b2c68-326a-49e0-959a-def9fe3b5736",
+      "matchNumber": 4,
+      "matchup": "PBKS vs GT",
+      "date": "Mar 31",
+      "venue": "Mullanpur",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 3 wkts",
+      "predictedWinner": "GT",
+      "predictionCorrect": false,
+      "confidence": 42.97,
+      "predictedProb": {
+        "PBKS": 42.97,
+        "GT": 57.03
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.050Z"
+    },
+    {
+      "cricApiId": "1412721c-3b2b-4703-89c7-f86f5ea81048",
+      "matchNumber": 3,
+      "matchup": "RR vs CSK",
+      "date": "Mar 30",
+      "venue": "Guwahati",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 8 wkts",
+      "predictedWinner": "RR",
+      "predictionCorrect": true,
+      "confidence": 52.68,
+      "predictedProb": {
+        "RR": 52.68,
+        "CSK": 47.32
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.050Z"
+    },
+    {
+      "cricApiId": "950a9aad-a1a7-46ef-9dcd-d25dec7964af",
+      "matchNumber": 2,
+      "matchup": "MI vs KKR",
+      "date": "Mar 29",
+      "venue": "Mumbai",
+      "actualWinner": "MI",
+      "actualWinnerFull": "Mumbai Indians",
+      "winMargin": "Mumbai Indians won by 6 wkts",
+      "predictedWinner": "MI",
+      "predictionCorrect": true,
+      "confidence": 53.9,
+      "predictedProb": {
+        "MI": 53.9,
+        "KKR": 46.1
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.050Z"
+    },
+    {
+      "cricApiId": "547b47e3-b2d9-4f51-8a49-8e7e4c946a6e",
+      "matchNumber": 1,
+      "matchup": "RCB vs SRH",
+      "date": "Mar 28",
+      "venue": "Bengaluru",
+      "actualWinner": "RCB",
+      "actualWinnerFull": "Royal Challengers Bengaluru",
+      "winMargin": "Royal Challengers Bengaluru won by 6 wkts",
+      "predictedWinner": "RCB",
+      "predictionCorrect": true,
+      "confidence": 50.44,
+      "predictedProb": {
+        "RCB": 50.44,
+        "SRH": 49.56
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-07T17:50:14.051Z"
+    },
+    {
+      "cricApiId": "5945bbf4-b6b5-45b6-abac-db03e8a39130",
+      "matchNumber": 14,
+      "matchup": "DC vs GT",
+      "date": "Apr 08",
+      "venue": "Delhi",
+      "actualWinner": "GT",
+      "actualWinnerFull": "Gujarat Titans",
+      "winMargin": "Gujarat Titans won by 1 run",
+      "predictedWinner": "GT",
+      "predictionCorrect": true,
+      "confidence": 54.21,
+      "predictedProb": {
+        "DC": 45.79,
+        "GT": 54.21
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-09T10:59:10.631Z"
+    },
+    {
+      "cricApiId": "3dd82a3e-52e3-409b-bb9c-ef458942a7a2",
+      "matchNumber": 13,
+      "matchup": "RR vs MI",
+      "date": "Apr 07",
+      "venue": "Guwahati",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 27 runs  -  11 overs game due to rain",
+      "predictedWinner": "MI",
+      "predictionCorrect": false,
+      "confidence": 42.98,
+      "predictedProb": {
+        "RR": 42.98,
+        "MI": 57.02
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-09T10:59:10.631Z"
+    },
+    {
+      "cricApiId": "2d6c0b86-76c0-4795-96a4-e252f575d2d9",
+      "matchNumber": 15,
+      "matchup": "KKR vs LSG",
+      "date": "Apr 09",
+      "venue": "Kolkata",
+      "actualWinner": "LSG",
+      "actualWinnerFull": "Lucknow Super Giants",
+      "winMargin": "Lucknow Super Giants won by 3 wkts",
+      "predictedWinner": "LSG",
+      "predictionCorrect": true,
+      "confidence": 51.08,
+      "predictedProb": {
+        "KKR": 48.92,
+        "LSG": 51.08
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-09T18:00:47.210Z"
+    },
+    {
+      "cricApiId": "3ec1f721-7f79-49e3-bbc1-69e88b9cf4a3",
+      "matchNumber": 16,
+      "matchup": "RR vs RCB",
+      "date": "Apr 10",
+      "venue": "Guwahati",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 6 wkts",
+      "predictedWinner": "RCB",
+      "predictionCorrect": false,
+      "confidence": 47.43,
+      "predictedProb": {
+        "RR": 47.43,
+        "RCB": 52.57
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-11T09:07:56.957Z"
+    },
+    {
+      "cricApiId": "8f0a09ba-2a87-4b94-9a61-d729ef8c0c14",
+      "matchNumber": 17,
+      "matchup": "PBKS vs SRH",
+      "date": "Apr 11",
+      "venue": "Mullanpur",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 6 wkts",
+      "predictedWinner": "SRH",
+      "predictionCorrect": false,
+      "confidence": 43.71,
+      "predictedProb": {
+        "PBKS": 43.71,
+        "SRH": 56.29
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-11T13:51:52.716Z"
+    },
+    {
+      "cricApiId": "63c19cfb-3544-41df-8bd8-10049818a6c5",
+      "matchNumber": 26,
+      "matchup": "RCB vs DC",
+      "date": "Apr 18",
+      "venue": "Bengaluru",
+      "actualWinner": "RCB",
+      "actualWinnerFull": "Royal Challengers Bengaluru",
+      "winMargin": "Royal Challengers Bengaluru won by 9 wkts",
+      "predictedWinner": "RCB",
+      "predictionCorrect": true,
+      "confidence": 53.48,
+      "predictedProb": {
+        "RCB": 53.48,
+        "DC": 46.52
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-28T10:49:40.319Z"
+    },
+    {
+      "cricApiId": "690985d0-c890-434a-bece-fb02d59b09d2",
+      "matchNumber": 37,
+      "matchup": "GT vs CSK",
+      "date": "Apr 26",
+      "venue": "Ahmedabad",
+      "actualWinner": "GT",
+      "actualWinnerFull": "Gujarat Titans",
+      "winMargin": "Gujarat Titans won by 8 wkts",
+      "predictedWinner": "GT",
+      "predictionCorrect": true,
+      "confidence": 59.21,
+      "predictedProb": {
+        "GT": 59.21,
+        "CSK": 40.79
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-28T10:49:40.337Z"
+    },
+    {
+      "cricApiId": "3d5968a6-4851-410c-b66a-811b92406933",
+      "matchNumber": 21,
+      "matchup": "SRH vs RR",
+      "date": "Apr 13",
+      "venue": "Hyderabad",
+      "actualWinner": "SRH",
+      "actualWinnerFull": "Sunrisers Hyderabad",
+      "winMargin": "Sunrisers Hyderabad won by 5 wkts",
+      "predictedWinner": "SRH",
+      "predictionCorrect": true,
+      "confidence": 55.88,
+      "predictedProb": {
+        "SRH": 55.88,
+        "RR": 44.12
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-28T10:49:40.338Z"
+    },
+    {
+      "cricApiId": "7bd928c0-1961-4fb5-a7a7-acd61c4a1586",
+      "matchNumber": 35,
+      "matchup": "DC vs PBKS",
+      "date": "Apr 25",
+      "venue": "Delhi",
+      "actualWinner": "PBKS",
+      "actualWinnerFull": "Punjab Kings",
+      "winMargin": "Punjab Kings won by 6 wkts",
+      "predictedWinner": "DC",
+      "predictionCorrect": false,
+      "confidence": 44.75,
+      "predictedProb": {
+        "DC": 55.25,
+        "PBKS": 44.75
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-28T10:49:40.340Z"
+    },
+    {
+      "cricApiId": "ed074a44-a661-4727-83a7-4a33c2a05165",
+      "matchNumber": 34,
+      "matchup": "RCB vs GT",
+      "date": "Apr 24",
+      "venue": "Bengaluru",
+      "actualWinner": "RCB",
+      "actualWinnerFull": "Royal Challengers Bengaluru",
+      "winMargin": "Royal Challengers Bengaluru won by 5 wkts",
+      "predictedWinner": "GT",
+      "predictionCorrect": false,
+      "confidence": 48.48,
+      "predictedProb": {
+        "RCB": 48.48,
+        "GT": 51.52
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-04-28T10:49:40.341Z"
+    },
+    {
+      "cricApiId": "fd660ab1-c4bf-4c0f-b1b9-7232361cd1e8",
+      "matchNumber": 37,
+      "matchup": "GT vs CSK",
+      "date": "Apr 26",
+      "venue": "Ahmedabad",
+      "actualWinner": "GT",
+      "actualWinnerFull": "Gujarat Titans",
+      "winMargin": "Gujarat Titans won by 89 runs",
+      "predictedWinner": "GT",
+      "predictionCorrect": true,
+      "confidence": 56.7,
+      "predictedProb": {
+        "GT": 56.7,
+        "CSK": 43.3
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-05-22T09:26:43.551Z"
+    },
+    {
+      "cricApiId": "5b1d59f9-51fd-449d-8cf1-9fc15ef15675",
+      "matchNumber": 2,
+      "matchup": "MI vs KKR",
+      "date": "Mar 29",
+      "venue": "Mumbai",
+      "actualWinner": "KKR",
+      "actualWinnerFull": "Kolkata Knight Riders",
+      "winMargin": "Kolkata Knight Riders won by 4 wkts",
+      "predictedWinner": "MI",
+      "predictionCorrect": false,
+      "confidence": 42.18,
+      "predictedProb": {
+        "MI": 57.82,
+        "KKR": 42.18
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-05-22T09:26:43.551Z"
+    },
+    {
+      "cricApiId": "3b225f44-ddf2-41d4-8079-7a3f81876e35",
+      "matchNumber": 32,
+      "matchup": "LSG vs RR",
+      "date": "Apr 22",
+      "venue": "Lucknow",
+      "actualWinner": "RR",
+      "actualWinnerFull": "Rajasthan Royals",
+      "winMargin": "Rajasthan Royals won by 7 wkts",
+      "predictedWinner": "RR",
+      "predictionCorrect": true,
+      "confidence": 50.26,
+      "predictedProb": {
+        "LSG": 49.74,
+        "RR": 50.26
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-05-22T09:26:43.551Z"
+    },
+    {
+      "cricApiId": "8416c2a9-4a74-4ac2-a6ae-5ad2538cbc56",
+      "matchNumber": 27,
+      "matchup": "SRH vs CSK",
+      "date": "Apr 18",
+      "venue": "Hyderabad",
+      "actualWinner": "SRH",
+      "actualWinnerFull": "Sunrisers Hyderabad",
+      "winMargin": "Sunrisers Hyderabad won by 5 wkts",
+      "predictedWinner": "SRH",
+      "predictionCorrect": true,
+      "confidence": 51.69,
+      "predictedProb": {
+        "SRH": 51.69,
+        "CSK": 48.31
+      },
+      "source": "ml-prediction",
+      "updatedAt": "2026-05-22T09:26:43.551Z"
+    }
+  ]
+}

@@ -1,0 +1,1334 @@
+[
+    {
+        "Match Number": 74,
+        "Date & Time": [
+            "JUN",
+            "TUE 3",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "190/9",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "184/7",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "6 RUNS"
+    },
+    {
+        "Match Number": 73,
+        "Date & Time": [
+            "JUN",
+            "SUN 1",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "207/5",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "203/6",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "5 WICKETS"
+    },
+    {
+        "Match Number": 72,
+        "Date & Time": [
+            "MAY",
+            "FRI 30",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "208/6",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "228/5",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "20 RUNS"
+    },
+    {
+        "Match Number": 71,
+        "Date & Time": [
+            "MAY",
+            "THU 29",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": 101,
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "106/2",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 70,
+        "Date & Time": [
+            "MAY",
+            "TUE 27",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "227/3",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "230/4",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 69,
+        "Date & Time": [
+            "MAY",
+            "MON 26",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "187/3",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "184/7",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 68,
+        "Date & Time": [
+            "MAY",
+            "SUN 25",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "278/3",
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": 168,
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "110 RUNS"
+    },
+    {
+        "Match Number": 67,
+        "Date & Time": [
+            "MAY",
+            "SUN 25",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": 147,
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "230/5",
+        "winner": "CHENNAI SUPER KINGS",
+        "winning_margin": "83 RUNS"
+    },
+    {
+        "Match Number": 66,
+        "Date & Time": [
+            "MAY",
+            "SAT 24",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "206/8",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": "208/4",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 65,
+        "Date & Time": [
+            "MAY",
+            "FRI 23",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": 189,
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": "231/6",
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "42 RUNS"
+    },
+    {
+        "Match Number": 64,
+        "Date & Time": [
+            "MAY",
+            "THU 22",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "202/9",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "235/2",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "33 RUNS"
+    },
+    {
+        "Match Number": 63,
+        "Date & Time": [
+            "MAY",
+            "WED 21",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "180/5",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": 121,
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "59 RUNS"
+    },
+    {
+        "Match Number": 62,
+        "Date & Time": [
+            "MAY",
+            "TUE 20",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": "187/8",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "188/4",
+        "winner": "RAJASTHAN ROYALS",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 61,
+        "Date & Time": [
+            "MAY",
+            "MON 19",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "205/7",
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": "206/4",
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 60,
+        "Date & Time": [
+            "MAY",
+            "SUN 18",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "199/3",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "205/0",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "10 WICKETS"
+    },
+    {
+        "Match Number": 59,
+        "Date & Time": [
+            "MAY",
+            "SUN 18",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "209/7",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "219/5",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "10 RUNS"
+    },
+    {
+        "Match Number": 58,
+        "Date & Time": [
+            "MAY",
+            "SAT 17",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": null,
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": null,
+        "winner": null,
+        "winning_margin": "MATCH ABANDONED"
+    },
+    {
+        "Match Number": 57,
+        "Date & Time": [
+            "MAY",
+            "WED 7",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "179/6",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "183/8",
+        "winner": "CHENNAI SUPER KINGS",
+        "winning_margin": "2 WICKETS"
+    },
+    {
+        "Match Number": 56,
+        "Date & Time": [
+            "MAY",
+            "TUE 6",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "155/8",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "147/7",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "3 WICKETS"
+    },
+    {
+        "Match Number": 55,
+        "Date & Time": [
+            "MAY",
+            "MON 5",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "133/7",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": null,
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "3 WICKETS"
+    },
+    {
+        "Match Number": 54,
+        "Date & Time": [
+            "MAY",
+            "SUN 4",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Himachal Pradesh Cricket Association Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "236/5",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "199/7",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "37 RUNS"
+    },
+    {
+        "Match Number": 53,
+        "Date & Time": [
+            "MAY",
+            "SUN 4",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "206/4",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "205/8",
+        "winner": "KOLKATA KNIGHT RIDERS",
+        "winning_margin": "1 RUN"
+    },
+    {
+        "Match Number": 52,
+        "Date & Time": [
+            "MAY",
+            "SAT 3",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "213/5",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "211/5",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "2 RUNS"
+    },
+    {
+        "Match Number": 51,
+        "Date & Time": [
+            "MAY",
+            "FRI 2",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "224/6",
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": "186/6",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "38 RUNS"
+    },
+    {
+        "Match Number": 50,
+        "Date & Time": [
+            "MAY",
+            "THU 1",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": 117,
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "217/2",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "100 RUNS"
+    },
+    {
+        "Match Number": 49,
+        "Date & Time": [
+            "APR",
+            "WED 30",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": 190,
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "194/6",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "4 WICKETS"
+    },
+    {
+        "Match Number": 48,
+        "Date & Time": [
+            "APR",
+            "TUE 29",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "190/9",
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": "204/9",
+        "winner": "KOLKATA KNIGHT RIDERS",
+        "winning_margin": "14 RUNS"
+    },
+    {
+        "Match Number": 47,
+        "Date & Time": [
+            "APR",
+            "MON 28",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "212/2",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "209/4",
+        "winner": "RAJASTHAN ROYALS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 46,
+        "Date & Time": [
+            "APR",
+            "SUN 27",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "162/8",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "165/4",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 45,
+        "Date & Time": [
+            "APR",
+            "SUN 27",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "215/7",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": 161,
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "54 RUNS"
+    },
+    {
+        "Match Number": 44,
+        "Date & Time": [
+            "APR",
+            "SAT 26",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "7/0",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "201/4",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "54 RUNS"
+    },
+    {
+        "Match Number": 43,
+        "Date & Time": [
+            "APR",
+            "FRI 25",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": 154,
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": "155/5",
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "5 WICKETS"
+    },
+    {
+        "Match Number": 42,
+        "Date & Time": [
+            "APR",
+            "THU 24",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "205/5",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "194/9",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "11 RUNS"
+    },
+    {
+        "Match Number": 41,
+        "Date & Time": [
+            "APR",
+            "WED 23",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "143/8",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "146/3",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 40,
+        "Date & Time": [
+            "APR",
+            "TUE 22",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "159/6",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": "161/2",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 39,
+        "Date & Time": [
+            "APR",
+            "MON 21",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "159/8",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "198/3",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "39 RUNS"
+    },
+    {
+        "Match Number": 38,
+        "Date & Time": [
+            "APR",
+            "SUN 20",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "177/1",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "176/5",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "9 WICKETS"
+    },
+    {
+        "Match Number": 37,
+        "Date & Time": [
+            "APR",
+            "SUN 20",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "157/6",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "159/3",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 36,
+        "Date & Time": [
+            "APR",
+            "SAT 19",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "178/5",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "180/5",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "2 RUNS"
+    },
+    {
+        "Match Number": 35,
+        "Date & Time": [
+            "APR",
+            "SAT 19",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "204/3",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": "203/8",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 34,
+        "Date & Time": [
+            "APR",
+            "FRI 18",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "95/9",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "98/5",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "5 WICKETS"
+    },
+    {
+        "Match Number": 33,
+        "Date & Time": [
+            "APR",
+            "THU 17",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "166/6",
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": "162/5",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "4 WICKETS"
+    },
+    {
+        "Match Number": 32,
+        "Date & Time": [
+            "APR",
+            "WED 16",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "188/5",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "188/4",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "SUPER OVER"
+    },
+    {
+        "Match Number": 31,
+        "Date & Time": [
+            "APR",
+            "TUE 15",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": 111,
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": 95,
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "16 RUNS"
+    },
+    {
+        "Match Number": 30,
+        "Date & Time": [
+            "APR",
+            "MON 14",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "166/7",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "168/5",
+        "winner": "CHENNAI SUPER KINGS",
+        "winning_margin": "5 WICKETS"
+    },
+    {
+        "Match Number": 29,
+        "Date & Time": [
+            "APR",
+            "SUN 13",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Arun Jaitley Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": 193,
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "205/5",
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "12 RUNS"
+    },
+    {
+        "Match Number": 28,
+        "Date & Time": [
+            "APR",
+            "SUN 13",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Sawai Mansingh Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "173/4",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "175/1",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "9 WICKETS"
+    },
+    {
+        "Match Number": 27,
+        "Date & Time": [
+            "APR",
+            "SAT 12",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "247/2",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "245/6",
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 26,
+        "Date & Time": [
+            "APR",
+            "SAT 12",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "186/4",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "180/6",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 25,
+        "Date & Time": [
+            "APR",
+            "FRI 11",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": "103/9",
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": "107/2",
+        "winner": "KOLKATA KNIGHT RIDERS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 24,
+        "Date & Time": [
+            "APR",
+            "THU 10",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "163/7",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": "169/4",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "6 WICKETS"
+    },
+    {
+        "Match Number": 23,
+        "Date & Time": [
+            "APR",
+            "WED 9",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "217/6",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": 159,
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "58 RUNS"
+    },
+    {
+        "Match Number": 22,
+        "Date & Time": [
+            "APR",
+            "TUE 8",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "219/6",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "201/5",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "18 RUNS"
+    },
+    {
+        "Match Number": 21,
+        "Date & Time": [
+            "APR",
+            "TUE 8",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "234/7",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "238/3",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "4 RUNS"
+    },
+    {
+        "Match Number": 20,
+        "Date & Time": [
+            "APR",
+            "MON 7",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "209/9",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "221/5",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "12 RUNS"
+    },
+    {
+        "Match Number": 19,
+        "Date & Time": [
+            "APR",
+            "SUN 6",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "152/8",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "153/3",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 18,
+        "Date & Time": [
+            "APR",
+            "SAT 5",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "New PCA Stadium",
+            null
+        ],
+        "Team 1": "Punjab Kings",
+        "Team 1 Score": "155/9",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "205/4",
+        "winner": "RAJASTHAN ROYALS",
+        "winning_margin": "50 RUNS"
+    },
+    {
+        "Match Number": 17,
+        "Date & Time": [
+            "APR",
+            "SAT 5",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": "158/5",
+        "Team 2": "Delhi Capitals",
+        "Team 2 Score": "183/6",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "25 RUNS"
+    },
+    {
+        "Match Number": 16,
+        "Date & Time": [
+            "APR",
+            "FRI 4",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "203/8",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "191/5",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "12 RUNS"
+    },
+    {
+        "Match Number": 15,
+        "Date & Time": [
+            "APR",
+            "THU 3",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "200/6",
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": 120,
+        "winner": "KOLKATA KNIGHT RIDERS",
+        "winning_margin": "80 RUNS"
+    },
+    {
+        "Match Number": 14,
+        "Date & Time": [
+            "APR",
+            "WED 2",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "M Chinnaswamy Stadium",
+            null
+        ],
+        "Team 1": "Royal Challengers Bengaluru",
+        "Team 1 Score": "169/8",
+        "Team 2": "Gujarat Titans",
+        "Team 2 Score": "170/2",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 13,
+        "Date & Time": [
+            "APR",
+            "TUE 1",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+            null
+        ],
+        "Team 1": "Lucknow Super Giants",
+        "Team 1 Score": "171/7",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "177/2",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 12,
+        "Date & Time": [
+            "MAR",
+            "MON 31",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Wankhede Stadium",
+            null
+        ],
+        "Team 1": "Mumbai Indians",
+        "Team 1 Score": "121/2",
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": 116,
+        "winner": "MUMBAI INDIANS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 11,
+        "Date & Time": [
+            "MAR",
+            "SUN 30",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "ACA Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "182/9",
+        "Team 2": "Chennai Super Kings",
+        "Team 2 Score": "176/6",
+        "winner": "RAJASTHAN ROYALS",
+        "winning_margin": "6 RUNS"
+    },
+    {
+        "Match Number": 10,
+        "Date & Time": [
+            "MAR",
+            "SUN 30",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "166/3",
+        "Team 2": "Sunrisers Hyderabad",
+        "Team 2 Score": 163,
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "7 WICKETS"
+    },
+    {
+        "Match Number": 9,
+        "Date & Time": [
+            "MAR",
+            "SAT 29",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "196/8",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "160/6",
+        "winner": "GUJARAT TITANS",
+        "winning_margin": "36 RUNS"
+    },
+    {
+        "Match Number": 8,
+        "Date & Time": [
+            "MAR",
+            "FRI 28",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": "146/8",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "196/7",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "50 RUNS"
+    },
+    {
+        "Match Number": 7,
+        "Date & Time": [
+            "MAR",
+            "THU 27",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "190/9",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "193/5",
+        "winner": "LUCKNOW SUPER GIANTS",
+        "winning_margin": "5 WICKETS"
+    },
+    {
+        "Match Number": 6,
+        "Date & Time": [
+            "MAR",
+            "WED 26",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "ACA Stadium",
+            null
+        ],
+        "Team 1": "Rajasthan Royals",
+        "Team 1 Score": "151/9",
+        "Team 2": "Kolkata Knight Riders",
+        "Team 2 Score": "153/2",
+        "winner": "KOLKATA KNIGHT RIDERS",
+        "winning_margin": "8 WICKETS"
+    },
+    {
+        "Match Number": 5,
+        "Date & Time": [
+            "MAR",
+            "TUE 25",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Narendra Modi Stadium",
+            null
+        ],
+        "Team 1": "Gujarat Titans",
+        "Team 1 Score": "232/5",
+        "Team 2": "Punjab Kings",
+        "Team 2 Score": "243/5",
+        "winner": "PUNJAB KINGS",
+        "winning_margin": "11 RUNS"
+    },
+    {
+        "Match Number": 4,
+        "Date & Time": [
+            "MAR",
+            "MON 24",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+            null
+        ],
+        "Team 1": "Delhi Capitals",
+        "Team 1 Score": "211/9",
+        "Team 2": "Lucknow Super Giants",
+        "Team 2 Score": "209/8",
+        "winner": "DELHI CAPITALS",
+        "winning_margin": "1 WICKET"
+    },
+    {
+        "Match Number": 3,
+        "Date & Time": [
+            "MAR",
+            "SUN 23",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "MA Chidambaram Stadium",
+            null
+        ],
+        "Team 1": "Chennai Super Kings",
+        "Team 1 Score": "158/6",
+        "Team 2": "Mumbai Indians",
+        "Team 2 Score": "155/9",
+        "winner": "CHENNAI SUPER KINGS",
+        "winning_margin": "4 WICKETS"
+    },
+    {
+        "Match Number": 2,
+        "Date & Time": [
+            "MAR",
+            "SUN 23",
+            "3:30 pm IST"
+        ],
+        "Venue": [
+            "Rajiv Gandhi International Stadium",
+            null
+        ],
+        "Team 1": "Sunrisers Hyderabad",
+        "Team 1 Score": "286/6",
+        "Team 2": "Rajasthan Royals",
+        "Team 2 Score": "242/6",
+        "winner": "SUNRISERS HYDERABAD",
+        "winning_margin": "44 RUNS"
+    },
+    {
+        "Match Number": 1,
+        "Date & Time": [
+            "MAR",
+            "SAT 22",
+            "7:30 pm IST"
+        ],
+        "Venue": [
+            "Eden Gardens",
+            null
+        ],
+        "Team 1": "Kolkata Knight Riders",
+        "Team 1 Score": "174/8",
+        "Team 2": "Royal Challengers Bengaluru",
+        "Team 2 Score": "177/3",
+        "winner": "ROYAL CHALLENGERS BENGALURU",
+        "winning_margin": "7 WICKETS"
+    }
+]

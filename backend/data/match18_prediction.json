@@ -1,0 +1,199 @@
+{
+  "match_id": 18,
+  "matchup": "CSK vs DC",
+  "team1": "CSK",
+  "team2": "DC",
+  "venue": "Chennai",
+  "date": "Apr 11",
+  "day": "Sat",
+  "time_ist": "7:30 PM",
+  "predicted_winner": "CSK",
+  "win_probability": {
+    "CSK": 62.5,
+    "DC": 37.5
+  },
+  "confidence": 12.5,
+  "confidence_label": "HIGH",
+  "playing_xi": {
+    "CSK": [
+      {
+        "name": "Ruturaj Gaikwad",
+        "role": "Batter",
+        "captain": true
+      },
+      {
+        "name": "Ayush Mhatre",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Dewald Brevis",
+        "role": "Batter",
+        "captain": false,
+        "recovered": true
+      },
+      {
+        "name": "Shivam Dube",
+        "role": "All-rounder",
+        "captain": false
+      },
+      {
+        "name": "Sanju Samson",
+        "role": "Wicketkeeper",
+        "captain": false
+      },
+      {
+        "name": "MS Dhoni",
+        "role": "Wicketkeeper",
+        "captain": false,
+        "recovered": true
+      },
+      {
+        "name": "Noor Ahmad",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "Anshul Kamboj",
+        "role": "All-rounder",
+        "captain": false
+      },
+      {
+        "name": "Khaleel Ahmed",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "Gurjapneet Singh",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "Rahul Chahar",
+        "role": "Bowler",
+        "captain": false
+      }
+    ],
+    "DC": [
+      {
+        "name": "KL Rahul",
+        "role": "Wicketkeeper",
+        "captain": true
+      },
+      {
+        "name": "Prithvi Shaw",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Nitish Rana",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Tristan Stubbs",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Karun Nair",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Axar Patel",
+        "role": "All-rounder",
+        "captain": false
+      },
+      {
+        "name": "Ashutosh Sharma",
+        "role": "Batter",
+        "captain": false
+      },
+      {
+        "name": "Kuldeep Yadav",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "Mitchell Starc",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "T. Natarajan",
+        "role": "Bowler",
+        "captain": false
+      },
+      {
+        "name": "Mukesh Kumar",
+        "role": "Bowler",
+        "captain": false
+      }
+    ]
+  },
+  "recovered_players": [
+    "MS Dhoni",
+    "Dewald Brevis"
+  ],
+  "before_recovery": {
+    "CSK": 55.3,
+    "DC": 44.7,
+    "winner": "CSK"
+  },
+  "after_recovery": {
+    "CSK": 62.5,
+    "DC": 37.5,
+    "winner": "CSK"
+  },
+  "probability_boost": "+7.2% to CSK after Dhoni + Brevis return",
+  "key_player_impact": [
+    {
+      "player": "MS Dhoni",
+      "team": "CSK",
+      "role": "Wicketkeeper",
+      "wasInjured": "Calf Strain",
+      "ipl_matches": 278,
+      "ipl_runs": 5439,
+      "avg": 38.3,
+      "strikeRate": 137.45,
+      "squadBoost": "+3.5%",
+      "homeBoost": "+4.0%",
+      "impact": "Dhoni's Chepauk experience and finishing ability adds massive lower-order firepower."
+    },
+    {
+      "player": "Dewald Brevis",
+      "team": "CSK",
+      "role": "Batter",
+      "wasInjured": "Side Strain",
+      "ipl_matches": 16,
+      "ipl_runs": 455,
+      "avg": 28.44,
+      "strikeRate": 153.2,
+      "squadBoost": "+2.5%",
+      "homeBoost": "+2.0%",
+      "impact": "Brevis' explosive strike rate (153.2) provides early powerplay punch."
+    }
+  ],
+  "ml_factors": {
+    "head_to_head": {
+      "CSK": 64.0,
+      "DC": 36.0
+    },
+    "venue_win_rate": {
+      "CSK": 72.0,
+      "DC": 41.0,
+      "venue": "Chennai"
+    },
+    "recent_form_5g": {
+      "CSK": 38.0,
+      "DC": 62.0
+    },
+    "squad_strength": {
+      "CSK": 87.0,
+      "DC": 82.0
+    }
+  },
+  "methodology": "VotingClassifier (RF+GBM+LR) \u00b7 feature engineered with player-availability delta \u00b7 trained 2008-2025",
+  "generated_at": "2026-04-11T13:49:09.146340Z"
+}

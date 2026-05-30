@@ -1,0 +1,39 @@
+.pred-2026-page {
+  padding-bottom: 48px;
+}
+
+.pred-2026-page__hero {
+  text-align: center;
+  padding: 28px 20px 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pred-2026-page__title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #f4b400;
+  letter-spacing: 0.04em;
+}
+
+.pred-2026-page__sub {
+  margin: 8px 0 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.pred-2026-page .pm26 {
+  margin-top: 0;
+}
+
+.pred-2026-page .wp-stream {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.pred-2026-page .season-engine {
+  max-width: 1200px;
+  margin: 0 auto;
+}

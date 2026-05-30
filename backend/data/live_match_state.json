@@ -1,0 +1,78 @@
+{
+  "currentLive": {
+    "isLive": true,
+    "matchNumber": 67,
+    "cricapiId": "20aacd15-ede1-4447-9b21-dd08e51900b2",
+    "team1": "SRH",
+    "team2": "RCB",
+    "score1": "210/6",
+    "overs1": "20.0",
+    "score2": "150/4",
+    "overs2": "15.2",
+    "status": "Sunrisers Hyderabad vs Royal Challengers Bengaluru, Match 67, IPL 2026",
+    "statusText": "Royal Challengers Bengaluru won by 6 wickets",
+    "result": "Royal Challengers Bengaluru won by 6 wickets",
+    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "date": "2026-05-22",
+    "matchEnded": true,
+    "toss": {
+      "winner": "PBKS",
+      "choice": "bowl"
+    },
+    "currentBatsmen": [
+      { "name": "Virat Kohli", "runs": 72, "balls": 51, "fours": 7, "sixes": 2 },
+      { "name": "Rajat Patidar", "runs": 58, "balls": 34, "fours": 5, "sixes": 3 }
+    ],
+    "currentBowler": { "name": "Arshdeep Singh", "overs": "4.0", "wickets": 3, "runs": 32 },
+    "recentOvers": "4,1,W,2,6,1"
+  },
+  "recentMatches": [
+    {
+      "cricapiId": "38f4d432-1349-4223-87ab-b1279c553754",
+      "label": "Final",
+      "team1": "RCB", "score1": "190/9", "overs1": "20.0",
+      "team2": "PBKS", "score2": "184/7", "overs2": "20.0",
+      "result": "RCB won by 6 runs",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "date": "2025-06-03"
+    },
+    {
+      "cricapiId": "c8425e58-85a4-4e8e-a56c-8afae638effb",
+      "label": "Qualifier 2",
+      "team1": "PBKS", "score1": "207/5", "overs1": "19.0",
+      "team2": "MI",  "score2": "203/6", "overs2": "20.0",
+      "result": "PBKS won by 5 wkts",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "date": "2025-06-01"
+    },
+    {
+      "cricapiId": "21cf482e-bb64-4b40-b6e0-6b51c77ba464",
+      "label": "Eliminator",
+      "team1": "MI", "score1": "228/5", "overs1": "20.0",
+      "team2": "GT", "score2": "208/6", "overs2": "20.0",
+      "result": "MI won by 20 runs",
+      "venue": "Maharaja Yadavindra Singh Stadium, Mullanpur",
+      "date": "2025-05-30"
+    },
+    {
+      "cricapiId": "bc3351d1-f950-4aa6-bb6f-473517a06885",
+      "label": "Qualifier 1",
+      "team1": "PBKS", "score1": "101/10", "overs1": "14.1",
+      "team2": "RCB",  "score2": "106/2",  "overs2": "10.0",
+      "result": "RCB won by 8 wkts",
+      "venue": "Maharaja Yadavindra Singh Stadium, Mullanpur",
+      "date": "2025-05-29"
+    },
+    {
+      "cricapiId": "20aacd15-ede1-4447-9b21-dd08e51900b2",
+      "label": "65th Match",
+      "team1": "SRH", "score1": "231/6", "overs1": "20.0",
+      "team2": "RCB", "score2": "189/10","overs2": "19.5",
+      "result": "SRH won by 42 runs",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "date": "2025-05-23"
+    }
+  ],
+  "lastUpdated": "2026-05-22T17:27:00.000Z",
+  "note": "IPL 2025 Final: RCB vs PBKS — Real CricAPI data. RCB WON IPL 2025!"
+}

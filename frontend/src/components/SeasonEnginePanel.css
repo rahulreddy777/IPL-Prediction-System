@@ -1,0 +1,351 @@
+.season-engine {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px 40px;
+}
+
+.season-engine__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.season-engine__title {
+  margin: 0;
+  color: #eab308;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.season-engine__sub {
+  margin: 6px 0 0;
+  color: #94a3b8;
+  font-size: 0.88rem;
+}
+
+.season-engine__ws-on {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.season-engine__ws-off {
+  color: #f87171;
+}
+
+.season-engine__meta {
+  margin: 0 0 16px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.season-engine__meta strong {
+  color: #94a3b8;
+}
+
+.season-engine__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.season-engine__actions button {
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.season-engine__actions button:hover:not(:disabled) {
+  background: #334155;
+  border-color: #64748b;
+}
+
+.season-engine__actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.season-engine__primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+  border-color: #3b82f6 !important;
+  color: #fff !important;
+}
+
+.season-engine__accent {
+  background: linear-gradient(135deg, #eab308, #ca8a04) !important;
+  border: none !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.season-engine__alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid #f87171;
+  border-radius: 8px;
+  color: #fecaca;
+  font-size: 0.88rem;
+}
+
+.season-engine__alert button {
+  background: none;
+  border: none;
+  color: #fecaca;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.season-engine__champion {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #131e32, #1a2744);
+  border: 1px solid #475569;
+  border-radius: 10px;
+}
+
+.season-engine__trophy {
+  font-size: 2rem;
+}
+
+.season-engine__champ-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.season-engine__runner {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.season-engine__dismiss {
+  margin-top: 8px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  background: transparent;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.season-engine__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .season-engine__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.season-engine__card {
+  background: #131e32;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.season-engine__card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.season-engine__card h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.season-engine__legend {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.season-engine__q {
+  display: inline-block;
+  padding: 1px 6px;
+  margin-right: 4px;
+  background: rgba(234, 179, 8, 0.25);
+  color: #eab308;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.season-engine__table-wrap {
+  overflow-x: auto;
+}
+
+.season-engine__card table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.season-engine__card th {
+  padding: 8px 6px;
+  text-align: left;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #334155;
+}
+
+.season-engine__card td {
+  padding: 9px 6px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.season-engine__qualified {
+  background: rgba(234, 179, 8, 0.06);
+}
+
+.season-engine__pts {
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.season-engine__nrr-pos {
+  color: #4ade80;
+}
+
+.season-engine__nrr-neg {
+  color: #f87171;
+}
+
+.season-engine__badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.season-engine__badge--q {
+  background: rgba(234, 179, 8, 0.2);
+  color: #eab308;
+}
+
+.season-engine__badge--e {
+  background: rgba(100, 116, 139, 0.3);
+  color: #94a3b8;
+}
+
+.season-engine__clear {
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  background: transparent;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.season-engine__events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.season-engine__event {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-left: 3px solid #475569;
+  background: #0d1627;
+}
+
+.season-engine__event--info {
+  border-left-color: #38bdf8;
+}
+
+.season-engine__event--success {
+  border-left-color: #4ade80;
+}
+
+.season-engine__event--error {
+  border-left-color: #f87171;
+  background: rgba(248, 113, 113, 0.08);
+}
+
+.season-engine__event-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  line-height: 1.4;
+}
+
+.season-engine__time {
+  display: block;
+  font-size: 0.72rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.season-engine__empty {
+  color: #64748b;
+  font-style: italic;
+  font-size: 0.85rem;
+  padding: 12px 0;
+}
+
+.season-engine__advanced {
+  margin-top: 24px;
+  padding: 14px 16px;
+  background: #0d1627;
+  border: 1px dashed #334155;
+  border-radius: 10px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.season-engine__advanced summary {
+  cursor: pointer;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.season-engine__hint {
+  margin: 10px 0 12px;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.season-engine__run {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #64748b;
+  background: #1e293b;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.82rem;
+}

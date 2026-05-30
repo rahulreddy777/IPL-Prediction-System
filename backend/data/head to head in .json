@@ -1,0 +1,112 @@
+{
+  "CSK": [
+    {"opponent": "MI", "total": 39, "wins": 18, "losses": 21, "home": 10, "away": 8},
+    {"opponent": "RCB", "total": 35, "wins": 21, "losses": 13, "home": 12, "away": 9},
+    {"opponent": "KKR", "total": 30, "wins": 19, "losses": 11, "home": 10, "away": 9},
+    {"opponent": "DC", "total": 30, "wins": 19, "losses": 11, "home": 11, "away": 8},
+    {"opponent": "PBKS", "total": 30, "wins": 16, "losses": 14, "home": 9, "away": 7},
+    {"opponent": "RR", "total": 31, "wins": 16, "losses": 15, "home": 8, "away": 8},
+    {"opponent": "SRH", "total": 22, "wins": 16, "losses": 6, "home": 9, "away": 7},
+    {"opponent": "GT", "total": 7, "wins": 3, "losses": 4, "home": 1, "away": 2},
+    {"opponent": "LSG", "total": 5, "wins": 1, "losses": 3, "home": 1, "away": 0}
+  ],
+  "MI": [
+    {"opponent": "CSK", "total": 39, "wins": 21, "losses": 18, "home": 11, "away": 10},
+    {"opponent": "RCB", "total": 33, "wins": 19, "losses": 14, "home": 10, "away": 9},
+    {"opponent": "KKR", "total": 35, "wins": 24, "losses": 11, "home": 13, "away": 11},
+    {"opponent": "DC", "total": 34, "wins": 19, "losses": 15, "home": 10, "away": 9},
+    {"opponent": "PBKS", "total": 30, "wins": 17, "losses": 13, "home": 9, "away": 8},
+    {"opponent": "RR", "total": 28, "wins": 15, "losses": 13, "home": 8, "away": 7},
+    {"opponent": "SRH", "total": 22, "wins": 12, "losses": 10, "home": 6, "away": 6},
+    {"opponent": "GT", "total": 7, "wins": 2, "losses": 5, "home": 1, "away": 1},
+    {"opponent": "LSG", "total": 8, "wins": 2, "losses": 6, "home": 1, "away": 1}
+  ],
+  "RCB": [
+    {"opponent": "CSK", "total": 35, "wins": 13, "losses": 21, "home": 6, "away": 7},
+    {"opponent": "MI", "total": 33, "wins": 14, "losses": 19, "home": 7, "away": 7},
+    {"opponent": "KKR", "total": 34, "wins": 14, "losses": 20, "home": 7, "away": 7},
+    {"opponent": "DC", "total": 30, "wins": 18, "losses": 12, "home": 9, "away": 9},
+    {"opponent": "PBKS", "total": 37, "wins": 19, "losses": 18, "home": 10, "away": 9},
+    {"opponent": "RR", "total": 34, "wins": 17, "losses": 14, "home": 9, "away": 8},
+    {"opponent": "SRH", "total": 24, "wins": 10, "losses": 14, "home": 5, "away": 5},
+    {"opponent": "LSG", "total": 5, "wins": 3, "losses": 2, "home": 2, "away": 1},
+    {"opponent": "GT", "total": 5, "wins": 2, "losses": 3, "home": 1, "away": 1}
+  ],
+  "LSG": [
+    {"opponent": "CSK", "total": 5, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "MI", "total": 8, "wins": 6, "losses": 2, "home": 3, "away": 3},
+    {"opponent": "RCB", "total": 5, "wins": 2, "losses": 3, "home": 1, "away": 1},
+    {"opponent": "KKR", "total": 4, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "DC", "total": 5, "wins": 3, "losses": 2, "home": 2, "away": 1},
+    {"opponent": "PBKS", "total": 5, "wins": 3, "losses": 2, "home": 2, "away": 1},
+    {"opponent": "RR", "total": 4, "wins": 2, "losses": 2, "home": 1, "away": 1},
+    {"opponent": "SRH", "total": 4, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "GT", "total": 6, "wins": 2, "losses": 4, "home": 1, "away": 1}
+  ],
+  "KKR": [
+    {"opponent": "CSK", "total": 30, "wins": 11, "losses": 19, "home": 6, "away": 5},
+    {"opponent": "MI", "total": 35, "wins": 11, "losses": 24, "home": 6, "away": 5},
+    {"opponent": "RCB", "total": 34, "wins": 20, "losses": 14, "home": 10, "away": 10},
+    {"opponent": "DC", "total": 33, "wins": 18, "losses": 15, "home": 9, "away": 9},
+    {"opponent": "PBKS", "total": 31, "wins": 21, "losses": 10, "home": 11, "away": 10},
+    {"opponent": "RR", "total": 28, "wins": 14, "losses": 14, "home": 7, "away": 7},
+    {"opponent": "SRH", "total": 27, "wins": 18, "losses": 9, "home": 9, "away": 9},
+    {"opponent": "LSG", "total": 4, "wins": 1, "losses": 3, "home": 1, "away": 0},
+    {"opponent": "GT", "total": 4, "wins": 1, "losses": 3, "home": 0, "away": 1}
+  ],
+  "DC": [
+    {"opponent": "CSK", "total": 30, "wins": 11, "losses": 19, "home": 6, "away": 5},
+    {"opponent": "MI", "total": 34, "wins": 15, "losses": 19, "home": 8, "away": 7},
+    {"opponent": "RCB", "total": 30, "wins": 12, "losses": 18, "home": 6, "away": 6},
+    {"opponent": "KKR", "total": 33, "wins": 15, "losses": 18, "home": 8, "away": 7},
+    {"opponent": "PBKS", "total": 32, "wins": 16, "losses": 16, "home": 8, "away": 8},
+    {"opponent": "RR", "total": 28, "wins": 13, "losses": 15, "home": 7, "away": 6},
+    {"opponent": "SRH", "total": 26, "wins": 12, "losses": 13, "home": 6, "away": 6},
+    {"opponent": "LSG", "total": 5, "wins": 2, "losses": 3, "home": 1, "away": 1},
+    {"opponent": "GT", "total": 4, "wins": 1, "losses": 3, "home": 0, "away": 1}
+  ],
+  "PBKS": [
+    {"opponent": "CSK", "total": 30, "wins": 14, "losses": 16, "home": 7, "away": 7},
+    {"opponent": "MI", "total": 30, "wins": 13, "losses": 17, "home": 6, "away": 7},
+    {"opponent": "RCB", "total": 37, "wins": 18, "losses": 19, "home": 9, "away": 9},
+    {"opponent": "KKR", "total": 31, "wins": 10, "losses": 21, "home": 5, "away": 5},
+    {"opponent": "DC", "total": 32, "wins": 16, "losses": 16, "home": 8, "away": 8},
+    {"opponent": "RR", "total": 39, "wins": 12, "losses": 17, "home": 6, "away": 6},
+    {"opponent": "SRH", "total": 23, "wins": 7, "losses": 16, "home": 3, "away": 4},
+    {"opponent": "LSG", "total": 5, "wins": 2, "losses": 3, "home": 1, "away": 1},
+    {"opponent": "GT", "total": 4, "wins": 2, "losses": 2, "home": 1, "away": 1}
+  ],
+  "SRH": [
+    {"opponent": "CSK", "total": 22, "wins": 6, "losses": 16, "home": 3, "away": 3},
+    {"opponent": "MI", "total": 22, "wins": 10, "losses": 12, "home": 5, "away": 5},
+    {"opponent": "RCB", "total": 24, "wins": 14, "losses": 10, "home": 7, "away": 7},
+    {"opponent": "KKR", "total": 27, "wins": 9, "losses": 18, "home": 5, "away": 4},
+    {"opponent": "DC", "total": 26, "wins": 13, "losses": 12, "home": 7, "away": 6},
+    {"opponent": "PBKS", "total": 23, "wins": 16, "losses": 7, "home": 8, "away": 8},
+    {"opponent": "RR", "total": 20, "wins": 11, "losses": 9, "home": 6, "away": 5},
+    {"opponent": "LSG", "total": 4, "wins": 1, "losses": 3, "home": 0, "away": 1},
+    {"opponent": "GT", "total": 4, "wins": 1, "losses": 3, "home": 1, "away": 0}
+  ],
+  "RR": [
+    {"opponent": "CSK", "total": 31, "wins": 15, "losses": 16, "home": 7, "away": 8},
+    {"opponent": "MI", "total": 28, "wins": 13, "losses": 15, "home": 6, "away": 7},
+    {"opponent": "RCB", "total": 34, "wins": 14, "losses": 17, "home": 7, "away": 7},
+    {"opponent": "KKR", "total": 28, "wins": 14, "losses": 14, "home": 7, "away": 7},
+    {"opponent": "DC", "total": 28, "wins": 15, "losses": 13, "home": 8, "away": 7},
+    {"opponent": "PBKS", "total": 39, "wins": 17, "losses": 12, "home": 9, "away": 8},
+    {"opponent": "SRH", "total": 20, "wins": 9, "losses": 11, "home": 4, "away": 5},
+    {"opponent": "LSG", "total": 4, "wins": 2, "losses": 2, "home": 1, "away": 1},
+    {"opponent": "GT", "total": 5, "wins": 1, "losses": 4, "home": 0, "away": 1}
+  ],
+  "GT": [
+    {"opponent": "CSK", "total": 7, "wins": 4, "losses": 3, "home": 2, "away": 2},
+    {"opponent": "MI", "total": 7, "wins": 5, "losses": 2, "home": 3, "away": 2},
+    {"opponent": "RCB", "total": 5, "wins": 3, "losses": 2, "home": 2, "away": 1},
+    {"opponent": "KKR", "total": 4, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "DC", "total": 4, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "PBKS", "total": 4, "wins": 2, "losses": 2, "home": 1, "away": 1},
+    {"opponent": "RR", "total": 5, "wins": 4, "losses": 1, "home": 2, "away": 2},
+    {"opponent": "SRH", "total": 4, "wins": 3, "losses": 1, "home": 2, "away": 1},
+    {"opponent": "LSG", "total": 6, "wins": 4, "losses": 2, "home": 2, "away": 2}
+  ]
+}

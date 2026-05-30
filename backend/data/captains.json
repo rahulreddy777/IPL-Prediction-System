@@ -1,0 +1,72 @@
+[
+    {
+        "team": "Chennai Super Kings",
+        "team_code": "CSK",
+        "captain": "Ruturaj Gaikwad",
+        "role": "Opening Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Mumbai Indians",
+        "team_code": "MI",
+        "captain": "Hardik Pandya",
+        "role": "All-rounder",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Gujarat Titans",
+        "team_code": "GT",
+        "captain": "Shubman Gill",
+        "role": "Opening Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Sunrisers Hyderabad",
+        "team_code": "SRH",
+        "captain": "Ishan Kishan",
+        "role": "WK-Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Lucknow Super Giants",
+        "team_code": "LSG",
+        "captain": "Rishabh Pant",
+        "role": "Wicketkeeper-Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Delhi Capitals",
+        "team_code": "DC",
+        "captain": "Axar Patel",
+        "role": "All-rounder",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Punjab Kings",
+        "team_code": "PBKS",
+        "captain": "Shreyas Iyer",
+        "role": "Middle-order Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Royal Challengers Bengaluru",
+        "team_code": "RCB",
+        "captain": "Rajat Patidar",
+        "role": "Top-order Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Rajasthan Royals",
+        "team_code": "RR",
+        "captain": "Riyan Parag",
+        "role": "Batter",
+        "appointment_type": "Confirmed"
+    },
+    {
+        "team": "Kolkata Knight Riders",
+        "team_code": "KKR",
+        "captain": "Ajinkya Rahane",
+        "role": "Top-order Batter",
+        "appointment_type": "Confirmed"
+    }
+]

@@ -1,0 +1,117 @@
+{
+  "dataset": "Active Franchises All-Time Standings",
+  "period": "2008-2025",
+  "last_updated": "2026-03-26",
+  "teams": [
+    {
+      "team": "Gujarat Titans",
+      "abbreviation": "GT",
+      "matches": 60,
+      "wins": 37,
+      "losses": 23,
+      "home_wins": 19,
+      "away_wins": 18,
+      "win_percentage": 61.67,
+      "titles": 1
+    },
+    {
+      "team": "Chennai Super Kings",
+      "abbreviation": "CSK",
+      "matches": 254,
+      "wins": 142,
+      "losses": 108,
+      "home_wins": 79,
+      "away_wins": 63,
+      "win_percentage": 55.91,
+      "titles": 5
+    },
+    {
+      "team": "Mumbai Indians",
+      "abbreviation": "MI",
+      "matches": 278,
+      "wins": 151,
+      "losses": 122,
+      "home_wins": 84,
+      "away_wins": 67,
+      "win_percentage": 54.32,
+      "titles": 5
+    },
+    {
+      "team": "Lucknow Super Giants",
+      "abbreviation": "LSG",
+      "matches": 58,
+      "wins": 30,
+      "losses": 27,
+      "home_wins": 14,
+      "away_wins": 16,
+      "win_percentage": 51.72,
+      "titles": 0
+    },
+    {
+      "team": "Kolkata Knight Riders",
+      "abbreviation": "KKR",
+      "matches": 269,
+      "wins": 135,
+      "losses": 124,
+      "home_wins": 72,
+      "away_wins": 63,
+      "win_percentage": 50.19,
+      "titles": 3
+    },
+    {
+      "team": "Royal Challengers Bengaluru",
+      "abbreviation": "RCB",
+      "matches": 272,
+      "wins": 132,
+      "losses": 132,
+      "home_wins": 70,
+      "away_wins": 62,
+      "win_percentage": 48.53,
+      "titles": 1
+    },
+    {
+      "team": "Rajasthan Royals",
+      "abbreviation": "RR",
+      "matches": 239,
+      "wins": 114,
+      "losses": 116,
+      "home_wins": 61,
+      "away_wins": 53,
+      "win_percentage": 47.70,
+      "titles": 1
+    },
+    {
+      "team": "Sunrisers Hyderabad",
+      "abbreviation": "SRH",
+      "matches": 196,
+      "wins": 93,
+      "losses": 98,
+      "home_wins": 51,
+      "away_wins": 42,
+      "win_percentage": 47.45,
+      "titles": 1
+    },
+    {
+      "team": "Punjab Kings",
+      "abbreviation": "PBKS",
+      "matches": 263,
+      "wins": 119,
+      "losses": 139,
+      "home_wins": 59,
+      "away_wins": 60,
+      "win_percentage": 45.25,
+      "titles": 0
+    },
+    {
+      "team": "Delhi Capitals",
+      "abbreviation": "DC",
+      "matches": 267,
+      "wins": 119,
+      "losses": 140,
+      "home_wins": 56,
+      "away_wins": 62,
+      "win_percentage": 44.57,
+      "titles": 0
+    }
+  ]
+}
