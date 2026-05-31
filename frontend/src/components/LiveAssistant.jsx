@@ -115,7 +115,7 @@ export default function LiveAssistant() {
     fetch(`${import.meta.env.VITE_API_URL}/api/live-intel`)
       .then(r => r.json())
       .then(d => { setLiveData(d); addLog('✅ Initial data loaded', 'success'); })
-      .catch(() => addLog('⚠️ Backend offline — check localhost:5000', 'warn'));
+      .catch(() => addLog('⚠️ Backend offline — check backend URL', 'warn'));
     connectSSE();
     return () => sseRef.current?.close();
   }, [connectSSE, addLog]);

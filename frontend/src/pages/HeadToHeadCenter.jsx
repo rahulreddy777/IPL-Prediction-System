@@ -21,8 +21,7 @@ export default function HeadToHeadCenter() {
       setLoading(true);
       setError('');
       try {
-        const API_BASE = import.meta.env.DEV ? 'http://localhost:5000' : import.meta.env.VITE_API_URL;
-        const res = await axios.get(`${API_BASE}/api/head-to-head`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/head-to-head`);
         setFullData(res.data);
       } catch (error) {
         console.error(error);
