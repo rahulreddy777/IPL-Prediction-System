@@ -1,5 +1,5 @@
 /**
- * IPL Live Match Agent — single 15s poll: CricAPI → MongoDB cache → WebSocket
+ * IPL Live Match Agent — single 15s poll: Rapid API → MongoDB cache → WebSocket
  */
 const fs = require("fs");
 const path = require("path");

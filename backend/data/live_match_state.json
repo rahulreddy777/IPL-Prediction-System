@@ -3,27 +3,27 @@
     "isLive": true,
     "matchNumber": 67,
     "cricapiId": "20aacd15-ede1-4447-9b21-dd08e51900b2",
-    "team1": "SRH",
+    "team1": "GT",
     "team2": "RCB",
     "score1": "210/6",
     "overs1": "20.0",
     "score2": "150/4",
     "overs2": "15.2",
-    "status": "Sunrisers Hyderabad vs Royal Challengers Bengaluru, Match 67, IPL 2026",
-    "statusText": "Royal Challengers Bengaluru won by 6 wickets",
-    "result": "Royal Challengers Bengaluru won by 6 wickets",
-    "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+    "status": "Gujarat Titans vs Royal Challengers Bengaluru, Match 67, IPL 2026",
+    "statusText": "Gujarat Titans vs Royal Challengers Bengaluru - Live",
+    "result": "",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
     "date": "2026-05-22",
-    "matchEnded": true,
+    "matchEnded": false,
     "toss": {
-      "winner": "PBKS",
-      "choice": "bowl"
+      "winner": "GT",
+      "choice": "bat"
     },
     "currentBatsmen": [
       { "name": "Virat Kohli", "runs": 72, "balls": 51, "fours": 7, "sixes": 2 },
       { "name": "Rajat Patidar", "runs": 58, "balls": 34, "fours": 5, "sixes": 3 }
     ],
-    "currentBowler": { "name": "Arshdeep Singh", "overs": "4.0", "wickets": 3, "runs": 32 },
+    "currentBowler": { "name": "Rashid Khan", "overs": "3.2", "wickets": 1, "runs": 28 },
     "recentOvers": "4,1,W,2,6,1"
   },
   "recentMatches": [

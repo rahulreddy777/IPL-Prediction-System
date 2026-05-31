@@ -39,7 +39,7 @@ router.get("/live", (req, res) => {
 
 /*
  * POST /api/agent/inject-live
- * Manually push live score data when CricAPI is rate-limited.
+ * Manually push live score data when Rapid API is rate-limited.
  * Body: { matches: [ { name, status, score: [{inning,r,w,o}], matchStarted, matchEnded } ] }
  */
 router.post("/inject-live", (req, res) => {

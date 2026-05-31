@@ -1,6 +1,6 @@
 /**
  * GET  /api/live-scores         — cache only (memory → MongoDB)
- * POST /api/live-scores/refresh — ONLY endpoint that may call CricAPI
+ * POST /api/live-scores/refresh — ONLY endpoint that may call Rapid API
  */
 const { predictionDB } = require("../config/db");
 const {
@@ -40,8 +40,8 @@ exports.getScores = async (req, res) => {
 
     const displaySource =
       result.displaySource ||
-      (source === "cricapi"
-        ? "Live via CricAPI"
+      (source === "rapidapi"
+        ? "Live via Rapid API"
         : source === "mongodb-cache" || fromCache
           ? "Using MongoDB cache"
           : "No live match today");
@@ -67,7 +67,7 @@ exports.getScores = async (req, res) => {
         state === "no-live-match"
           ? "No live match today"
           : state === "api-unavailable"
-            ? "CricAPI unavailable. Use Fetch from API to retry."
+            ? "Rapid API unavailable. Use Fetch from API to retry."
             : state === "upcoming"
               ? `Match starts at 7:30 PM IST — ${upcoming.length} fixture(s) scheduled`
               : null,

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const NAV_ITEMS = [
   { id: "prediction2026", label: "Dashboard",           icon: "⚡",  badge: null },
-  { id: "livescores",    label: "Live Scores",         icon: "📺",  badge: null },
   { id: "final",         label: "IPL 2026 FINAL",      icon: "🏆",  badge: "NEW" },
   { id: "teams",         label: "Teams",               icon: "🏏",  badge: null },
   { id: "captains2026",  label: "IPL Captains 2026",   icon: "🎖️",  badge: null },
@@ -165,34 +164,18 @@ export default function Sidebar({ activeTab, setActiveTab }) {
         {!collapsed && (
           <div style={{ padding: "14px", borderTop: "1px solid rgba(255,255,255,0.05)", flexShrink: 0 }}>
             <div style={{
-              background: "linear-gradient(135deg,rgba(22,163,74,0.15),rgba(6,182,212,0.08))",
-              border: "1px solid rgba(22,163,74,0.25)",
+              background: "linear-gradient(135deg,rgba(124,58,237,0.12),rgba(59,130,246,0.06))",
+              border: "1px solid rgba(124,58,237,0.2)",
               borderRadius: "12px", padding: "12px",
+              textAlign: "center",
             }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-                <span style={{
-                  width: "8px", height: "8px", borderRadius: "50%",
-                  background: "#22c55e", boxShadow: "0 0 8px #22c55e",
-                  animation: "pulse-live 1s infinite", flexShrink: 0,
-                }} />
-                <span style={{ fontSize: "12px", fontWeight: "700", color: "#4ade80" }}>IPL 2026 • LIVE</span>
+              <div style={{ fontSize: "18px", marginBottom: "4px" }}>🏆</div>
+              <div style={{ fontSize: "12px", fontWeight: "800", color: "#c4b5fd", fontFamily: "'Oswald', sans-serif", letterSpacing: "1px" }}>
+                IPL 2026
               </div>
-              <div style={{ fontSize: "10px", color: "#64748b", marginBottom: "2px" }}>Season is Live</div>
-              <div style={{ fontSize: "10px", color: "#94a3b8", marginBottom: "10px" }}>
-                Today's Matches <strong style={{ color: "#e2e8f0" }}>2</strong>
+              <div style={{ fontSize: "10px", color: "#64748b", marginTop: "2px" }}>
+                PREDICTION HUB
               </div>
-              <button
-                onClick={() => setActiveTab && setActiveTab("livescores")}
-                style={{
-                  width: "100%",
-                  background: "linear-gradient(135deg,#16a34a,#15803d)",
-                  border: "none", borderRadius: "8px", padding: "8px 0",
-                  color: "#fff", fontSize: "11px", fontWeight: "700",
-                  cursor: "pointer", letterSpacing: "0.05em",
-                }}
-              >
-                View Live Scores
-              </button>
             </div>
           </div>
         )}

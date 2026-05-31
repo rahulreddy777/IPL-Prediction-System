@@ -23,6 +23,7 @@ import AllTimeBowlers from "./components/AllTimeBowlers";
 import AllSeasons from "./components/AllSeasons";
 import Venues from "./components/Venues";
 import IPLChatbot from "./components/IPLChatbot";
+import LiveFinalDashboard from "./components/LiveFinalDashboard";
 import { Users } from "lucide-react";
 
 const SIDEBAR_W_EXPANDED = 220;
@@ -56,6 +57,7 @@ function App() {
     allseasons: "allseasons",
     venues: "venues",
     chatbot: "chatbot",
+    livefinal: "livefinal",
   };
 
   const handleSidebarTab = (id) => {
@@ -184,6 +186,7 @@ function App() {
           {activeTab === "allseasons" && <AllSeasons />}
           {activeTab === "venues" && <Venues />}
           {activeTab === "chatbot" && <IPLChatbot />}
+          {activeTab === "livefinal" && <LiveFinalDashboard />}
         </main>
       </div>
     </>

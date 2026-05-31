@@ -45,20 +45,24 @@ app.use("/api/cricbuzz",              require("./routes/cricbuzz"));
 app.use("/api/final-prediction",      require("./routes/finalPrediction"));
 app.use("/api/team-history",          require("./routes/teamHistory"));
 app.use("/api/head-to-head",          require("./routes/headToHead"));
+app.use("/api/live-final",           require("./routes/liveFinal"));
 
 app.get("/", (req, res) => {
   res.json({
     message: "IPL Prediction API",
-    cricapi_configured: !!process.env.CRIC_API_KEY,
+    rapidapi_configured: !!(process.env.RAPID_API_KEY || process.env.RAPIDAPI_KEY),
     endpoints: {
-      "live-scores": "GET /api/live-scores (cache only)",
-      "live-refresh": "POST /api/live-scores/refresh (only CricAPI call)",
-      "cric-live":   "/api/cric-live",
-      "win-prob-ws": "ws://localhost:5000/ws (AI_WIN_PROBABILITY_UPDATE)",
-      "trigger-win": "POST /api/trigger-win-update/:matchId",
-      season:        "POST /api/season/run-full (M68 → Champion)",
-      teams:         "/api/teams",
-      predictions:   "/api/predictions",
+      "live-scores":   "GET  /api/live-scores (cache only)",
+      "live-final":    "GET  /api/live-final  (GT vs RCB — live match)",
+      "commentary":    "GET  /api/live-final/commentary",
+      "scorecard":     "GET  /api/live-final/scorecard",
+      "live-refresh":  "POST /api/live-scores/refresh (only Rapid API call)",
+      "cric-live":     "/api/cric-live",
+      "win-prob-ws":   "ws://localhost:5000/ws (AI_WIN_PROBABILITY_UPDATE)",
+      "trigger-win":   "POST /api/trigger-win-update/:matchId",
+      season:          "POST /api/season/run-full (M68 → Champion)",
+      teams:           "/api/teams",
+      predictions:     "/api/predictions",
     },
   });
 });

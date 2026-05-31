@@ -5,11 +5,11 @@
  *
  * Data flow:
  *  GET /api/live-scores      → reads MongoDB cache (fast, safe, no quota hit)
- *  POST /api/live-scores/refresh → triggers a fresh CricAPI fetch + re-cache
+ *  POST /api/live-scores/refresh → triggers a fresh Rapid API fetch + re-cache
  *  ${import.meta.env.VITE_WS_URL}    → real-time push events (LIVE_SCORE_UPDATE etc.)
  *
  * Auto-polling: every 30 seconds (GET cache only, no API quota used)
- * Manual refresh: POST refresh button (uses 1 CricAPI hit)
+ * Manual refresh: POST refresh button (uses 1 Rapid API hit)
  * ─────────────────────────────────────────────────────────────────────────────
  */
 import React, { useState, useEffect, useCallback, useRef } from "react";
@@ -256,7 +256,7 @@ export default function LiveScores() {
     }
   }, []);
 
-  // ── Manual API refresh (uses 1 CricAPI hit) ───────────────────────────────
+  // ── Manual API refresh (uses 1 Rapid API hit) ───────────────────────────────
   const handleManualRefresh = useCallback(async () => {
     setRefreshing(true);
     try {
@@ -267,7 +267,7 @@ export default function LiveScores() {
       setUpcomingMatches(data.upcomingMatches  || []);
       setCompletedMatches(data.completedMatches || []);
       setUiState(data.uiState || "no-live-match");
-      setSource(data.displaySource     || data.source || "CricAPI");
+      setSource(data.displaySource     || data.source || "Rapid API");
       setUpdatedAt(data.updatedAt      || new Date().toISOString());
       setHint(data.hint                || null);
       setError(data.error              || null);
@@ -390,7 +390,7 @@ export default function LiveScores() {
           className="live-scores__retry"
           onClick={handleManualRefresh}
           disabled={refreshing}
-          title="Fetch latest from CricAPI (uses 1 API hit)"
+          title="Fetch latest from Rapid API (uses 1 API hit)"
         >
           {refreshing ? "⏳ Fetching…" : "⚡ Fetch from API"}
         </button>
@@ -467,7 +467,7 @@ export default function LiveScores() {
               </p>
               {hint && <p className="live-scores__empty-hint">{hint}</p>}
               <p className="live-scores__empty-hint">
-                Use <b>"⚡ Fetch from API"</b> to pull the latest data from CricAPI.
+                Use <b>"⚡ Fetch from API"</b> to pull the latest data from Rapid API.
               </p>
             </div>
           )}
@@ -480,11 +480,11 @@ export default function LiveScores() {
             >
               <div style={{ fontSize: "2.5rem" }}>📡</div>
               <p>
-                <b style={{ color: "#f87171" }}>CricAPI Unavailable</b>
+                <b style={{ color: "#f87171" }}>Rapid API Unavailable</b>
               </p>
               <p className="live-scores__empty-hint">
-                The backend cannot reach CricAPI. Check your{" "}
-                <code>CRIC_API_KEY</code> in <code>.env</code> and ensure
+                The backend cannot reach Rapid API. Check your{" "}
+                <code>RAPID_API_KEY</code> in <code>.env</code> and ensure
                 MongoDB is running.
               </p>
               <button className="live-scores__retry" onClick={handleManualRefresh} disabled={refreshing}>
