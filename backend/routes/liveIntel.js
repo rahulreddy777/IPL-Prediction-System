@@ -7,7 +7,7 @@ const router   = express.Router();
 const intel    = require('../services/liveIntelService');
 const { predictionDB } = require('../config/db');
 const { pushWinPredictionUpdate } = require('../services/winProbabilityStream');
-const { pushLiveUpdate } = require('../services/liveScoreService');
+const { refreshAndPushLiveUpdate } = require('../services/liveScoreService');
 const { onLiveScoreFinalized } = require('../services/matchResultService');
 
 // ── SSE clients store ─────────────────────────────────────────────────────────
@@ -67,7 +67,7 @@ router.post('/toss', express.json(), (req, res) => {
     }
     const result = intel.recordToss({ matchNumber, team1, team2, venue, tossWinner, tossChoice });
     broadcastSSE({ type: 'toss', ...result });
-    pushLiveUpdate(predictionDB).catch(() => {});
+    refreshAndPushLiveUpdate(predictionDB).catch(() => {});
     res.json({ success: true, ...result });
   } catch(err) {
     res.status(500).json({ success: false, error: err.message });
@@ -114,7 +114,7 @@ router.post('/live-score', express.json(), async (req, res) => {
     broadcastSSE({ type: 'live-score', ...liveData, commentary });
 
     // Event-driven live + AI updates (cache only — no API)
-    pushLiveUpdate(predictionDB).catch((e) =>
+    refreshAndPushLiveUpdate(predictionDB).catch((e) =>
       console.warn('[LiveScore] push:', e.message)
     );
 

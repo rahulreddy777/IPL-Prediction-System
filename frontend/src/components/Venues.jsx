@@ -102,6 +102,7 @@ const Venues = () => {
                 style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }} 
                 onMouseOver={e => e.currentTarget.style.transform = 'scale(1.1)'}
                 onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+                onError={e => { e.currentTarget.onerror = null; e.currentTarget.src = '/stadiums/fallback.png'; }}
               />
               <div style={{
                 position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
@@ -194,6 +195,7 @@ const Venues = () => {
               boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
             }} 
             onClick={(e) => e.stopPropagation()}
+            onError={e => { e.currentTarget.onerror = null; e.currentTarget.src = '/stadiums/fallback.png'; }}
           />
         </div>
       )}

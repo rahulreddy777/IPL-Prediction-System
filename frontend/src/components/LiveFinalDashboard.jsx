@@ -546,16 +546,42 @@ export default function LiveFinalDashboard() {
   const fetchMatch = useCallback(async () => {
     try {
       setError(null);
-      const res = await fetch(`${API}/api/live-final`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
+      const mockData = {
+        isLive: true,
+        isMock: true,
+        status: "Match Started (Offline Mode)",
+        battingTeam: "RCB",
+        target: 215,
+        team1: { name: "Gujarat Titans", shortName: "GT", score: "214/4", overs: "20.0" },
+        team2: { name: "Royal Challengers Bengaluru", shortName: "RCB", score: "45/0", overs: "4.2" },
+        toss: { winner: "GT", decision: "bat", text: "GT won the toss and elected to bat" },
+        currentRunRate: 10.38,
+        requiredRunRate: 10.85,
+        partnership: { runs: 45, balls: 26 },
+        lastWicket: "—",
+        winProbability: { team1: 45, team2: 55 },
+        recentOvers: "1 4 . 2 W 1 , 6 4 1 . 1 2",
+        batters: [
+          { name: "V Kohli", isStriker: true, runs: 24, balls: 14, fours: 3, sixes: 1, strikeRate: 171.4 },
+          { name: "F du Plessis", isStriker: false, runs: 20, balls: 12, fours: 2, sixes: 1, strikeRate: 166.6 }
+        ],
+        bowlers: [
+          { name: "Rashid Khan", isBowling: true, overs: 1.2, maidens: 0, runs: 12, wickets: 0, economy: 9.0 }
+        ],
+        aiInsights: [
+          "RCB's opening partnership looking strong, Win Prob up by 8%.",
+          "GT needs a wicket in the next 2 overs to reclaim control.",
+          "Kohli looking aggressive against spin early on."
+        ]
+      };
+      
       if (isMounted.current) {
-        setMatchData(data);
+        setMatchData(mockData);
         setLastUpdated(new Date());
         setRefreshCount(c => c + 1);
       }
     } catch (err) {
-      if (isMounted.current) setError(err.message);
+      if (isMounted.current) setError("Failed to load offline mock data.");
     } finally {
       if (isMounted.current) setLoading(false);
     }
@@ -563,22 +589,37 @@ export default function LiveFinalDashboard() {
 
   const fetchCommentary = useCallback(async () => {
     try {
-      const res = await fetch(`${API}/api/live-final/commentary`);
-      if (!res.ok) return;
-      const data = await res.json();
-      if (isMounted.current && data.commentary) {
-        setCommentary(data.commentary);
+      const mockComm = [
+        { over: "4", ball: "2", isFour: true, text: "Rashid Khan to Kohli, FOUR! Beautifully timed through the covers." },
+        { over: "4", ball: "1", isSix: false, text: "Rashid Khan to Kohli, 1 run, pushed to long on." },
+        { over: "3", ball: "6", isSix: true, text: "Shami to du Plessis, SIX! Massive hit over mid-wicket." },
+        { over: "3", ball: "5", isWicket: false, text: "Shami to du Plessis, dot ball, short and wide." }
+      ];
+      if (isMounted.current) {
+        setCommentary(mockComm);
       }
     } catch (_) {}
   }, []);
 
   const fetchScorecard = useCallback(async () => {
     try {
-      const res = await fetch(`${API}/api/live-final/scorecard`);
-      if (!res.ok) return;
-      const data = await res.json();
+      const mockScorecard = [
+        {
+          teamName: "Gujarat Titans",
+          batsmanData: {
+            1: { batName: "S Gill", runs: 85, balls: 52, fours: 8, sixes: 4, strikeRate: 163.4, outDesc: "c Kohli b Siraj" },
+            2: { batName: "W Saha", runs: 22, balls: 16, fours: 3, sixes: 0, strikeRate: 137.5, outDesc: "lbw Maxwell" }
+          },
+          bowlTeamDetails: {
+            bowlersData: {
+              1: { bowlName: "M Siraj", overs: 4, maidens: 0, runs: 38, wickets: 2, economy: 9.5 },
+              2: { bowlName: "G Maxwell", overs: 4, maidens: 0, runs: 32, wickets: 1, economy: 8.0 }
+            }
+          }
+        }
+      ];
       if (isMounted.current) {
-        setScorecard(data.innings || []);
+        setScorecard(mockScorecard);
       }
     } catch (_) {}
   }, []);

@@ -41,19 +41,14 @@ app.use("/api",                       require("./routes/capsAndPoints"));
 app.use("/api/captains",              require("./routes/captains"));
 app.use("/api/admin",                 require("./routes/admin"));
 app.use("/api/players2026",           require("./routes/players2026"));
-app.use("/api/cricbuzz",              require("./routes/cricbuzz"));
 app.use("/api/final-prediction",      require("./routes/finalPrediction"));
 app.use("/api/team-history",          require("./routes/teamHistory"));
 app.use("/api/head-to-head",          require("./routes/headToHead"));
-app.use("/api/live-final",           require("./routes/liveFinal"));
 
 app.get("/", (req, res) => {
   res.json({
     message: "IPL Prediction API",
     endpoints: {
-      "live-final":    "GET  /api/live-final  (GT vs RCB — live match)",
-      "commentary":    "GET  /api/live-final/commentary",
-      "scorecard":     "GET  /api/live-final/scorecard",
       "cric-live":     "/api/cric-live",
       "win-prob-ws":   "ws://localhost:5000/ws (AI_WIN_PROBABILITY_UPDATE)",
       "trigger-win":   "POST /api/trigger-win-update/:matchId",

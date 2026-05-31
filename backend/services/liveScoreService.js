@@ -1,6 +1,3 @@
-const { getLiveScores } = require("./cricbuzzService");
-const { broadcast } = require("./websocketServer"); // if we need to push updates
-
 let memCache = {
   matches: [],
   upcomingMatches: [],
@@ -10,9 +7,9 @@ let memCache = {
 };
 
 /**
- * Filter and shape CricAPI data into live/upcoming/completed IPL matches
+ * Filter and shape data into live/upcoming/completed IPL matches
  */
-function processCricApiData(rawData, source) {
+function processCacheData(rawData, source) {
   if (!rawData) return memCache;
 
   let allMatches = [];
@@ -21,7 +18,7 @@ function processCricApiData(rawData, source) {
   } else if (Array.isArray(rawData.response)) {
     allMatches = rawData.response;
   } else if (rawData.response && Array.isArray(rawData.response.typeMatches)) {
-    // Flatten RapidAPI structure
+    // Flatten structure
     rawData.response.typeMatches.forEach(tm => {
       if (Array.isArray(tm.seriesMatches)) {
         tm.seriesMatches.forEach(sm => {
@@ -38,15 +35,9 @@ function processCricApiData(rawData, source) {
   const completed = [];
 
   for (const match of allMatches) {
-    // RapidAPI format vs CricAPI format
     const isRapid = !!match.matchInfo;
     const info = isRapid ? match.matchInfo : match;
     const scoreInfo = isRapid ? match.matchScore : match;
-
-    const name = (info.name || info.matchDesc || info.seriesName || "").toLowerCase();
-    
-    // Accept all matches for now to ensure UI populates if there are matches
-    // if (!name.includes("ipl") && !name.includes("indian premier") && !name.includes("women")) {}
 
     let t1 = "T1", t2 = "T2";
     if (isRapid) {
@@ -115,17 +106,15 @@ function processCricApiData(rawData, source) {
  * GET cache only (memory -> MongoDB)
  */
 async function fetchLiveIPLScores(db) {
-  // If memory cache exists and is fresh (e.g., within last 5 mins), return it
   if (memCache.updatedAt) {
     return { ...memCache, fromCache: true, cacheLayer: "memory" };
   }
 
-  // Fallback to MongoDB
   try {
     const cacheDoc = await db.collection("liveCache").findOne({ type: "ipl" });
     if (cacheDoc && cacheDoc.data) {
       return { 
-        ...processCricApiData(cacheDoc.data, "mongodb-cache"), 
+        ...processCacheData(cacheDoc.data, "mongodb-cache"), 
         fromCache: true, 
         cacheLayer: "mongodb" 
       };
@@ -137,54 +126,17 @@ async function fetchLiveIPLScores(db) {
   return { ...memCache, fromCache: true, cacheLayer: "none" };
 }
 
-async function fetchAndCache(db) {
-  const data = await getLiveScores();
-
-  if (data && Array.isArray(data.typeMatches) || data) {
-    try {
-      await db.asPromise();
-      await db.collection("liveCache").updateOne(
-        { type: "ipl" },
-        { $set: { data, updatedAt: new Date() } },
-        { upsert: true }
-      );
-    } catch (e) {
-      console.warn("[RAPIDAPI] MongoDB save failed:", e.message);
-    }
-    return { source: "rapidapi", data };
-  }
-
-  // Fallback to MongoDB cache
-  try {
-    await db.asPromise();
-    const cache = await db.collection("liveCache").findOne({ type: "ipl" });
-    if (cache) {
-      return { source: "mongodb-cache", data: cache.data };
-    }
-  } catch (e) {
-    console.warn("[RAPIDAPI] MongoDB read failed:", e.message);
-  }
-
-  return null;
-}
-
 /**
- * POST refresh — calls Rapid API and updates MongoDB & Memory
+ * Refresh (MongoDB -> Memory)
  */
 async function refreshAndPushLiveUpdate(db, options = {}) {
   try {
-    const result = await fetchAndCache(db);
-    if (result && result.data) {
-      const updatedCache = processCricApiData(result.data, result.source);
-      
-      // Optional: Broadcast via websocket to connected clients
-      if (typeof broadcast === "function") {
-        broadcast({ type: "LIVE_SCORE_UPDATE", timestamp: Date.now() });
-      }
-
+    const cacheDoc = await db.collection("liveCache").findOne({ type: "ipl" });
+    if (cacheDoc && cacheDoc.data) {
+      const updatedCache = processCacheData(cacheDoc.data, "mongodb-cache");
       return updatedCache;
     }
-    return { ...memCache, error: "Failed to fetch from Rapid API" };
+    return memCache;
   } catch (e) {
     console.error("[liveScoreService] Refresh error:", e.message);
     return { ...memCache, error: e.message };
@@ -198,11 +150,6 @@ function getCacheStatus() {
     liveCount: memCache.matches.length
   };
 }
-
-// ── Background Poller (Optional but requested by some setups) ──
-// We'll leave it as a no-op if we only want manual/websocket refresh,
-// or we can uncomment to poll API every 5 minutes automatically.
-// setInterval(() => { refreshAndPushLiveUpdate(...) }, 5 * 60 * 1000);
 
 module.exports = {
   fetchLiveIPLScores,
