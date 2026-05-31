@@ -20,7 +20,7 @@ app.use("/api/prediction",       require("./routes/prediction"));
 app.use("/api/winners",          require("./routes/winners"));
 app.use("/api/bowlers",          require("./routes/bowlers"));
 app.use("/api/squads",           require("./routes/squads"));
-app.use("/api/live-scores",      require("./routes/liveScores"));
+
 app.use("/api/players",          require("./routes/players"));
 app.use("/api/matches",          require("./routes/matches"));
 app.use("/api/matches2026",      require("./routes/matches2026"));
@@ -50,13 +50,10 @@ app.use("/api/live-final",           require("./routes/liveFinal"));
 app.get("/", (req, res) => {
   res.json({
     message: "IPL Prediction API",
-    rapidapi_configured: !!(process.env.RAPID_API_KEY || process.env.RAPIDAPI_KEY),
     endpoints: {
-      "live-scores":   "GET  /api/live-scores (cache only)",
       "live-final":    "GET  /api/live-final  (GT vs RCB — live match)",
       "commentary":    "GET  /api/live-final/commentary",
       "scorecard":     "GET  /api/live-final/scorecard",
-      "live-refresh":  "POST /api/live-scores/refresh (only Rapid API call)",
       "cric-live":     "/api/cric-live",
       "win-prob-ws":   "ws://localhost:5000/ws (AI_WIN_PROBABILITY_UPDATE)",
       "trigger-win":   "POST /api/trigger-win-update/:matchId",

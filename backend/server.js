@@ -19,16 +19,11 @@ global.seasonRunning = global.seasonRunning || false;
 server.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`WebSocket AI stream: ws://localhost:${PORT}/ws`);
-  console.log(
-    `CricAPI key: ${process.env.CRIC_API_KEY ? process.env.CRIC_API_KEY.slice(0, 8) + "..." : "NOT SET"}`
-  );
-  console.log(`Live scores (cache): GET http://localhost:${PORT}/api/live-scores`);
-  console.log(`Live refresh (API): POST http://localhost:${PORT}/api/live-scores/refresh`);
+
 
   try {
     const { predictionDB } = require("./config/db");
     await predictionDB.asPromise();
-    require("./services/liveScoreService"); // Starts the poll interval
     const { ensurePlayoffMatches } = require("./services/iplMatchesService");
     await ensurePlayoffMatches(predictionDB);
   } catch (e) {

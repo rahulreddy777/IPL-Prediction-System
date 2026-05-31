@@ -78,7 +78,7 @@ export default function IPLChatbot() {
   const [messages, setMessages] = useState([
     {
       role: 'bot',
-      text: "👋 **Welcome to the IPL 2026 AI Assistant!**\n\nI am powered by a live connection to the MongoDB Atlas database and an advanced AI engine. Ask me anything about current stats, match predictions, head-to-head records, or team analysis!",
+      text: "👋 **Welcome to the IPL 2026 Cricket Assistant!**\n\nI'm powered by live MongoDB data and an intent-based engine. Ask me about live scores, predictions, results, upcoming matches, or team info!",
       ts: new Date().toISOString(),
     }
   ]);
@@ -108,7 +108,7 @@ export default function IPLChatbot() {
     } catch (err) {
       setMessages(prev => [...prev, { 
         role: 'bot', 
-        text: '⚠️ **Connection Error:** Backend or OpenAI API unavailable. Please check your network and API keys.', 
+        text: '⚠️ **Connection Error:** Unable to reach the backend. Please check your network connection.', 
         ts: new Date().toISOString(),
         isError: true
       }]);
@@ -275,7 +275,7 @@ export default function IPLChatbot() {
           </button>
         </div>
         <div style={{ textAlign: 'center', fontSize: '11px', color: '#475569', marginTop: '12px' }}>
-          AI Assistant can make mistakes. Verify important predictions.
+          Responses are based on live data. Always verify important info.
         </div>
       </div>
     </div>

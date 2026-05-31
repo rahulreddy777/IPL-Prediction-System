@@ -9,7 +9,6 @@ const NAV_ITEMS = [
   { id: "matches",       label: "Matches",             icon: "🗓️",  badge: null },
   { id: "allseasons",    label: "All Seasons Matches", icon: "📅",  badge: null },
   { id: "venues",        label: "Venues",              icon: "📍",  badge: null },
-  { id: "chatbot",       label: "AI Chatbot",          icon: "🤖",  badge: null },
 ];
 
 const BADGE_STYLES = {

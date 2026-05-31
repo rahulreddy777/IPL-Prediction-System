@@ -37,16 +37,6 @@ const STATS = [
     glow: "#dc2626",
     border: "rgba(220,38,38,0.3)",
   },
-  {
-    icon: "📡",
-    value: "LIVE",
-    label: "REAL-TIME",
-    sub: "Updates",
-    gradient: "linear-gradient(135deg,#0f766e,#14b8a6)",
-    glow: "#14b8a6",
-    border: "rgba(20,184,166,0.3)",
-    pulse: true,
-  },
 ];
 
 export default function StatsCards() {

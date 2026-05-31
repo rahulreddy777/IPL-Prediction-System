@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "./components/layout/Sidebar";
 import TopNavbar from "./components/layout/TopNavbar";
 import Prediction2026 from "./pages/Prediction2026";
-import LiveScores from "./components/LiveScores";
+
 import MatchesPage from "./pages/MatchesPage";
 import PointsTable from "./pages/PointsTable";
 import CaptainsPage from "./pages/CaptainsPage";
@@ -22,7 +22,7 @@ import AllTimeBatters from "./components/AllTimeBatters";
 import AllTimeBowlers from "./components/AllTimeBowlers";
 import AllSeasons from "./components/AllSeasons";
 import Venues from "./components/Venues";
-import IPLChatbot from "./components/IPLChatbot";
+
 import LiveFinalDashboard from "./components/LiveFinalDashboard";
 import { Users } from "lucide-react";
 
@@ -37,7 +37,6 @@ function App() {
   const TAB_MAP = {
     prediction2026: "prediction2026",
     ai: "ai",
-    livescores: "livescores",
     teams: "teams",
     captains2026: "captains2026",    // IPL Captains 2026
     points: "points",
@@ -56,7 +55,6 @@ function App() {
     purplecap: "bowlers",
     allseasons: "allseasons",
     venues: "venues",
-    chatbot: "chatbot",
     livefinal: "livefinal",
   };
 
@@ -67,7 +65,6 @@ function App() {
   const handleQuickAction = (id) => {
     const map = {
       ai: "ai",
-      live: "livescores",
       orangecap: "playerstats",   // ALL SEASONS button
       purplecap: "bowlers",       // ALL TIME BOWLERS button
     };
@@ -84,7 +81,8 @@ function App() {
         matches: "matches",
         winner2025: "champions",
         winners: "champions",
-        live: "livescores",
+        live: "prediction2026",
+
         h2h: "h2h",
         history: "history",
         records: "allseasons",
@@ -168,7 +166,7 @@ function App() {
               <PlayoffBracketLive />
             </div>
           )}
-          {activeTab === "livescores" && <LiveScores />}
+
           {activeTab === "matches" && <MatchesPage />}
           {activeTab === "points" && <PointsTable />}
           {activeTab === "captains2026" && <CaptainsPage />}
@@ -185,7 +183,6 @@ function App() {
           {activeTab === "bowlers" && <AllTimeBowlers />}
           {activeTab === "allseasons" && <AllSeasons />}
           {activeTab === "venues" && <Venues />}
-          {activeTab === "chatbot" && <IPLChatbot />}
           {activeTab === "livefinal" && <LiveFinalDashboard />}
         </main>
       </div>

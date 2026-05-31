@@ -208,7 +208,7 @@ export default function AgentDashboard() {
             </div>
           </div>
           <p className="ag-sub">
-            Rapid API result polling · Live scores &amp; toss via /api/live-intel (RapidAPI + cache) · ML accuracy tracking
+           ML result polling · Live scores from MongoDB cache · ML accuracy tracking
           </p>
         </div>
 
@@ -222,7 +222,7 @@ export default function AgentDashboard() {
             className={`ag-btn ${triggering ? "ag-btn--spin" : ""}`}
             onClick={triggerNow}
             disabled={triggering}
-            title="Force poll Rapid API now"
+            title="Force a manual poll now"
           >
             <Zap size={14} />
             {triggering ? "Polling…" : "Poll Now"}
@@ -391,7 +391,7 @@ export default function AgentDashboard() {
 
             <button className="ag-btn ag-btn--full" onClick={triggerNow} disabled={triggering}>
               <ChevronRight size={14} />
-              {triggering ? "Polling Rapid API…" : "Trigger Manual Poll"}
+              {triggering ? "Polling…" : "Trigger Manual Poll"}
             </button>
           </div>
         </div>

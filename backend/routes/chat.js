@@ -1,6 +1,6 @@
 const express = require("express");
 const router  = express.Router();
-const chat    = require("../services/aiAssistantService");
+const chat    = require("../services/chatService");
 
 
 /* POST /api/chat  { message: "..." } → { reply: "...", timestamp } */

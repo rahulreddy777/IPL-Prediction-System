@@ -29,14 +29,6 @@ const CARDS = [
     subtitle: "Complete IPL Roster",
     gradient: "linear-gradient(135deg, #7c3aed, #a855f7)",
     glow: "#a855f7"
-  },
-  {
-    id: "live",
-    title: "LIVE SCORE",
-    subtitle: "Real-Time Updates",
-    gradient: "linear-gradient(135deg, #ea580c, #f97316)",
-    glow: "#f97316",
-    pulse: true
   }
 ];
 

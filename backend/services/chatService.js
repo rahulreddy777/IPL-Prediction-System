@@ -3,7 +3,7 @@
  * No external LLM API key needed. All data from CricAPI + ML Agent.
  */
 const liveAgent    = require("./liveMatchAgent");
-const liveScores   = require("./liveScoreService");
+
 const path         = require("path");
 const fs           = require("fs");
 
@@ -72,63 +72,7 @@ async function handleLiveScore() {
   const stats = liveAgent.getStats();
   const upcoming = SCHEDULE.filter((s) => !results.find((r) => r.matchNumber === s.Match));
 
-  let ls = { data: [], provider: "offline", liveCount: 0 };
-  try {
-    ls = await liveScores.getLiveScores();
-  } catch {
-    /* offline */
-  }
-
-  const rows = ls.data || [];
-  const live = rows.filter(
-    (m) =>
-      m &&
-      m.source !== "schedule" &&
-      !m.matchEnded &&
-      (m.matchStarted ||
-        String(m.status || "")
-          .toLowerCase()
-          .includes("live"))
-  );
-
-  if (live.length > 0) {
-    const lines = live.map((m) => {
-      const toss =
-        m.tossWinner && m.tossChoice
-          ? `\n  🪙 **Toss:** ${m.tossWinner} elected to ${
-              m.tossChoice === "field" ? "field (chase)" : "bat first"
-            }`
-          : "";
-      const scores = (m.score || []).length
-        ? (m.score || [])
-            .map(
-              (s) => `  📊 **${s.inning}:** ${s.r}/${s.w} (${s.o} ov)`
-            )
-            .join("\n")
-        : `  📡 _Status:_ ${String(m.status || "").slice(0, 140)}`;
-      return `🔴 **${m.name}**${toss}\n${scores}\n📌 ${m.status}\n🔗 _Source:_ ${m.source || ls.provider}`;
-    });
-    return (
-      `🔴 **LIVE IPL — Right Now** (${ls.provider})\n\n` +
-      `${lines.join("\n\n")}\n\n` +
-      `_Live scores from MongoDB cache + WebSocket (no polling). API refresh manual only._`
-    );
-  }
-
-  const justFinished = rows.filter(
-    (m) => m.matchEnded && /won|win/i.test(String(m.status || ""))
-  );
   let reply = "";
-
-  if (justFinished.length > 0) {
-    reply += `🏁 **RECENT COMPLETE (from feed):**\n\n`;
-    for (const m of justFinished.slice(0, 2)) {
-      reply += `🏏 **${m.name}**\n🏆 ${m.status}\n\n`;
-    }
-  }
-
-  reply += `📡 **No IPL match is live in the feed right now.**\n`;
-  reply += `_(Provider: ${ls.provider})_\n\n`;
 
   if (results.length > 0) {
     const latest = [...results].reverse().slice(0, 3);
@@ -146,6 +90,8 @@ async function handleLiveScore() {
     reply += `🤖 ML Accuracy: **${stats.accuracyPct}%** (${stats.correctPredictions}/${
       stats.withPrediction || stats.totalCompleted
     })\n\n`;
+  } else {
+    reply += `📡 **No stored match results yet for IPL 2026.**\n\n`;
   }
 
   if (upcoming.length > 0) {
