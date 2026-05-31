@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Users, User, Search, X } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_URL;
 
 const TEAM_COLORS = {
   CSK: '#F9CD05', MI: '#004BA0', KKR: '#3A225D', GT: '#1C8CBF',

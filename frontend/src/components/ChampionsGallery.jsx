@@ -10,7 +10,7 @@ const ChampionsGallery = () => {
   useEffect(() => {
     const fetchWinners = async () => {
       try {
-        const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const API = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
         const response = await axios.get(`${API}/api/winners`);
         const sortedWinners = response.data.sort((a, b) => parseInt(b.Season) - parseInt(a.Season));
         setWinners(sortedWinners);
@@ -56,7 +56,7 @@ const ChampionsGallery = () => {
       }}>
         {winners.map((winner) => {
           const color = getTeamColor(winner.Winner);
-          const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+          const API = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
           const ext = winner.Season == 2014 ? 'jpg' : 'png';
           const winnerImageUrl = `${API}/data/winners/${winner.Season}.${ext}`;
 

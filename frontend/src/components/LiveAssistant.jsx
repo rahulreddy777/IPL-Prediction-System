@@ -59,7 +59,7 @@ export default function LiveAssistant() {
   const connectSSE = useCallback(() => {
     if (sseRef.current) sseRef.current.close();
     try {
-      const es = new EventSource('http://localhost:5000/api/live-intel/stream');
+      const es = new EventSource(`${import.meta.env.VITE_API_URL}/api/live-intel/stream`);
       sseRef.current = es;
 
       es.onopen = () => {
@@ -78,7 +78,7 @@ export default function LiveAssistant() {
           } else if (data.type === 'result') {
             addLog(`✅ RESULT: ${data.result?.winner} won Match ${data.result?.matchNumber}`, 'result');
             setLastMsg(`🏆 ${data.result?.winner} won! ${data.result?.margin || ''}`);
-            fetch('http://localhost:5000/api/live-intel').then(r=>r.json()).then(setLiveData).catch(()=>{});
+            fetch(`${import.meta.env.VITE_API_URL}/api/live-intel`).then(r=>r.json()).then(setLiveData).catch(()=>{});
           } else if (data.type === 'live-score') {
             if (data.cleared) {
               setLiveData(prev => prev ? { ...prev, currentLive: null } : prev);
@@ -112,7 +112,7 @@ export default function LiveAssistant() {
 
   // Fetch once on mount, then connect SSE
   useEffect(() => {
-    fetch('http://localhost:5000/api/live-intel')
+    fetch(`${import.meta.env.VITE_API_URL}/api/live-intel`)
       .then(r => r.json())
       .then(d => { setLiveData(d); addLog('✅ Initial data loaded', 'success'); })
       .catch(() => addLog('⚠️ Backend offline — check localhost:5000', 'warn'));
@@ -126,7 +126,7 @@ export default function LiveAssistant() {
     if (!tossForm.tossWinner || !tossForm.tossChoice) return;
     setSubmitting(true);
     try {
-      const r = await fetch('http://localhost:5000/api/live-intel/toss', {
+      const r = await fetch(`${import.meta.env.VITE_API_URL}/api/live-intel/toss`, {
         method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(tossForm),
       });
       const d = await r.json();
@@ -143,13 +143,13 @@ export default function LiveAssistant() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const r = await fetch('http://localhost:5000/api/live-intel/result', {
+      const r = await fetch(`${import.meta.env.VITE_API_URL}/api/live-intel/result`, {
         method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(resultForm),
       });
       const d = await r.json();
       if (d.success) {
         addLog(`✅ RESULT saved: ${d.result.winner} won M${d.result.matchNumber}`, 'result');
-        fetch('http://localhost:5000/api/live-intel').then(r=>r.json()).then(setLiveData).catch(()=>{});
+        fetch(`${import.meta.env.VITE_API_URL}/api/live-intel`).then(r=>r.json()).then(setLiveData).catch(()=>{});
         setActiveTab('history');
       }
     } catch { addLog('❌ Result POST failed', 'error'); }
@@ -160,7 +160,7 @@ export default function LiveAssistant() {
     e.preventDefault();
     setSubmitting(true);
     try {
-      const r = await fetch('http://localhost:5000/api/live-intel/live-score', {
+      const r = await fetch(`${import.meta.env.VITE_API_URL}/api/live-intel/live-score`, {
         method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(scoreForm),
       });
       const d = await r.json();
@@ -198,7 +198,7 @@ export default function LiveAssistant() {
 
   async function clearLive() {
     try {
-      await fetch('http://localhost:5000/api/live-intel/clear-live', { method:'POST' });
+      await fetch(`${import.meta.env.VITE_API_URL}/api/live-intel/clear-live`, { method:'POST' });
       setLiveData(prev => prev ? { ...prev, currentLive: null } : prev);
       addLog('🔴 Live match card cleared', 'info');
       showToast('Live match cleared', 'info');

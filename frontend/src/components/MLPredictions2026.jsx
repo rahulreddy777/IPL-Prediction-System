@@ -274,7 +274,7 @@ export default function MLPredictions2026({ onClose }) {
   // ── Check status on mount ─────────────────────────────────────────────────
   const checkStatus = useCallback(async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/ml2026/status');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ml2026/status`);
       const data = await res.json();
       setStatus(data);
       return data;
@@ -288,7 +288,7 @@ export default function MLPredictions2026({ onClose }) {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('http://localhost:5000/api/ml2026/predictions');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ml2026/predictions`);
       const data = await res.json();
       if (data.success) {
         setPredictions(data.predictions || []);
@@ -330,7 +330,7 @@ export default function MLPredictions2026({ onClose }) {
     }, 8000);
 
     try {
-      const res = await fetch('http://localhost:5000/api/ml2026/run-pipeline', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ml2026/run-pipeline`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       });

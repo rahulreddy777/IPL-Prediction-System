@@ -2,7 +2,7 @@
  * socket.js — Singleton WebSocket connection
  * Dispatches custom DOM events so any component can react without coupling.
  */
-const socket = new WebSocket("ws://localhost:5000/ws")
+const socket = new WebSocket(`${import.meta.env.VITE_WS_URL}`)
 
 socket.onopen = () => {
   console.log("[WS CONNECTED]")

@@ -12,7 +12,7 @@ export const teamsData = [
       name: 'Ruturaj Gaikwad',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 19, won: 8, lost: 11, winPct: '42.11%' },
-      image: 'http://localhost:5000/data/captains/ruthuraj  gaikwad CSK.png'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/ruthuraj  gaikwad CSK.png`
     }
   },
   {
@@ -28,7 +28,7 @@ export const teamsData = [
       name: 'Hardik Pandya',
       role: 'Captain • All-rounder',
       captainStats: { matches: 60, won: 35, lost: 25, winPct: '58.33%' },
-      image: 'http://localhost:5000/data/captains/hardik pandya MI.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/hardik pandya MI.jpg`
     }
   },
   {
@@ -44,7 +44,7 @@ export const teamsData = [
       name: 'Ajinkya Rahane',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 38, won: 14, lost: 23, winPct: '36.84%' },
-      image: 'http://localhost:5000/data/captains/ajinkya rahane KKR.jpeg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/ajinkya rahane KKR.jpeg`
     }
   },
   {
@@ -60,7 +60,7 @@ export const teamsData = [
       name: 'Riyan Parag',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 8, won: 2, lost: 6, winPct: '25.00%' },
-      image: 'http://localhost:5000/data/captains/Riyan parag 💗.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/Riyan parag 💗.jpg`
     }
   },
   {
@@ -76,7 +76,7 @@ export const teamsData = [
       name: 'Rajat Patidar',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 15, won: 11, lost: 4, winPct: '73.33%' },
-      image: 'http://localhost:5000/data/captains/rajat patidar RCB.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/rajat patidar RCB.jpg`
     }
   },
   {
@@ -92,7 +92,7 @@ export const teamsData = [
       name: 'Axar Patel',
       role: 'Captain • All-rounder',
       captainStats: { matches: 13, won: 5, lost: 6, winPct: '38.46%' },
-      image: 'http://localhost:5000/data/captains/Axar-Patel DC.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/Axar-Patel DC.jpg`
     }
   },
   {
@@ -108,7 +108,7 @@ export const teamsData = [
       name: 'Ishan Kishan (Interim)',
       role: 'Captain • WK-Batter',
       captainStats: { matches: 0, won: 0, lost: 0, winPct: '0.00%' },
-      image: 'http://localhost:5000/data/captains/pat cummins.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/pat cummins.jpg`
     }
   },
   {
@@ -124,7 +124,7 @@ export const teamsData = [
       name: 'Shubman Gill',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 27, won: 14, lost: 13, winPct: '51.85%' },
-      image: 'http://localhost:5000/data/captains/Shubman gill  GT.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/Shubman gill  GT.jpg`
     }
   },
   {
@@ -140,7 +140,7 @@ export const teamsData = [
       name: 'Shreyas Iyer',
       role: 'Captain • Right-hand Bat',
       captainStats: { matches: 87, won: 48, lost: 35, winPct: '55.17%' },
-      image: 'http://localhost:5000/data/captains/shreyas iyer PBKS.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/shreyas iyer PBKS.jpg`
     }
   },
   {
@@ -156,7 +156,7 @@ export const teamsData = [
       name: 'Rishabh Pant',
       role: 'Captain • WK-Batter',
       captainStats: { matches: 59, won: 29, lost: 27, winPct: '49.15%' },
-      image: 'http://localhost:5000/data/captains/Rishab pant LSG.jpg'
+      image: `${import.meta.env.VITE_API_URL}/data/captains/Rishab pant LSG.jpg`
     }
   }
 ];

@@ -1135,7 +1135,7 @@ export default function Predictions2026() {
       setFreshLoading(true);
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 4000);
-      const response = await fetch('http://localhost:5000/api/fresh-predictions', { signal: controller.signal });
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/fresh-predictions`, { signal: controller.signal });
       clearTimeout(timer);
       if (!response.ok) return; // silent fail — ALL_74 already loaded
       const data = await response.json();
@@ -1157,7 +1157,7 @@ export default function Predictions2026() {
       setFreshLoading(true);
       console.log('[Frontend] Generating fresh ML predictions...');
       
-      const response = await fetch('http://localhost:5000/api/fresh-predictions/generate-fresh', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/fresh-predictions/generate-fresh`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       });
@@ -1235,7 +1235,7 @@ export default function Predictions2026() {
     const fetchAllMatches = async () => {
       try {
         setLoading(true);
-        const resp = await fetch('http://localhost:5000/api/matches2026');
+        const resp = await fetch(`${import.meta.env.VITE_API_URL}/api/matches2026`);
         if (!resp.ok) throw new Error('Failed to load matches');
         
         const allMatches = await resp.json();
@@ -1819,7 +1819,7 @@ export default function Predictions2026() {
           <div style={{ textAlign: 'center', padding: '60px 0', color: '#f87171' }}>
             <div style={{ fontSize: '36px', marginBottom: '12px' }}>⚠️</div>
             <div style={{ fontWeight: 700 }}>{error}</div>
-            <div style={{ fontSize: '12px', color: '#64748b', marginTop: '8px' }}>Make sure the backend is running on http://localhost:5000</div>
+            <div style={{ fontSize: '12px', color: '#64748b', marginTop: '8px' }}>Make sure the backend is running on ${import.meta.env.VITE_API_URL}</div>
           </div>
         )}
 

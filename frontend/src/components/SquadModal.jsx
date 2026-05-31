@@ -26,7 +26,7 @@ const SquadModal = ({ team, onClose }) => {
         setSearchQuery('');
         setSelectedPlayer(null);
         // Hit the new MongoDB-integrated API
-        const response = await axios.get(`http://localhost:5000/api/teams/${teamId}/players`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/teams/${teamId}/players`);
         const data = response.data?.players || [];
         setTeamSquad(data);
       } catch (err) {

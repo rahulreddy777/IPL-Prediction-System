@@ -17,7 +17,7 @@ ChartJS.register(
   CategoryScale, LinearScale, BarElement
 );
 
-const API = (import.meta.env.VITE_API_URL || 'http://localhost:5000') + '/api/final-prediction/rcb-vs-gt';
+const API = (import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`) + '/api/final-prediction/rcb-vs-gt';
 const RCB_C = '#D4101A';
 const GT_C  = '#1B6CA8';
 const GOLD  = '#F59E0B';

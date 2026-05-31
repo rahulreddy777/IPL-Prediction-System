@@ -5,7 +5,7 @@ import TeamHistoryModal from '../components/TeamHistoryModal';
 import { History, Target, Shield, MapPin, Users } from 'lucide-react';
 import './TeamHistory.css';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
 
 export default function TeamHistory() {
   const [historyData, setHistoryData] = useState([]);

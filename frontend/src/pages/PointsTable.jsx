@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import TeamLogo from '../components/common/TeamLogo';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
 
 const teamMeta = {
   RCB:  { name: 'Royal Challengers Bengaluru', border: '#c0392b' },

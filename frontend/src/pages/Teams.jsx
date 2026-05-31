@@ -13,7 +13,7 @@ export default function Teams() {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/teams");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/teams`);
         setTeams(res.data);
       } catch (err) {
         console.error("Failed to fetch teams:", err);
@@ -57,7 +57,7 @@ export default function Teams() {
                   ...team,
                   id: team.shortName?.toLowerCase(), // Map MongoDB structure to what TeamCard expects
                   logo: team.logoUrl || `/teams/${team.shortName?.toLowerCase()}.jpg`,
-                  captain: typeof team.captain === 'object' ? team.captain : (mockTeam.captain || { name: team.captain, image: `http://localhost:5000/data/captains/${team.captain}.jpg` }),
+                  captain: typeof team.captain === 'object' ? team.captain : (mockTeam.captain || { name: team.captain, image: `${import.meta.env.VITE_API_URL}/data/captains/${team.captain}.jpg` }),
                   titles: team.championshipWins?.length || 0,
                   color: mockTeam.color || '#facc15'
                 }}

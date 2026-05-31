@@ -175,7 +175,7 @@ export default function InjuryTracker() {
   // Try fetching from the backend (non-blocking fallback)
   useEffect(() => {
     setApiStatus('loading');
-    fetch('http://localhost:5000/api/injury')
+    fetch(`${import.meta.env.VITE_API_URL}/api/injury`)
       .then(r => r.json())
       .then(d => {
         if (d.success && Array.isArray(d.injured)) {

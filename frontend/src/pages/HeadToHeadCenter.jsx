@@ -4,7 +4,7 @@ import TeamLogo from '../components/common/TeamLogo';
 import { Swords, Activity, Crosshair, BarChart2 } from 'lucide-react';
 import './HeadToHeadCenter.css';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
 
 const TEAMS = ['CSK', 'DC', 'GT', 'KKR', 'LSG', 'MI', 'PBKS', 'RCB', 'RR', 'SRH'];
 

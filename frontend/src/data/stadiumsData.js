@@ -8,7 +8,7 @@ export const stadiumsData = [
     chase: "53%",
     soil: "Black Soil",
     tip: "True bounce early, can grip later for spinners under lights",
-    image: "http://localhost:5000/data/stadiums/Rajiv%20Gandhi%20International%20Cricket%20Stadium,hyderabad.png"
+    image: `${import.meta.env.VITE_API_URL}/data/stadiums/Rajiv%20Gandhi%20International%20Cricket%20Stadium,hyderabad.png`
   },
   {
     tierName: "BATTING PARADISE",
@@ -41,7 +41,7 @@ export const stadiumsData = [
     chase: "52%",
     soil: "Black/Red Mix",
     tip: "Belter pitch - T20WC 2026 avg score 218",
-    image: "http://localhost:5000/data/stadiums/Narendra%20Modi,%20Ahmedabad.png"
+    image: `${import.meta.env.VITE_API_URL}/data/stadiums/Narendra%20Modi,%20Ahmedabad.png`
   },
   {
     tierName: "BATTING PARADISE",

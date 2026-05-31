@@ -6,7 +6,7 @@ import PlayoffCard from "./PlayoffCard";
 import { fetchPlayoffBracket } from "../../services/LiveResultService";
 import "./PlayoffEngine.css";
 
-const WS_URL = import.meta.env.VITE_WS_URL || "ws://localhost:5000/ws";
+const WS_URL = import.meta.env.VITE_WS_URL || `${import.meta.env.VITE_WS_URL}`;
 const REFRESH_MS = 15000;
 
 function TeamBadge({ team, status }) {

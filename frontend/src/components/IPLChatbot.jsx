@@ -82,7 +82,7 @@ export default function IPLChatbot() {
   useEffect(() => {
     const check = async () => {
       try {
-        const r = await fetch('http://localhost:5000/api/live-scores');
+        const r = await fetch(`${import.meta.env.VITE_API_URL}/api/live-scores`);
         const j = await r.json();
         const live = (j.data || []).filter(m => m.matchStarted && !m.matchEnded);
         setLiveCount(live.length);
@@ -102,7 +102,7 @@ export default function IPLChatbot() {
     setLoading(true);
 
     try {
-      const res  = await fetch('http://localhost:5000/api/chat', {
+      const res  = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: msg }),

@@ -119,7 +119,7 @@ export default function AgentDashboard() {
   /* ── HTTP fetch ── */
   const fetchData = useCallback(async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/agent/results");
+      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/agent/results`);
       setResults(data.results || []);
       setStats(data.stats   || null);
       setLastUpdate(new Date());
@@ -133,7 +133,7 @@ export default function AgentDashboard() {
 
   const fetchLiveIntel = useCallback(async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/live-intel");
+      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/live-intel`);
       setLiveIntel(data);
     } catch { /* optional */ }
   }, []);
@@ -145,7 +145,7 @@ export default function AgentDashboard() {
     const li = setInterval(fetchLiveIntel, 45000);
 
     // Connect SSE
-    const es = new EventSource("http://localhost:5000/api/agent/stream");
+    const es = new EventSource(`${import.meta.env.VITE_API_URL}/api/agent/stream`);
     sseRef.current = es;
     setSseStatus("connecting");
 
@@ -175,7 +175,7 @@ export default function AgentDashboard() {
   const triggerNow = async () => {
     setTriggering(true);
     try {
-      const { data } = await axios.post("http://localhost:5000/api/agent/trigger");
+      const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/api/agent/trigger`);
       setResults(data.results || []);
       setStats(data.stats   || null);
       setLastUpdate(new Date());

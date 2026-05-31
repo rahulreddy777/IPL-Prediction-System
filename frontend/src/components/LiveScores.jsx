@@ -6,7 +6,7 @@
  * Data flow:
  *  GET /api/live-scores      → reads MongoDB cache (fast, safe, no quota hit)
  *  POST /api/live-scores/refresh → triggers a fresh CricAPI fetch + re-cache
- *  ws://localhost:5000/ws    → real-time push events (LIVE_SCORE_UPDATE etc.)
+ *  ${import.meta.env.VITE_WS_URL}    → real-time push events (LIVE_SCORE_UPDATE etc.)
  *
  * Auto-polling: every 30 seconds (GET cache only, no API quota used)
  * Manual refresh: POST refresh button (uses 1 CricAPI hit)
@@ -18,8 +18,8 @@ import TeamLogo from "./common/TeamLogo";
 import "./LiveScores.css";
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const API_URL      = import.meta.env.VITE_API_URL || "http://localhost:5000";
-const WS_URL       = import.meta.env.VITE_WS_URL  || "ws://localhost:5000/ws";
+const API_URL      = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
+const WS_URL       = import.meta.env.VITE_WS_URL  || `${import.meta.env.VITE_WS_URL}`;
 const POLL_MS      = 30_000; // 30 seconds — cache-only, safe
 
 const TEAM_COLORS = {

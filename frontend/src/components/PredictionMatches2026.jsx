@@ -10,8 +10,8 @@ import axios from "axios";
 import TeamLogo from "./common/TeamLogo";
 import "./PredictionMatches2026.css";
 
-const API    = import.meta.env.VITE_API_URL || "http://localhost:5000";
-const WS_URL = import.meta.env.VITE_WS_URL  || "ws://localhost:5000/ws";
+const API    = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
+const WS_URL = import.meta.env.VITE_WS_URL  || `${import.meta.env.VITE_WS_URL}`;
 
 // ── Static maps ───────────────────────────────────────────────────────────────
 const TEAM_COLORS = {
