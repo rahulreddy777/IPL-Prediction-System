@@ -1,6 +1,7 @@
 const express = require("express");
 const router  = express.Router();
-const chat    = require("../services/chatService");
+const chat    = require("../services/aiAssistantService");
+
 
 /* POST /api/chat  { message: "..." } → { reply: "...", timestamp } */
 router.post("/", async (req, res) => {

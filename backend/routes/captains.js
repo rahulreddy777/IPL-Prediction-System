@@ -3,10 +3,10 @@
  * Reads MongoDB capatin_stats_2026 → normalizes fields for CaptainsPage
  * Falls back to captains.json on any error.
  */
-const express          = require("express");
-const router           = express.Router();
-const path             = require("path");
-const fs               = require("fs");
+const express = require("express");
+const router = express.Router();
+const path = require("path");
+const fs = require("fs");
 const { predictionDB } = require("../config/db");
 
 const FALLBACK = JSON.parse(
@@ -18,7 +18,7 @@ function extractTeamCode(franchise) {
   const m = String(franchise || "").match(/\(([A-Z]+)\)\s*$/);
   if (m) return m[1];
   // Try plain codes
-  const codes = ["CSK","MI","RCB","KKR","GT","SRH","DC","RR","PBKS","LSG"];
+  const codes = ["CSK", "MI", "RCB", "KKR", "GT", "SRH", "DC", "RR", "PBKS", "LSG"];
   for (const c of codes) {
     if (String(franchise || "").toUpperCase().includes(c)) return c;
   }
@@ -29,17 +29,17 @@ function extractTeamCode(franchise) {
 function normalize(c) {
   const teamCode = c.team_code || extractTeamCode(c.franchise);
   return {
-    team_code:        teamCode,
-    captain:          c.captain || c.captainName || c.name || "—",
-    franchise:        c.franchise || teamCode,
-    role:             c.role || "Captain",
+    team_code: teamCode,
+    captain: c.captain || c.captainName || c.name || "—",
+    franchise: c.franchise || teamCode,
+    role: c.role || "Captain",
     appointment_type: c.appointment_type || "Confirmed",
-    matches:          c.matches ?? c.played ?? null,
-    won:              c.won ?? c.wins ?? null,
-    lost:             c.lost ?? c.losses ?? null,
-    win_percentage:   c.win_percentage ?? c.winPercentage ?? null,
-    titles_won:       c.titles_won ?? c.titlesWon ?? 0,
-    experience:       c.experience || "",
+    matches: c.matches ?? c.played ?? null,
+    won: c.won ?? c.wins ?? null,
+    lost: c.lost ?? c.losses ?? null,
+    win_percentage: c.win_percentage ?? c.winPercentage ?? null,
+    titles_won: c.titles_won ?? c.titlesWon ?? 0,
+    experience: c.experience || "",
   };
 }
 
@@ -47,7 +47,7 @@ function normalize(c) {
 router.get("/", async (req, res) => {
   try {
     let docs = await predictionDB.collection("captain_stats_2026").find({}).toArray();
-    
+
     if (!docs || docs.length === 0) {
       docs = await predictionDB.collection("capatin_stats_2026").find({}).toArray();
     }

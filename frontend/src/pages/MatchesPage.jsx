@@ -66,11 +66,10 @@ function OrangeCapTab() {
   useEffect(() => {
     const fetch_ = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/api/all-seasons-caps`);
-        const sorted = (Array.isArray(res.data) ? res.data : []).sort((a,b) => b.Season - a.Season);
-        setCaps(sorted);
+        const res = await axios.get(`${API_BASE}/api/orange-cap`);
+        setCaps(Array.isArray(res.data) ? res.data : []);
       } catch {
-        setError("Could not fetch Orange Cap data.");
+        setError("Could not fetch Batting stats.");
       } finally {
         setLoading(false);
       }
@@ -78,7 +77,7 @@ function OrangeCapTab() {
     fetch_();
   }, []);
 
-  if (loading) return <Spinner color="#f97316" label="Fetching Orange Caps from MongoDB…" />;
+  if (loading) return <Spinner color="#f97316" label="Fetching 2026 Batting Stats…" />;
   if (error) return <ErrorBox msg={error} />;
 
   return (
@@ -86,10 +85,10 @@ function OrangeCapTab() {
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr style={{ background: "linear-gradient(90deg,rgba(234,88,12,0.2),rgba(249,115,22,0.1))" }}>
-            {["Season", "Player (Team)", "Runs"].map((h, i) => (
+            {["Player", "Matches", "Runs", "Average", "Strike Rate"].map((h, i) => (
               <th key={h} style={{
                 padding: "16px",
-                textAlign: i === 2 ? "center" : "left",
+                textAlign: "center",
                 fontSize: "12px", fontWeight: "800", letterSpacing: "0.1em",
                 color: "#fb923c", textTransform: "uppercase",
               }}>{h}</th>
@@ -103,21 +102,23 @@ function OrangeCapTab() {
               onMouseEnter={e => e.currentTarget.style.background = "rgba(249,115,22,0.06)"}
               onMouseLeave={e => e.currentTarget.style.background = "transparent"}
             >
-              <td style={{ padding: "16px", color: "#60a5fa", fontWeight: "800", fontSize: "15px" }}>{c.Season}</td>
-              <td style={{ padding: "16px", color: "#f1f5f9", fontWeight: "700", fontSize: "15px" }}>{c.OrangeCap}</td>
+              <td style={{ padding: "16px", color: "#f1f5f9", fontWeight: "700", fontSize: "15px", textAlign: "center" }}>{c.player}</td>
+              <td style={{ padding: "16px", color: "#94a3b8", fontWeight: "600", fontSize: "14px", textAlign: "center" }}>{c.matches || "—"}</td>
               <td style={{ padding: "16px", textAlign: "center" }}>
                 <span style={{
                   background: "rgba(249,115,22,0.15)", border: "1px solid rgba(249,115,22,0.4)",
                   color: "#fb923c", fontWeight: "900", fontSize: "16px",
                   borderRadius: "8px", padding: "4px 14px", display: "inline-block",
-                }}>{c.Runs}</span>
+                }}>{c.runs || 0}</span>
               </td>
+              <td style={{ padding: "16px", color: "#38bdf8", fontWeight: "700", fontSize: "14px", textAlign: "center" }}>{c.average || "—"}</td>
+              <td style={{ padding: "16px", color: "#34d399", fontWeight: "700", fontSize: "14px", textAlign: "center" }}>{c.strikeRate || "—"}</td>
             </tr>
           ))}
         </tbody>
       </table>
       <div style={{ padding: "10px 16px", fontSize: "10px", color: "#334155", letterSpacing: "0.08em", textAlign: "center" }}>
-        DATA: MongoDB `all_seasons_caps` · {caps.length} SEASONS
+        DATA: MongoDB `batting_stats_2026` · {caps.length} PLAYERS
       </div>
     </div>
   );
@@ -132,11 +133,10 @@ function PurpleCapTab() {
   useEffect(() => {
     const fetch_ = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/api/all-seasons-caps`);
-        const sorted = (Array.isArray(res.data) ? res.data : []).sort((a,b) => b.Season - a.Season);
-        setCaps(sorted);
+        const res = await axios.get(`${API_BASE}/api/purple-cap`);
+        setCaps(Array.isArray(res.data) ? res.data : []);
       } catch {
-        setError("Could not fetch Purple Cap data.");
+        setError("Could not fetch Bowling stats.");
       } finally {
         setLoading(false);
       }
@@ -144,7 +144,7 @@ function PurpleCapTab() {
     fetch_();
   }, []);
 
-  if (loading) return <Spinner color="#a855f7" label="Fetching Purple Caps from MongoDB…" />;
+  if (loading) return <Spinner color="#a855f7" label="Fetching 2026 Bowling Stats…" />;
   if (error) return <ErrorBox msg={error} />;
 
   return (
@@ -152,10 +152,10 @@ function PurpleCapTab() {
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr style={{ background: "linear-gradient(90deg,rgba(124,58,237,0.2),rgba(168,85,247,0.1))" }}>
-            {["Season", "Player (Team)", "Wickets"].map((h, i) => (
+            {["Player", "Matches", "Wickets", "Average", "Economy", "Strike Rate"].map((h, i) => (
               <th key={h} style={{
                 padding: "16px",
-                textAlign: i === 2 ? "center" : "left",
+                textAlign: "center",
                 fontSize: "12px", fontWeight: "800", letterSpacing: "0.1em",
                 color: "#c084fc", textTransform: "uppercase",
               }}>{h}</th>
@@ -163,27 +163,32 @@ function PurpleCapTab() {
           </tr>
         </thead>
         <tbody>
-          {caps.map((c, idx) => (
+          {caps.map((c, idx) => {
+            const economy = c.overs && c.runsConceded ? (c.runsConceded / c.overs).toFixed(2) : "—";
+            return (
             <tr key={idx}
               style={{ borderBottom: "1px solid rgba(255,255,255,0.04)", transition: "background 0.15s" }}
               onMouseEnter={e => e.currentTarget.style.background = "rgba(168,85,247,0.06)"}
               onMouseLeave={e => e.currentTarget.style.background = "transparent"}
             >
-              <td style={{ padding: "16px", color: "#60a5fa", fontWeight: "800", fontSize: "15px" }}>{c.Season}</td>
-              <td style={{ padding: "16px", color: "#f1f5f9", fontWeight: "700", fontSize: "15px" }}>{c.PurpleCap}</td>
+              <td style={{ padding: "16px", color: "#f1f5f9", fontWeight: "700", fontSize: "15px", textAlign: "center" }}>{c.player}</td>
+              <td style={{ padding: "16px", color: "#94a3b8", fontWeight: "600", fontSize: "14px", textAlign: "center" }}>{c.matches || "—"}</td>
               <td style={{ padding: "16px", textAlign: "center" }}>
                 <span style={{
                   background: "rgba(168,85,247,0.15)", border: "1px solid rgba(168,85,247,0.4)",
                   color: "#c084fc", fontWeight: "900", fontSize: "16px",
                   borderRadius: "8px", padding: "4px 14px", display: "inline-block",
-                }}>{c.Wickets}</span>
+                }}>{c.wickets || 0}</span>
               </td>
+              <td style={{ padding: "16px", color: "#38bdf8", fontWeight: "700", fontSize: "14px", textAlign: "center" }}>{c.average || "—"}</td>
+              <td style={{ padding: "16px", color: "#facc15", fontWeight: "700", fontSize: "14px", textAlign: "center" }}>{economy}</td>
+              <td style={{ padding: "16px", color: "#fb923c", fontWeight: "700", fontSize: "14px", textAlign: "center" }}>{c.strikeRate || "—"}</td>
             </tr>
-          ))}
+          )})}
         </tbody>
       </table>
       <div style={{ padding: "10px 16px", fontSize: "10px", color: "#334155", letterSpacing: "0.08em", textAlign: "center" }}>
-        DATA: MongoDB `all_seasons_caps` · {caps.length} SEASONS
+        DATA: MongoDB `bowling_stats_2026` · {caps.length} PLAYERS
       </div>
     </div>
   );
@@ -518,9 +523,9 @@ function SearchBar({ value, onChange, placeholder, style = {} }) {
 
 /* ─────────────────────── Main Page ─────────────────────── */
 const TABS = [
-  { id: "matches",    label: "🗓️ All Matches",        color: "#7c3aed" },
-  { id: "orangecap",  label: "🟠 Orange Cap (2008-2025)", color: "#f97316" },
-  { id: "purplecap",  label: "🟣 Purple Cap (2008-2025)", color: "#a855f7" },
+  { id: "matches",    label: "🗓️ All Matches", color: "#3b82f6" },
+  { id: "orangecap",  label: "🟠 2026 Batting Stats", color: "#f97316" },
+  { id: "purplecap",  label: "🟣 2026 Bowling Stats", color: "#a855f7" },
 ];
 
 export default function MatchesPage() {

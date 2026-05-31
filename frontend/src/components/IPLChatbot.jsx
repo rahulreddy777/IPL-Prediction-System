@@ -1,22 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Bot, Send, User, Sparkles, AlertCircle, RefreshCw } from 'lucide-react';
 
-const QUICK_ACTIONS = [
-  { label: '🔴 Live Score',     msg: 'live score'             },
-  { label: '🪙 Toss',           msg: 'who won the toss'       },
-  { label: '📅 Next Match',     msg: 'next match'             },
-  { label: '📊 Results',        msg: 'match results'          },
-  { label: '🤖 ML Accuracy',    msg: 'prediction accuracy'    },
-  { label: '💪 Best Team',      msg: 'who will win IPL 2026'  },
-  { label: '🏏 MI Squad',       msg: 'tell me about MI'       },
-  { label: '👑 Predict M6',     msg: 'predict match 6'        },
-  { label: '❓ Help',           msg: 'help'                   },
+const SUGGESTED_QUESTIONS = [
+  "Who will win IPL 2026?",
+  "Predict RCB vs GT",
+  "Top batsmen this season",
+  "Playoff qualification chances",
+  "Best bowling attack",
+  "Orange Cap contenders",
+  "Head to head CSK vs MI"
 ];
-
-const TEAM_COLORS = {
-  CSK:'#F9CD05', MI:'#1E90FF', KKR:'#7B2FBE', RR:'#EA1A85',
-  RCB:'#D4101A', DC:'#0057A8', SRH:'#F26522', GT:'#00B4D8',
-  PBKS:'#DD1F2D', LSG:'#00BFFF'
-};
 
 /* Render markdown-lite: **bold**, bullet points */
 function renderMarkdown(text = '') {
@@ -24,35 +17,56 @@ function renderMarkdown(text = '') {
   return lines.map((line, i) => {
     // Bold
     const parts = line.split(/\*\*(.*?)\*\*/g);
-    const rich = parts.map((p, j) => j % 2 === 1 ? <strong key={j}>{p}</strong> : p);
+    const rich = parts.map((p, j) => j % 2 === 1 ? <strong key={j} style={{color: '#f8fafc'}}>{p}</strong> : p);
 
     // Bullet indented line
-    const isBullet = line.startsWith('•') || line.startsWith('-') || line.startsWith('*');
-    // Header-like (emoji line)
+    const isBullet = line.trim().startsWith('-') || line.trim().startsWith('*');
+    // Header-like (starts with [ or is all caps without much punctuation)
+    const isHeader = line.startsWith('[') && line.endsWith(']');
     const isEmpty = line.trim() === '';
 
-    if (isEmpty) return <div key={i} style={{ height: '6px' }} />;
+    if (isEmpty) return <div key={i} style={{ height: '8px' }} />;
+    
+    if (isHeader) {
+      return (
+        <div key={i} style={{ 
+          fontSize: '13px', 
+          fontWeight: '800', 
+          color: '#fbbf24', 
+          marginTop: '12px', 
+          marginBottom: '4px',
+          letterSpacing: '0.5px'
+        }}>
+          {rich}
+        </div>
+      );
+    }
+
     return (
       <div key={i} style={{
-        paddingLeft: isBullet ? '8px' : '0',
-        lineHeight: '1.55',
-        marginBottom: '1px',
+        paddingLeft: isBullet ? '12px' : '0',
+        display: 'flex',
+        gap: isBullet ? '8px' : '0',
+        lineHeight: '1.6',
+        marginBottom: '4px',
+        color: '#cbd5e1'
       }}>
-        {rich}
+        {isBullet && <span style={{ color: '#fbbf24', flexShrink: 0 }}>•</span>}
+        <div style={{ flex: 1 }}>{rich}</div>
       </div>
     );
   });
 }
 
-/* Typing indicator dots */
-function TypingDots() {
+function TypingIndicator() {
   return (
-    <div style={{ display: 'flex', gap: '5px', alignItems: 'center', padding: '4px 0' }}>
+    <div style={{ display: 'flex', gap: '4px', alignItems: 'center', padding: '12px 16px', background: '#1e293b', borderRadius: '12px', width: 'fit-content' }}>
+      <Bot size={16} color="#fbbf24" style={{ marginRight: '8px' }} />
       {[0, 1, 2].map(i => (
         <div key={i} style={{
-          width: '8px', height: '8px', borderRadius: '50%',
-          background: '#f59e0b',
-          animation: `typingBounce 1.2s ${i * 0.2}s ease-in-out infinite`,
+          width: '6px', height: '6px', borderRadius: '50%',
+          background: '#fbbf24',
+          animation: `typingBounce 1s ${i * 0.2}s infinite`,
         }} />
       ))}
     </div>
@@ -63,35 +77,19 @@ export default function IPLChatbot() {
   const [messages, setMessages] = useState([
     {
       role: 'bot',
-      text: "👋 **Hey Cricket Fan!** I'm your **IPL 2026 AI Assistant!**\n\nI use the **live score API** (RapidAPI) + **CricAPI agent cache**, **auto toss** parsing, and **ML predictions**. Ask me anything!\n\n🏏 Try: *live score*, *toss*, *next match*, *predict match 6*, or *help*",
+      text: "👋 **Welcome to the IPL 2026 AI Assistant!**\n\nI am powered by a live connection to the MongoDB Atlas database and an advanced AI engine. Ask me anything about current stats, match predictions, head-to-head records, or team analysis!",
       ts: new Date().toISOString(),
     }
   ]);
-  const [input, setInput]         = useState('');
-  const [loading, setLoading]     = useState(false);
-  const [liveCount, setLiveCount] = useState(0);
-  const bottomRef                 = useRef(null);
-  const inputRef                  = useRef(null);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const bottomRef = useRef(null);
+  const inputRef = useRef(null);
 
   // Auto-scroll
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, loading]);
-
-  // Poll live match count for the badge
-  useEffect(() => {
-    const check = async () => {
-      try {
-        const r = await fetch(`${import.meta.env.VITE_API_URL}/api/live-scores`);
-        const j = await r.json();
-        const live = (j.data || []).filter(m => m.matchStarted && !m.matchEnded);
-        setLiveCount(live.length);
-      } catch { /* ignore */ }
-    };
-    check();
-    const t = setInterval(check, 30000);
-    return () => clearInterval(t);
-  }, []);
 
   const sendMessage = async (text) => {
     const msg = (text || input).trim();
@@ -102,15 +100,24 @@ export default function IPLChatbot() {
     setLoading(true);
 
     try {
-      const res  = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: msg }),
       });
+      
       const data = await res.json();
+      
+      if (!res.ok) throw new Error(data.error || "Failed to fetch");
+
       setMessages(prev => [...prev, { role: 'bot', text: data.reply, ts: data.timestamp }]);
-    } catch {
-      setMessages(prev => [...prev, { role: 'bot', text: '⚠️ Connection error. Make sure the backend is running.', ts: new Date().toISOString() }]);
+    } catch (err) {
+      setMessages(prev => [...prev, { 
+        role: 'bot', 
+        text: '⚠️ **Connection Error:** Backend or OpenAI API unavailable. Please check your network and API keys.', 
+        ts: new Date().toISOString(),
+        isError: true
+      }]);
     } finally {
       setLoading(false);
       inputRef.current?.focus();
@@ -123,264 +130,158 @@ export default function IPLChatbot() {
 
   const clearChat = () => setMessages([{
     role: 'bot',
-    text: "🔄 Chat cleared! How can I help you?\n\nType **help** to see what I can do.",
+    text: "🔄 Chat cleared! How can I help you next?",
     ts: new Date().toISOString(),
   }]);
 
   return (
     <div style={{
-      backgroundColor: '#0d1627',
-      minHeight: '100vh',
+      backgroundColor: '#020617', // Deep tailwind slate-950
+      height: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
-      padding: '0 0 40px',
-      fontFamily: "'Inter', 'Segoe UI', sans-serif",
+      fontFamily: "'Inter', sans-serif",
+      color: '#f8fafc'
     }}>
-      {/* Keyframe styles */}
       <style>{`
         @keyframes typingBounce {
-          0%,60%,100% { transform: translateY(0); }
-          30% { transform: translateY(-8px); }
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-4px); opacity: 0.5; }
         }
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(12px); }
+        @keyframes slideUp {
+          from { opacity: 0; transform: translateY(10px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-        .chat-input::placeholder { color: #475569; }
-        .chat-input:focus { outline: none; border-color: #f59e0b !important; box-shadow: 0 0 0 3px rgba(245,158,11,0.15) !important; }
-        .quick-btn:hover { background: #f59e0b !important; color: #000 !important; transform: translateY(-2px); }
-        .send-btn:hover { background: linear-gradient(135deg,#f59e0b,#eab308) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(245,158,11,0.5) !important; }
-        .chat-msg { animation: fadeInUp 0.25s ease; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
       `}</style>
 
-      {/* ── Hero Banner ───────────────────────────────────────────────────── */}
-      <div style={{
-        width: '100%',
-        background: 'linear-gradient(160deg, #0a1628 0%, #1a2744 50%, #0a1628 100%)',
-        borderBottom: '2px solid rgba(245,158,11,0.2)',
-        padding: '36px 20px 28px',
-        textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden',
-        marginBottom: '28px',
+      {/* Header */}
+      <div style={{ 
+        padding: '20px 24px', 
+        background: 'linear-gradient(90deg, #0f172a 0%, #1e1b4b 100%)', 
+        borderBottom: '1px solid #334155',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        boxShadow: '0 4px 20px rgba(0,0,0,0.5)'
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 0%, rgba(245,158,11,0.07) 0%, transparent 70%)' }} />
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          {/* Live badge */}
-          {liveCount > 0 && (
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px',
-              background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.3)',
-              borderRadius: '20px', padding: '4px 12px', marginBottom: '12px', fontSize: '11px',
-              fontWeight: 800, color: '#ef4444', letterSpacing: '1px' }}>
-              <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#ef4444', display: 'inline-block', animation: 'pulse 1.4s infinite' }} />
-              {liveCount} MATCH{liveCount > 1 ? 'ES' : ''} LIVE NOW
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ background: 'rgba(251, 191, 36, 0.1)', padding: '10px', borderRadius: '12px', border: '1px solid rgba(251, 191, 36, 0.3)' }}>
+            <Sparkles size={24} color="#fbbf24" />
+          </div>
+          <div>
+            <h2 style={{ margin: 0, fontSize: '18px', fontWeight: '700', letterSpacing: '0.5px' }}>AI Cricket Assistant</h2>
+            <div style={{ fontSize: '12px', color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '4px', marginTop: '2px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e', boxShadow: '0 0 8px #22c55e' }} />
+              Connected to MongoDB Atlas
             </div>
-          )}
-          <h1 style={{
-            fontSize: '42px', fontWeight: 900, margin: '0 0 8px',
-            background: 'linear-gradient(90deg, #f59e0b, #fde68a, #f59e0b)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-            letterSpacing: '1px',
-          }}>
-            🏏 IPL 2026 AI CHATBOT
-          </h1>
-          <div style={{ fontSize: '13px', color: '#64748b', fontWeight: 600, letterSpacing: '1.5px' }}>
-            LIVE SCORE API · AUTO TOSS · CRICAPI AGENT · ML PREDICTIONS
           </div>
         </div>
+        <button onClick={clearChat} title="Clear Chat" style={{
+          background: 'transparent', border: 'none', color: '#64748b', cursor: 'pointer', padding: '8px', borderRadius: '8px', transition: '0.2s'
+        }} onMouseOver={e => e.currentTarget.style.color = '#f8fafc'} onMouseOut={e => e.currentTarget.style.color = '#64748b'}>
+          <RefreshCw size={20} />
+        </button>
       </div>
 
-      {/* ── Main Chat Container ───────────────────────────────────────────── */}
-      <div style={{ width: '100%', maxWidth: '820px', padding: '0 16px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-
-        {/* Quick Actions */}
-        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-          {QUICK_ACTIONS.map(qa => (
-            <button key={qa.msg} className="quick-btn" onClick={() => sendMessage(qa.msg)}
-              style={{
-                padding: '7px 14px', borderRadius: '20px', border: '1px solid rgba(245,158,11,0.25)',
-                background: 'rgba(245,158,11,0.08)', color: '#f59e0b',
-                fontSize: '12px', fontWeight: 700, cursor: 'pointer',
-                transition: 'all 0.2s ease', letterSpacing: '0.3px',
+      {/* Chat Area */}
+      <div style={{ flex: 1, overflowY: 'auto', padding: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        {messages.map((m, i) => {
+          const isUser = m.role === 'user';
+          return (
+            <div key={i} style={{
+              display: 'flex',
+              gap: '12px',
+              alignSelf: isUser ? 'flex-end' : 'flex-start',
+              maxWidth: '85%',
+              animation: 'slideUp 0.3s ease-out forwards',
+            }}>
+              {!isUser && (
+                <div style={{ flexShrink: 0, width: '36px', height: '36px', borderRadius: '50%', background: 'linear-gradient(135deg, #1e1b4b, #312e81)', border: '1px solid #4338ca', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Bot size={18} color="#818cf8" />
+                </div>
+              )}
+              
+              <div style={{
+                background: isUser ? 'linear-gradient(135deg, #2563eb, #1d4ed8)' : m.isError ? '#450a0a' : '#0f172a',
+                border: `1px solid ${isUser ? '#3b82f6' : m.isError ? '#7f1d1d' : '#1e293b'}`,
+                padding: '14px 18px',
+                borderRadius: '16px',
+                borderTopRightRadius: isUser ? '4px' : '16px',
+                borderTopLeftRadius: !isUser ? '4px' : '16px',
+                fontSize: '14px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
               }}>
-              {qa.label}
+                {renderMarkdown(m.text)}
+                <div style={{ fontSize: '10px', color: isUser ? '#93c5fd' : '#64748b', marginTop: '8px', textAlign: 'right' }}>
+                  {new Date(m.ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                </div>
+              </div>
+
+              {isUser && (
+                <div style={{ flexShrink: 0, width: '36px', height: '36px', borderRadius: '50%', background: '#1e293b', border: '1px solid #334155', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <User size={18} color="#94a3b8" />
+                </div>
+              )}
+            </div>
+          );
+        })}
+        {loading && <TypingIndicator />}
+        <div ref={bottomRef} />
+      </div>
+
+      {/* Suggested Questions */}
+      {messages.length < 3 && (
+        <div style={{ padding: '0 24px 12px', display: 'flex', gap: '8px', overflowX: 'auto', whiteSpace: 'nowrap', scrollbarWidth: 'none' }}>
+          {SUGGESTED_QUESTIONS.map(q => (
+            <button key={q} onClick={() => sendMessage(q)} disabled={loading} style={{
+              background: '#0f172a', border: '1px solid #1e293b', color: '#94a3b8', padding: '8px 16px', borderRadius: '20px',
+              fontSize: '12px', cursor: 'pointer', transition: 'all 0.2s',
+            }} onMouseOver={e => { e.currentTarget.style.borderColor = '#3b82f6'; e.currentTarget.style.color = '#bfdbfe'; }}
+               onMouseOut={e => { e.currentTarget.style.borderColor = '#1e293b'; e.currentTarget.style.color = '#94a3b8'; }}>
+              {q}
             </button>
           ))}
-          <button onClick={clearChat}
+        </div>
+      )}
+
+      {/* Input Area */}
+      <div style={{ padding: '20px 24px', background: '#0f172a', borderTop: '1px solid #1e293b' }}>
+        <div style={{ display: 'flex', gap: '12px', maxWidth: '1000px', margin: '0 auto', position: 'relative' }}>
+          <textarea
+            ref={inputRef}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKey}
+            placeholder="Ask the AI Assistant..."
+            rows={1}
             style={{
-              marginLeft: 'auto', padding: '7px 14px', borderRadius: '20px',
-              border: '1px solid rgba(100,116,139,0.3)', background: 'transparent',
-              color: '#475569', fontSize: '12px', fontWeight: 700, cursor: 'pointer',
-              transition: 'all 0.2s',
+              flex: 1, background: '#1e293b', border: '1px solid #334155', color: '#f8fafc',
+              padding: '16px 50px 16px 20px', borderRadius: '24px', outline: 'none',
+              fontSize: '14px', resize: 'none', lineHeight: '1.4', overflow: 'hidden',
+              boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.1)', transition: 'border-color 0.2s'
             }}
-            onMouseEnter={e => { e.currentTarget.style.color='#94a3b8'; e.currentTarget.style.borderColor='#475569'; }}
-            onMouseLeave={e => { e.currentTarget.style.color='#475569'; e.currentTarget.style.borderColor='rgba(100,116,139,0.3)'; }}>
-            🗑️ Clear
+            onFocus={(e) => e.target.style.borderColor = '#3b82f6'}
+            onBlur={(e) => e.target.style.borderColor = '#334155'}
+          />
+          <button
+            onClick={() => sendMessage()}
+            disabled={loading || !input.trim()}
+            style={{
+              position: 'absolute', right: '6px', top: '6px', bottom: '6px', width: '40px',
+              background: input.trim() && !loading ? '#3b82f6' : '#334155', border: 'none', borderRadius: '50%',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: input.trim() && !loading ? 'pointer' : 'not-allowed',
+              transition: 'background 0.2s'
+            }}
+          >
+            <Send size={18} color={input.trim() && !loading ? '#fff' : '#94a3b8'} style={{ marginLeft: '2px' }} />
           </button>
         </div>
-
-        {/* Chat Window */}
-        <div style={{
-          background: 'linear-gradient(160deg, #0f172a, #1e293b)',
-          border: '1px solid rgba(245,158,11,0.15)',
-          borderRadius: '20px',
-          overflow: 'hidden',
-          boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
-        }}>
-          {/* Chat header */}
-          <div style={{
-            padding: '14px 20px', display: 'flex', alignItems: 'center', gap: '10px',
-            background: 'rgba(245,158,11,0.05)', borderBottom: '1px solid rgba(245,158,11,0.1)',
-          }}>
-            <div style={{
-              width: '36px', height: '36px', borderRadius: '50%',
-              background: 'linear-gradient(135deg, #f59e0b, #eab308)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px',
-            }}>🏏</div>
-            <div>
-              <div style={{ fontSize: '14px', fontWeight: 800, color: '#e2e8f0' }}>IPL AI Assistant</div>
-              <div style={{ fontSize: '10px', color: '#22c55e', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#22c55e', display: 'inline-block' }} />
-                Online · Real-time data
-              </div>
-            </div>
-            <div style={{ marginLeft: 'auto', fontSize: '10px', color: '#334155', fontWeight: 700, letterSpacing: '1px' }}>
-              Live API + ML Agent
-            </div>
-          </div>
-
-          {/* Messages area */}
-          <div style={{
-            height: '480px', overflowY: 'auto', padding: '20px',
-            display: 'flex', flexDirection: 'column', gap: '14px',
-            scrollbarWidth: 'thin', scrollbarColor: '#1e293b transparent',
-          }}>
-            {messages.map((msg, i) => (
-              <div key={i} className="chat-msg" style={{
-                display: 'flex',
-                flexDirection: msg.role === 'user' ? 'row-reverse' : 'row',
-                gap: '10px', alignItems: 'flex-end',
-              }}>
-                {/* Avatar */}
-                <div style={{
-                  width: '32px', height: '32px', borderRadius: '50%', flexShrink: 0,
-                  background: msg.role === 'user'
-                    ? 'linear-gradient(135deg, #3b82f6, #1d4ed8)'
-                    : 'linear-gradient(135deg, #f59e0b, #d97706)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: '15px',
-                }}>
-                  {msg.role === 'user' ? '👤' : '🏏'}
-                </div>
-
-                {/* Bubble */}
-                <div style={{
-                  maxWidth: '75%',
-                  background: msg.role === 'user'
-                    ? 'linear-gradient(135deg, #1d4ed8, #1e40af)'
-                    : 'linear-gradient(135deg, #0f172a, #1e293b)',
-                  border: msg.role === 'user'
-                    ? '1px solid rgba(59,130,246,0.4)'
-                    : '1px solid rgba(245,158,11,0.15)',
-                  borderRadius: msg.role === 'user' ? '18px 18px 4px 18px' : '18px 18px 18px 4px',
-                  padding: '12px 16px',
-                  fontSize: '13px', lineHeight: '1.6', color: '#e2e8f0',
-                  boxShadow: msg.role === 'user'
-                    ? '0 4px 16px rgba(59,130,246,0.2)'
-                    : '0 4px 16px rgba(0,0,0,0.4)',
-                }}>
-                  {msg.role === 'bot' ? renderMarkdown(msg.text) : msg.text}
-                  <div style={{ fontSize: '9px', color: '#334155', marginTop: '5px', textAlign: msg.role === 'user' ? 'left' : 'right' }}>
-                    {new Date(msg.ts).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })}
-                  </div>
-                </div>
-              </div>
-            ))}
-
-            {/* Typing indicator */}
-            {loading && (
-              <div className="chat-msg" style={{ display: 'flex', gap: '10px', alignItems: 'flex-end' }}>
-                <div style={{
-                  width: '32px', height: '32px', borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #f59e0b, #d97706)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '15px',
-                }}>🏏</div>
-                <div style={{
-                  background: 'linear-gradient(135deg, #0f172a, #1e293b)',
-                  border: '1px solid rgba(245,158,11,0.15)',
-                  borderRadius: '18px 18px 18px 4px', padding: '12px 16px',
-                }}>
-                  <TypingDots />
-                </div>
-              </div>
-            )}
-            <div ref={bottomRef} />
-          </div>
-
-          {/* Input bar */}
-          <div style={{
-            padding: '16px 20px', borderTop: '1px solid rgba(245,158,11,0.1)',
-            background: 'rgba(15,23,42,0.6)', display: 'flex', gap: '10px', alignItems: 'flex-end',
-          }}>
-            <input
-              ref={inputRef}
-              className="chat-input"
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={handleKey}
-              placeholder="Ask about live scores, predictions, results..."
-              disabled={loading}
-              style={{
-                flex: 1, background: 'rgba(30,41,59,0.8)',
-                border: '1.5px solid rgba(71,85,105,0.5)',
-                borderRadius: '14px', padding: '12px 16px',
-                color: '#e2e8f0', fontSize: '13px', fontFamily: 'inherit',
-                resize: 'none', transition: 'border-color 0.2s, box-shadow 0.2s',
-                cursor: loading ? 'not-allowed' : 'text',
-                opacity: loading ? 0.6 : 1,
-              }}
-            />
-            <button
-              className="send-btn"
-              onClick={() => sendMessage()}
-              disabled={loading || !input.trim()}
-              style={{
-                padding: '12px 22px', borderRadius: '14px', border: 'none',
-                background: loading || !input.trim()
-                  ? 'rgba(71,85,105,0.4)'
-                  : 'linear-gradient(135deg,#f59e0b,#d97706)',
-                color: loading || !input.trim() ? '#475569' : '#000',
-                fontWeight: 800, fontSize: '13px', cursor: loading || !input.trim() ? 'not-allowed' : 'pointer',
-                transition: 'all 0.2s ease', display: 'flex', alignItems: 'center', gap: '6px',
-                boxShadow: loading || !input.trim() ? 'none' : '0 4px 12px rgba(245,158,11,0.35)',
-                flexShrink: 0,
-              }}>
-              {loading ? '⏳' : '➤'} {loading ? 'Thinking' : 'Send'}
-            </button>
-          </div>
-        </div>
-
-        {/* Info footer */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '10px',
-        }}>
-          {[
-            { icon: '📡', label: 'Data Source', val: 'RapidAPI + CricAPI' },
-            { icon: '🤖', label: 'ML Engine', val: 'Ensemble Voting Classifier' },
-            { icon: '🎯', label: 'ML Accuracy', val: 'Real-time from Agent' },
-            { icon: '⚡', label: 'Response Time', val: '< 500ms' },
-          ].map(({ icon, label, val }) => (
-            <div key={label} style={{
-              background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(71,85,105,0.2)',
-              borderRadius: '12px', padding: '10px 14px', textAlign: 'center',
-            }}>
-              <div style={{ fontSize: '18px', marginBottom: '4px' }}>{icon}</div>
-              <div style={{ fontSize: '9px', color: '#475569', fontWeight: 700, letterSpacing: '1px', marginBottom: '2px' }}>{label}</div>
-              <div style={{ fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>{val}</div>
-            </div>
-          ))}
+        <div style={{ textAlign: 'center', fontSize: '11px', color: '#475569', marginTop: '12px' }}>
+          AI Assistant can make mistakes. Verify important predictions.
         </div>
       </div>
     </div>

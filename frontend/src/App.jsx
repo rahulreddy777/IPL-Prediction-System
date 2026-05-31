@@ -1,61 +1,61 @@
 import React, { useState, useEffect } from "react";
-import Sidebar          from "./components/layout/Sidebar";
-import TopNavbar        from "./components/layout/TopNavbar";
-import Prediction2026   from "./pages/Prediction2026";
-import LiveScores       from "./components/LiveScores";
-import MatchesPage      from "./pages/MatchesPage";
-import PointsTable      from "./pages/PointsTable";
-import CaptainsPage     from "./pages/CaptainsPage";
-import Teams            from "./pages/Teams";
-import CaptainCard      from "./components/CaptainCard";
+import Sidebar from "./components/layout/Sidebar";
+import TopNavbar from "./components/layout/TopNavbar";
+import Prediction2026 from "./pages/Prediction2026";
+import LiveScores from "./components/LiveScores";
+import MatchesPage from "./pages/MatchesPage";
+import PointsTable from "./pages/PointsTable";
+import CaptainsPage from "./pages/CaptainsPage";
+import Teams from "./pages/Teams";
+import CaptainCard from "./components/CaptainCard";
 import ChampionsGallery from "./components/ChampionsGallery";
-import Venues           from "./components/Venues";
-import AllSeasons       from "./components/AllSeasons";
-import PlayerStats      from "./components/PlayerStats";
-import AllPlayers       from "./components/AllPlayers";
-import AllTimeBowlers   from "./components/AllTimeBowlers";
-import AllTimeBatters   from "./components/AllTimeBatters";
-import InjuryTracker    from "./components/InjuryTracker";
+import PlayerStats from "./components/PlayerStats";
+import AllPlayers from "./components/AllPlayers";
+import InjuryTracker from "./components/InjuryTracker";
 import MLPredictions2026 from "./components/MLPredictions2026";
-import HeroBanner       from "./components/dashboard/HeroBanner";
+import HeroBanner from "./components/dashboard/HeroBanner";
 import PlayoffBracketLive from "./components/playoffs/PlayoffBracketLive";
-import FinalPrediction  from "./pages/FinalPrediction";
-import TeamHistory      from "./pages/TeamHistory";
+import FinalPrediction from "./pages/FinalPrediction";
+import TeamHistory from "./pages/TeamHistory";
 import HeadToHeadCenter from "./pages/HeadToHeadCenter";
-import { teamsData }    from "./data/mockData";
-import { Users }        from "lucide-react";
+import AllTimeBatters from "./components/AllTimeBatters";
+import AllTimeBowlers from "./components/AllTimeBowlers";
+import AllSeasons from "./components/AllSeasons";
+import Venues from "./components/Venues";
+import IPLChatbot from "./components/IPLChatbot";
+import { Users } from "lucide-react";
 
 const SIDEBAR_W_EXPANDED = 220;
 const SIDEBAR_W_COLLAPSED = 64;
 
 function App() {
-  const [activeTab, setActiveTab]       = useState("prediction2026");
-  const [sidebarOpen, setSidebarOpen]   = useState(true);
+  const [activeTab, setActiveTab] = useState("prediction2026");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   // Map sidebar tab IDs → content tab IDs
   const TAB_MAP = {
-    prediction2026 : "prediction2026",
-    ai             : "ai",
-    livescores     : "livescores",
-    teams          : "teams",
-    captains2026   : "captains2026",    // IPL Captains 2026
-    points         : "points",
-    matches        : "matches",
-    playoffs       : "playoffs",
-    allplayers     : "allplayers",
-    orangecap      : "playerstats",
-    purplecap      : "bowlers",
-    venues         : "venues",
-    settings       : "prediction2026",
-    captains       : "captains2026",
-    champions      : "champions",
-    allseasons     : "allseasons",
-    injuries       : "injuries",
-    batters        : "batters",
-    bowlers        : "bowlers",
-    final          : "final",
-    history        : "history",
-    h2h            : "h2h",
+    prediction2026: "prediction2026",
+    ai: "ai",
+    livescores: "livescores",
+    teams: "teams",
+    captains2026: "captains2026",    // IPL Captains 2026
+    points: "points",
+    matches: "matches",
+    playoffs: "playoffs",
+    allplayers: "allplayers",
+    orangecap: "playerstats",
+    settings: "prediction2026",
+    captains: "captains2026",
+    champions: "champions",
+    injuries: "injuries",
+    final: "final",
+    history: "history",
+    h2h: "h2h",
+    batters: "batters",
+    purplecap: "bowlers",
+    allseasons: "allseasons",
+    venues: "venues",
+    chatbot: "chatbot",
   };
 
   const handleSidebarTab = (id) => {
@@ -64,10 +64,10 @@ function App() {
 
   const handleQuickAction = (id) => {
     const map = {
-      ai        : "ai",
-      live      : "livescores",
-      orangecap : "playerstats",   // ALL SEASONS button
-      purplecap : "bowlers",       // ALL TIME BOWLERS button
+      ai: "ai",
+      live: "livescores",
+      orangecap: "playerstats",   // ALL SEASONS button
+      purplecap: "bowlers",       // ALL TIME BOWLERS button
     };
     setActiveTab(map[id] || "prediction2026");
   };
@@ -158,31 +158,32 @@ function App() {
         {/* Page Content */}
         <main style={{ flex: 1 }}>
           {activeTab === "prediction2026" && <Prediction2026 />}
-          {activeTab === "ai"             && <MLPredictions2026 />}
-          {activeTab === "playoffs"       && (
+          {activeTab === "ai" && <MLPredictions2026 />}
+          {activeTab === "playoffs" && (
             <div style={{ padding: "28px 24px", display: "flex", flexDirection: "column", gap: "24px" }}>
               <h2 style={{ fontSize: "26px", color: "#eab308", margin: 0, fontFamily: "'Oswald', sans-serif" }}>🏆 IPL 2026 PLAYOFFS — BRACKET & TEAMS</h2>
               <HeroBanner />
               <PlayoffBracketLive />
             </div>
           )}
-          {activeTab === "livescores"     && <LiveScores />}
-          {activeTab === "matches"        && <MatchesPage />}
-          {activeTab === "points"         && <PointsTable />}
-          {activeTab === "captains2026"   && <CaptainsPage />}
-          {activeTab === "teams"          && <Teams />}
-          {activeTab === "captains"       && renderCaptains()}
-          {activeTab === "champions"      && <ChampionsGallery />}
-          {activeTab === "venues"         && <Venues />}
-          {activeTab === "allplayers"     && <AllPlayers />}
-          {activeTab === "playerstats"    && <PlayerStats />}
-          {activeTab === "batters"        && <AllTimeBatters />}
-          {activeTab === "bowlers"        && <AllTimeBowlers />}
-          {activeTab === "allseasons"     && <AllSeasons />}
-          {activeTab === "injuries"       && <InjuryTracker />}
-          {activeTab === "final"          && <FinalPrediction />}
-          {activeTab === "history"        && <TeamHistory />}
-          {activeTab === "h2h"            && <HeadToHeadCenter />}
+          {activeTab === "livescores" && <LiveScores />}
+          {activeTab === "matches" && <MatchesPage />}
+          {activeTab === "points" && <PointsTable />}
+          {activeTab === "captains2026" && <CaptainsPage />}
+          {activeTab === "teams" && <Teams />}
+          {activeTab === "captains" && renderCaptains()}
+          {activeTab === "champions" && <ChampionsGallery />}
+          {activeTab === "allplayers" && <AllPlayers />}
+          {activeTab === "playerstats" && <PlayerStats />}
+          {activeTab === "injuries" && <InjuryTracker />}
+          {activeTab === "final" && <FinalPrediction />}
+          {activeTab === "history" && <TeamHistory />}
+          {activeTab === "h2h" && <HeadToHeadCenter />}
+          {activeTab === "batters" && <AllTimeBatters />}
+          {activeTab === "bowlers" && <AllTimeBowlers />}
+          {activeTab === "allseasons" && <AllSeasons />}
+          {activeTab === "venues" && <Venues />}
+          {activeTab === "chatbot" && <IPLChatbot />}
         </main>
       </div>
     </>

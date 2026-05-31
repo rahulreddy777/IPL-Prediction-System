@@ -8,10 +8,9 @@ const NAV_ITEMS = [
   { id: "captains2026",  label: "IPL Captains 2026",   icon: "🎖️",  badge: null },
   { id: "points",        label: "Points Table",        icon: "📊",  badge: null },
   { id: "matches",       label: "Matches",             icon: "🗓️",  badge: null },
-  { id: "batters",       label: "All Time Batters",    icon: "🟠",  badge: null },
-  { id: "purplecap",     label: "All Time Bowlers",    icon: "🟣",  badge: null },
   { id: "allseasons",    label: "All Seasons Matches", icon: "📅",  badge: null },
   { id: "venues",        label: "Venues",              icon: "📍",  badge: null },
+  { id: "chatbot",       label: "AI Chatbot",          icon: "🤖",  badge: null },
 ];
 
 const BADGE_STYLES = {

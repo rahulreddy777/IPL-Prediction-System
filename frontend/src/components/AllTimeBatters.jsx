@@ -19,9 +19,9 @@ const AllTimeBatters = () => {
   const fetchBatters = async () => {
     setLoading(true)
     try {
-      const response = await api.get("/players/all-time-batters")
+      const response = await api.get("/orange-cap")
       const rows = Array.isArray(response.data) ? response.data : []
-      setBatters(rows.slice().sort((a, b) => Number(a.rank ?? 999999) - Number(b.rank ?? 999999)))
+      setBatters(rows)
     } catch (e) {
       console.error("Error fetching batters:", e)
       setBatters([])
@@ -32,7 +32,7 @@ const AllTimeBatters = () => {
 
   if (loading) return (
     <div style={{ minHeight: "100vh", background: "#0f172a", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ color: "#f59e0b", fontSize: 22, fontWeight: 700, letterSpacing: 2 }}>⏳ Loading All-Time Batters...</div>
+      <div style={{ color: "#f59e0b", fontSize: 22, fontWeight: 700, letterSpacing: 2 }}>⏳ Loading 2026 Batters...</div>
     </div>
   )
 
@@ -45,11 +45,11 @@ const AllTimeBatters = () => {
           <div style={{ display: "inline-flex", alignItems: "center", gap: 14, background: "linear-gradient(135deg,#1e293b,#0f172a)", border: "1px solid #f59e0b44", borderRadius: 16, padding: "12px 32px", marginBottom: 12, boxShadow: "0 0 40px #f59e0b22" }}>
             <span style={{ fontSize: 32 }}>🏏</span>
             <span style={{ fontSize: 28, fontWeight: 900, letterSpacing: 2, background: "linear-gradient(90deg,#f59e0b,#fbbf24,#fde68a)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              ALL-TIME IPL BATTERS
+              IPL 2026 BATTING STATS
             </span>
             <span style={{ fontSize: 32 }}>🏏</span>
           </div>
-          <div style={{ color: "#94a3b8", fontSize: 14, letterSpacing: 1 }}>TOP RUN SCORERS (2008–2025)</div>
+          <div style={{ color: "#94a3b8", fontSize: 14, letterSpacing: 1 }}>TOP RUN SCORERS (ORANGE CAP CONTENDERS)</div>
         </div>
 
         {/* Table Card */}
@@ -101,37 +101,34 @@ const AllTimeBatters = () => {
 
                       {/* Player */}
                       <td style={{ padding: "14px 18px" }}>
-                        <span style={{ color: "#f1f5f9", fontWeight: 700, fontSize: 15 }}>{b.player}</span>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                          <span style={{ color: "#f1f5f9", fontWeight: 700, fontSize: 15 }}>{b.player || b.Player}</span>
+                          <span style={{ color: "#94a3b8", fontSize: 11, fontWeight: 600, letterSpacing: 0.5, textTransform: "uppercase" }}>{b.team || b.Team}</span>
+                        </div>
                       </td>
 
                       {/* Runs */}
                       <td style={{ padding: "14px 18px", textAlign: "center" }}>
-                        <span style={{
-                          background: "linear-gradient(135deg,#f59e0b22,#d9700022)",
-                          border: "1px solid #f59e0b55",
-                          color: "#fbbf24", fontWeight: 800, fontSize: 17,
-                          borderRadius: 8, padding: "4px 14px", display: "inline-block"
-                        }}>{b.runs?.toLocaleString()}</span>
+                        <span style={{ background: "linear-gradient(135deg,#f59e0b22,#b4530922)", border: "1px solid #f59e0b55", color: "#fcd34d", fontWeight: 800, fontSize: 17, borderRadius: 8, padding: "4px 14px", display: "inline-block" }}>
+                          {b.runs || b.Runs || 0}
+                        </span>
                       </td>
 
                       {/* Matches */}
                       <td style={{ padding: "14px 18px", textAlign: "center", color: "#94a3b8", fontWeight: 600, fontSize: 14 }}>
-                        {b.matches ?? "—"}
+                        {b.matches || b.Matches || "—"}
                       </td>
 
                       {/* Average */}
                       <td style={{ padding: "14px 18px", textAlign: "center" }}>
-                        <span style={{ color: "#38bdf8", fontWeight: 700, fontSize: 15 }}>{b.average ?? "—"}</span>
+                        <span style={{ color: "#38bdf8", fontWeight: 700, fontSize: 15 }}>{b.avg || b.Avg || "—"}</span>
                       </td>
 
                       {/* Strike Rate */}
                       <td style={{ padding: "14px 18px", textAlign: "center" }}>
-                        <span style={{
-                          background: "#10b98122",
-                          border: "1px solid #10b98155",
-                          color: "#34d399", fontWeight: 700, fontSize: 14,
-                          borderRadius: 6, padding: "3px 10px", display: "inline-block"
-                        }}>{b.strike_rate ?? "—"}</span>
+                        <span style={{ background: "#34d39918", border: "1px solid #34d39944", color: "#34d399", fontWeight: 700, fontSize: 14, borderRadius: 6, padding: "3px 10px", display: "inline-block", letterSpacing: 0.5 }}>
+                          {b.sr || b.SR || "—"}
+                        </span>
                       </td>
                     </tr>
                   )
@@ -142,7 +139,7 @@ const AllTimeBatters = () => {
         </div>
 
         <div style={{ textAlign: "center", color: "#334155", fontSize: 12, marginTop: 20, letterSpacing: 1 }}>
-          DATA SOURCE: IPL 2008–2025 • ALL STATS UPDATED
+          DATA SOURCE: MONGODB ATLAS (BATTER_STATS_2026)
         </div>
       </div>
     </div>

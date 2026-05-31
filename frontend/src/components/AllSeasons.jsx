@@ -353,14 +353,13 @@ const AllSeasons = () => {
                     }}>
                       <td style={{ padding: '14px', fontWeight: 'bold', color: '#60a5fa' }}>{c.Season}</td>
                       <td style={{ padding: '14px', fontWeight: '600' }}>{c.PurpleCap}</td>
-                      <td style={{ padding: '14px', textAlign: 'center', fontWeight: '800', color: '#facc15' }}>{c.Wickets}</td>
+                      <td style={{ padding: '14px', textAlign: 'center', fontWeight: '800', color: '#a855f7' }}>{c.Wickets}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           )}
-
         </div>
 
         {/* Footer note */}
