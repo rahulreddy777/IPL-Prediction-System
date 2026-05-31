@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import TeamLogo from '../components/common/TeamLogo';
-import { Swords, Activity, Crosshair, BarChart2 } from 'lucide-react';
+import { Swords, Activity, Crosshair, BarChart2, Database } from 'lucide-react';
 import './HeadToHeadCenter.css';
 
 const API = import.meta.env.VITE_API_URL || `${import.meta.env.VITE_API_URL}`;
@@ -11,35 +11,69 @@ const TEAMS = ['CSK', 'DC', 'GT', 'KKR', 'LSG', 'MI', 'PBKS', 'RCB', 'RR', 'SRH'
 export default function HeadToHeadCenter() {
   const [teamA, setTeamA] = useState('RCB');
   const [teamB, setTeamB] = useState('GT');
+  const [fullData, setFullData] = useState(null);
   const [h2hData, setH2hData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const fetchH2H = async () => {
+  useEffect(() => {
+    const fetchAllData = async () => {
+      setLoading(true);
+      setError('');
+      try {
+        const API_BASE = import.meta.env.DEV ? 'http://localhost:5000' : import.meta.env.VITE_API_URL;
+        const res = await axios.get(`${API_BASE}/api/head-to-head`);
+        setFullData(res.data);
+      } catch (error) {
+        console.error(error);
+        setError(error.message || "Failed to fetch head to head data");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchAllData();
+  }, []);
+
+  useEffect(() => {
+    if (!fullData) return;
+    
     if (teamA === teamB) {
       setError("Please select two different teams");
       setH2hData(null);
       return;
     }
-    setLoading(true);
     setError('');
-    try {
-      const res = await axios.get(`${API}/api/head-to-head/${teamA}/${teamB}`);
-      if (res.data && res.data.success) {
-        setH2hData(res.data.data);
-      }
-    } catch (err) {
-      console.error(err);
-      setError("Failed to fetch head to head data");
-      setH2hData(null);
-    } finally {
-      setLoading(false);
-    }
-  };
 
-  useEffect(() => {
-    fetchH2H();
-  }, [teamA, teamB]);
+    try {
+      const splits = fullData.head_to_head_splits;
+      if (!splits || !splits[teamA] || !splits[teamA][teamB]) {
+        // Fallback for old schema if it exists
+        if (fullData[teamA]) {
+          const m = fullData[teamA].find(x => x.opponent === teamB);
+          if (m) {
+            setH2hData(m);
+            return;
+          }
+        }
+        setError(`Matchup not found between ${teamA} and ${teamB}`);
+        setH2hData(null);
+        return;
+      }
+
+      const matchupData = splits[teamA][teamB];
+      setH2hData({
+        opponent: teamB,
+        total: matchupData.total_matches,
+        wins: matchupData.overall_wins,
+        losses: matchupData.overall_losses,
+        home: matchupData.home_wins,
+        away: matchupData.away_neutral_wins
+      });
+    } catch (err) {
+      setError("Error parsing matchup data");
+      setH2hData(null);
+    }
+  }, [teamA, teamB, fullData]);
 
   return (
     <div className="h2h-page">
@@ -47,6 +81,10 @@ export default function HeadToHeadCenter() {
         <Swords size={32} color="#ef4444" />
         <h2>HEAD TO HEAD CENTER</h2>
         <p>Advanced Matchup Analytics & Win Probability</p>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', padding: '6px 16px', borderRadius: '24px', fontSize: '13px', fontWeight: 600, marginTop: '16px', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
+          <Database size={16} />
+          <span>Connected to MongoDB Atlas</span>
+        </div>
       </div>
 
       <div className="h2h-selectors">
@@ -130,6 +168,10 @@ export default function HeadToHeadCenter() {
                 <span className="t2">{h2hData.losses - h2hData.home}</span>
               </div>
             </div>
+          </div>
+
+          <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: 12, marginTop: 40, letterSpacing: 1 }}>
+            DATA SOURCE: MONGODB ATLAS (IPL_TEAMS_HEAD_TO_HEAD)
           </div>
 
         </div>
