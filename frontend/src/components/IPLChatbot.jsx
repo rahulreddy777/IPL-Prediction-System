@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Bot, Send, User, Sparkles, AlertCircle, RefreshCw } from 'lucide-react';
+import axios from 'axios';
 
 const SUGGESTED_QUESTIONS = [
   "Who will win IPL 2026?",
@@ -100,15 +101,8 @@ export default function IPLChatbot() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: msg }),
-      });
-      
-      const data = await res.json();
-      
-      if (!res.ok) throw new Error(data.error || "Failed to fetch");
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/chat`, { message: msg });
+      const data = res.data;
 
       setMessages(prev => [...prev, { role: 'bot', text: data.reply, ts: data.timestamp }]);
     } catch (err) {

@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import axios from 'axios';
 import App from './App';
 import './index.css';
+
+// Global Axios Configuration
+axios.defaults.timeout = 30000;
 
 class ErrorBoundary extends React.Component {
   constructor(props) {

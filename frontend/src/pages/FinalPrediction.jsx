@@ -9,6 +9,7 @@ import {
   Filler, Tooltip, Legend, CategoryScale, LinearScale, BarElement,
 } from 'chart.js';
 import { Radar, Bar } from 'react-chartjs-2';
+import axios from 'axios';
 import TeamLogo from '../components/common/TeamLogo';
 import './FinalPrediction.css';
 
@@ -233,12 +234,18 @@ export default function FinalPrediction() {
   const [tab, setTab]     = useState('overview');
   const [lastFetch, setLastFetch] = useState(null);
 
-  const load = useCallback(() => {
-    setLoading(true);
-    fetch(API)
-      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-      .then(d => { setData(d); setLoading(false); setLastFetch(new Date()); })
-      .catch(e => { setError(e.message); setLoading(false); });
+  const load = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const r = await axios.get(API);
+      setData(r.data);
+      setLastFetch(new Date());
+    } catch (e) {
+      setError(e.message || "Failed to load prediction data.");
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
   useEffect(() => { load(); }, [load]);
